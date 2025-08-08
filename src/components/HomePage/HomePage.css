@@ -1,0 +1,65 @@
+/* HomePage component specific styles */
+
+.hero-section {
+  min-height: 100vh;
+  padding-top: 5rem;
+  background-color: #f9fafb;
+  color: #1f2937;
+}
+
+.profile-image {
+  max-width: 21.875rem;
+  width: 100%;
+}
+
+.home-btn-download {
+  background-color: #6366f1 !important;
+  color: #ffffff !important;
+  border: none !important;
+  transition: all 0.3s ease !important;
+}
+.home-btn-download:hover {
+  background-color: #4f46e5 !important;
+}
+.home-btn-download:active {
+  background-color: #4338ca !important;
+}
+
+.home-btn-contact {
+  background-color: #e5e7eb !important;
+  color: #1f2937 !important;
+  border: none !important;
+  transition: all 0.3s ease !important;
+}
+.home-btn-contact:hover {
+  background-color: #d1d5db !important;
+}
+.home-btn-contact:active {
+  background-color: #9ca3af !important;
+}
+
+.home-social-linkedin {
+  color: #0a66c2 !important;
+  font-size: 3rem !important;
+  transition: all 0.3s ease !important;
+}
+.home-social-linkedin:hover {
+  color: #004182 !important;
+  transform: scale(1.1);
+}
+.home-social-linkedin {
+  transform: scale(1);
+}
+
+.home-social-github {
+  color: #1f2937 !important;
+  font-size: 3rem !important;
+  transition: all 0.3s ease !important;
+}
+.home-social-github:hover {
+  color: #000000 !important;
+  transform: scale(1.1);
+}
+.home-social-github {
+  transform: scale(1);
+}

@@ -1,25 +1,32 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import NavBar from "./components/NavBar/NavBar";
+import HomePage from "./components/HomePage/HomePage";
+import ContactPage from "./components/ContactPage";
+import ResumePage from "./components/ResumePage";
+import PortfolioPage from "./components/PortfolioPage";
+import "./index.css";
 
 function App() {
+  const [activeSection, setActiveSection] = useState("home");
+
+  const handleNavClick = (section: string) => {
+    setActiveSection(section);
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div className="App">
+        <NavBar activeSection={activeSection} onNavClick={handleNavClick} />
+        <Routes>
+          <Route path="/" element={<HomePage onNavClick={handleNavClick} />} />
+          <Route path="/portfolio" element={<PortfolioPage />} />
+          <Route path="/contact" element={<ContactPage />} />
+          <Route path="/resume" element={<ResumePage />} />
+          {/* Add more routes as needed */}
+        </Routes>
+      </div>
+    </Router>
   );
 }
 
