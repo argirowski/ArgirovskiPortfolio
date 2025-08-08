@@ -50,7 +50,7 @@ const ResumePage: React.FC = () => {
                             Damilah
                           </p>
                         </div>
-                        <Badge bg="secondary" className="font-mono">
+                        <Badge className="font-mono year-badge">
                           2022 - 2025
                         </Badge>
                       </div>
@@ -94,7 +94,7 @@ const ResumePage: React.FC = () => {
                             CodeIT Solution
                           </p>
                         </div>
-                        <Badge bg="secondary" className="font-mono">
+                        <Badge bg="secondary" className="font-mono year-badge">
                           2021 - 2022
                         </Badge>
                       </div>
@@ -154,7 +154,7 @@ const ResumePage: React.FC = () => {
                             Semos Computer Education Center
                           </p>
                         </div>
-                        <Badge bg="secondary" className="font-mono">
+                        <Badge bg="secondary" className="font-mono year-badge">
                           2018 - 2019
                         </Badge>
                       </div>
@@ -201,12 +201,7 @@ const ResumePage: React.FC = () => {
                           "CSS3",
                           "Tailwind CSS",
                         ].map((skill) => (
-                          <Badge
-                            key={skill}
-                            bg="warning"
-                            text="dark"
-                            className="font-mono"
-                          >
+                          <Badge key={skill} className="font-mono skill-badge">
                             {skill}
                           </Badge>
                         ))}
@@ -223,12 +218,7 @@ const ResumePage: React.FC = () => {
                           "Unit Testing",
                           "REST APIs",
                         ].map((skill) => (
-                          <Badge
-                            key={skill}
-                            bg="warning"
-                            text="dark"
-                            className="font-mono"
-                          >
+                          <Badge key={skill} className="font-mono skill-badge">
                             {skill}
                           </Badge>
                         ))}
@@ -239,12 +229,7 @@ const ResumePage: React.FC = () => {
                       <h6 className="text-light font-inter mb-2">Database</h6>
                       <div className="d-flex flex-wrap gap-2">
                         {["MySQL"].map((skill) => (
-                          <Badge
-                            key={skill}
-                            bg="warning"
-                            text="dark"
-                            className="font-mono"
-                          >
+                          <Badge key={skill} className="font-mono skill-badge">
                             {skill}
                           </Badge>
                         ))}
@@ -257,12 +242,7 @@ const ResumePage: React.FC = () => {
                       </h6>
                       <div className="d-flex flex-wrap gap-2">
                         {["Git", "Docker", "AWS", "Agile"].map((skill) => (
-                          <Badge
-                            key={skill}
-                            bg="warning"
-                            text="dark"
-                            className="font-mono"
-                          >
+                          <Badge key={skill} className="font-mono skill-badge">
                             {skill}
                           </Badge>
                         ))}

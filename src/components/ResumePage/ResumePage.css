@@ -9,3 +9,27 @@
 .resume-card {
   background-color: #ffffff !important;
 }
+
+.year-badge {
+  background-color: #2d2d2d !important;
+  color: #f5f5f5 !important;
+  border: none !important;
+}
+
+.resume-card .card-body,
+.resume-card .card-text,
+.resume-card ul,
+.resume-card li,
+.resume-card h5,
+.resume-card h6,
+.resume-card p {
+  color: #1a1a1a !important;
+}
+
+.skill-badge {
+  border: 1px solid #1a1a1a !important;
+  color: #1a1a1a !important;
+  background: transparent !important;
+  margin-right: 0.3rem;
+  margin-top: 0.2rem;
+}
