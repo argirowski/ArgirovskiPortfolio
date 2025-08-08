@@ -1,6 +1,14 @@
 import React from "react";
 import { Container, Row, Col, Card, Badge } from "react-bootstrap";
 import "./ResumePage.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faBriefcase,
+  faGraduationCap,
+  faMarker,
+  faCircleCheck,
+  faEarthEurope,
+} from "@fortawesome/free-solid-svg-icons";
 
 const ResumePage: React.FC = () => {
   return (
@@ -24,15 +32,7 @@ const ResumePage: React.FC = () => {
                 <Card className="mb-4 border-secondary resume-card">
                   <Card.Body className="p-4">
                     <h3 className="text-warning mb-4 font-poppins">
-                      <svg
-                        width="24"
-                        height="24"
-                        fill="currentColor"
-                        viewBox="0 0 24 24"
-                        className="me-2"
-                      >
-                        <path d="M20,6C20.58,6 21.05,6.2 21.42,6.59C21.8,7 22,7.45 22,8V19C22,19.55 21.8,20 21.42,20.41C21.05,20.8 20.58,21 20,21H4C3.42,21 2.95,20.8 2.58,20.41C2.2,20 2,19.55 2,19V8C2,7.45 2.2,7 2.58,6.59C2.95,6.2 3.42,6 4,6H8V4C8,3.42 8.2,2.95 8.58,2.58C8.95,2.2 9.42,2 10,2H14C14.58,2 15.05,2.2 15.42,2.58C15.8,2.95 16,3.42 16,4V6H20M4,8V19H20V8H4M10,4V6H14V4H10Z" />
-                      </svg>
+                      <FontAwesomeIcon icon={faBriefcase} className="me-2" />
                       Work Experience
                     </h3>
 
@@ -126,15 +126,10 @@ const ResumePage: React.FC = () => {
                 <Card className="mb-4 border-secondary resume-card">
                   <Card.Body className="p-4">
                     <h3 className="text-warning mb-4 font-poppins">
-                      <svg
-                        width="24"
-                        height="24"
-                        fill="currentColor"
-                        viewBox="0 0 24 24"
+                      <FontAwesomeIcon
+                        icon={faGraduationCap}
                         className="me-2"
-                      >
-                        <path d="M12,3L1,9L12,15L21,10.09V17H23V9M5,13.18V17.18L12,21L19,17.18V13.18L12,17L5,13.18Z" />
-                      </svg>
+                      />
                       Education
                     </h3>
 
@@ -169,15 +164,7 @@ const ResumePage: React.FC = () => {
                 <Card className="mb-4 border-secondary resume-card">
                   <Card.Body className="p-4">
                     <h4 className="text-warning mb-4 font-poppins">
-                      <svg
-                        width="20"
-                        height="20"
-                        fill="currentColor"
-                        viewBox="0 0 24 24"
-                        className="me-2"
-                      >
-                        <path d="M9.4,16.6L4.8,12L3.4,13.4L9.4,19.4L20.6,8.2L19.2,6.8L9.4,16.6Z" />
-                      </svg>
+                      <FontAwesomeIcon icon={faMarker} className="me-2" />
                       Technical Skills
                     </h4>
 
@@ -246,15 +233,7 @@ const ResumePage: React.FC = () => {
                 <Card className="mb-4 border-secondary resume-card">
                   <Card.Body className="p-4">
                     <h4 className="text-warning mb-4 font-poppins">
-                      <svg
-                        width="20"
-                        height="20"
-                        fill="currentColor"
-                        viewBox="0 0 24 24"
-                        className="me-2"
-                      >
-                        <path d="M17.9,17.39C17.64,16.59 16.89,16 16,16H15V13A1,1 0 0,0 14,12H8V10H10A1,1 0 0,0 11,9V7H13A2,2 0 0,0 15,5V4.59C17.93,5.77 20,8.64 20,12C20,14.08 19.2,15.97 17.9,17.39M11,19.93C7.05,19.44 4,16.08 4,12C4,11.38 4.08,10.78 4.21,10.21L9,15V16A2,2 0 0,0 11,18M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2Z" />
-                      </svg>
+                      <FontAwesomeIcon icon={faEarthEurope} className="me-2" />
                       Languages
                     </h4>
 
@@ -283,15 +262,7 @@ const ResumePage: React.FC = () => {
                 <Card className="border-secondary resume-card">
                   <Card.Body className="p-4">
                     <h4 className="text-warning mb-4 font-poppins">
-                      <svg
-                        width="20"
-                        height="20"
-                        fill="currentColor"
-                        viewBox="0 0 24 24"
-                        className="me-2"
-                      >
-                        <path d="M10,17L6,13L7.41,11.59L10,14.17L16.59,7.58L18,9M12,2A10,10 0 0,1 22,12A10,10 0 0,1 12,22A10,10 0 0,1 2,12A10,10 0 0,1 12,2M12,4A8,8 0 0,0 4,12A8,8 0 0,0 12,20A8,8 0 0,0 20,12A8,8 0 0,0 12,4Z" />
-                      </svg>
+                      <FontAwesomeIcon icon={faCircleCheck} className="me-2" />
                       Certifications
                     </h4>
 
