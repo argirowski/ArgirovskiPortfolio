@@ -13,6 +13,8 @@
 }
 
 .home-btn-download {
+  height: 4rem;
+  width: 12rem;
   background-color: #6366f1 !important;
   color: #ffffff !important;
   border: none !important;
@@ -26,6 +28,8 @@
 }
 
 .home-btn-contact {
+  height: 4rem;
+  width: 12rem;
   background-color: #e5e7eb !important;
   color: #1f2937 !important;
   border: none !important;

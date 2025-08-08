@@ -17,28 +17,10 @@ const ResumePage: React.FC = () => {
         <Row className="justify-content-center mb-5">
           <Col lg={10}>
             <div className="text-center mb-4">
-              <h1 className="display-3 fw-bold mb-3 font-poppins">
-                My <span className="text-warning">Resume</span>
-              </h1>
+              <h1 className="display-3 fw-bold mb-3 font-poppins">My Resume</h1>
               <p className="lead fs-4 font-inter mb-4">
                 Full Stack Developer with expertise in modern web technologies
               </p>
-              <Button
-                variant="warning"
-                size="lg"
-                className="font-inter fw-semibold px-4 py-2"
-              >
-                <svg
-                  width="16"
-                  height="16"
-                  fill="currentColor"
-                  viewBox="0 0 24 24"
-                  className="me-2"
-                >
-                  <path d="M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M18,20H6V4H13V9H18V20Z" />
-                </svg>
-                Download PDF
-              </Button>
             </div>
           </Col>
         </Row>
@@ -49,7 +31,10 @@ const ResumePage: React.FC = () => {
               {/* Left Column */}
               <Col lg={8}>
                 {/* Experience Section */}
-                <Card className="mb-4 bg-dark border-secondary">
+                <Card
+                  className="mb-4 border-secondary"
+                  style={{ backgroundColor: "#1E1E2F" }}
+                >
                   <Card.Body className="p-4">
                     <h3 className="text-warning mb-4 font-poppins">
                       <svg
@@ -69,32 +54,41 @@ const ResumePage: React.FC = () => {
                       <div className="d-flex justify-content-between align-items-start mb-2">
                         <div>
                           <h5 className="text-light font-poppins mb-1">
-                            Senior Full Stack Developer
+                            Software Developer
                           </h5>
                           <p className="text-warning mb-0 font-inter">
-                            Tech Company Inc.
+                            Damilah
                           </p>
                         </div>
                         <Badge bg="secondary" className="font-mono">
-                          2022 - Present
+                          2022 - 2025
                         </Badge>
                       </div>
                       <ul className="text-light font-inter">
                         <li>
-                          Developed and maintained web applications using React,
-                          Node.js, and TypeScript
+                          Built modern, responsive user interfaces using React
+                          with TypeScript, ensuring type safety and maintainable
+                          code structure.
                         </li>
                         <li>
-                          Led a team of 3 developers in building scalable
-                          microservices architecture
+                          Developed scalable backend APIs and business logic
+                          using .NET Core, enabling seamless data flow across
+                          the stack.
                         </li>
                         <li>
-                          Improved application performance by 40% through code
-                          optimization
+                          Employed Entity Framework Core for efficient data
+                          access and object-relational mapping, following best
+                          practices for database interaction.
                         </li>
                         <li>
-                          Collaborated with cross-functional teams to deliver
-                          high-quality software solutions
+                          Designed and implemented sleek, utility-first UI
+                          components with Tailwind CSS, focusing on clean,
+                          accessible, mobile-first design.
+                        </li>
+                        <li>
+                          Collaborated in a full-stack environment, contributing
+                          to both frontend features and backend architecture,
+                          delivering cohesive end-to-end solutions.
                         </li>
                       </ul>
                     </div>
@@ -104,66 +98,40 @@ const ResumePage: React.FC = () => {
                       <div className="d-flex justify-content-between align-items-start mb-2">
                         <div>
                           <h5 className="text-light font-poppins mb-1">
-                            Frontend Developer
+                            Software Developer
                           </h5>
                           <p className="text-warning mb-0 font-inter">
-                            Digital Solutions Ltd.
+                            CodeIT Solution
                           </p>
                         </div>
                         <Badge bg="secondary" className="font-mono">
-                          2020 - 2022
+                          2021 - 2022
                         </Badge>
                       </div>
                       <ul className="text-light font-inter">
                         <li>
-                          Built responsive web applications using React and
-                          modern CSS frameworks
+                          Developed and maintained full-stack applications using
+                          .NET Core and C#, ensuring scalable and efficient
+                          backend architecture.
                         </li>
                         <li>
-                          Implemented RESTful APIs integration for dynamic
-                          content management
+                          Built responsive, user-centric front-end interfaces
+                          with React and styled components using Bootstrap for
+                          modern, accessible UI design.
                         </li>
                         <li>
-                          Optimized user experience through performance
-                          improvements and UX research
+                          Designed and queried SQL-based relational databases,
+                          optimizing performance for key operations.
                         </li>
                         <li>
-                          Mentored junior developers and conducted code reviews
-                        </li>
-                      </ul>
-                    </div>
-
-                    {/* Job 3 */}
-                    <div>
-                      <div className="d-flex justify-content-between align-items-start mb-2">
-                        <div>
-                          <h5 className="text-light font-poppins mb-1">
-                            Junior Web Developer
-                          </h5>
-                          <p className="text-warning mb-0 font-inter">
-                            StartUp Innovations
-                          </p>
-                        </div>
-                        <Badge bg="secondary" className="font-mono">
-                          2018 - 2020
-                        </Badge>
-                      </div>
-                      <ul className="text-light font-inter">
-                        <li>
-                          Developed websites using HTML, CSS, JavaScript, and
-                          PHP
+                          Utilized Entity Framework Core for object-relational
+                          mapping, enhancing productivity and consistency in
+                          data management.
                         </li>
                         <li>
-                          Worked with databases (MySQL) to create dynamic web
-                          applications
-                        </li>
-                        <li>
-                          Participated in agile development processes and daily
-                          standups
-                        </li>
-                        <li>
-                          Learned and implemented best practices for clean,
-                          maintainable code
+                          Collaborated on both frontend and backend solutions,
+                          contributing to end-to-end application features and
+                          delivery.
                         </li>
                       </ul>
                     </div>
@@ -171,7 +139,10 @@ const ResumePage: React.FC = () => {
                 </Card>
 
                 {/* Education Section */}
-                <Card className="mb-4 bg-dark border-secondary">
+                <Card
+                  className="mb-4 border-secondary"
+                  style={{ backgroundColor: "#1E1E2F" }}
+                >
                   <Card.Body className="p-4">
                     <h3 className="text-warning mb-4 font-poppins">
                       <svg
@@ -190,19 +161,23 @@ const ResumePage: React.FC = () => {
                       <div className="d-flex justify-content-between align-items-start mb-2">
                         <div>
                           <h5 className="text-light font-poppins mb-1">
-                            Bachelor of Computer Science
+                            Web Developer, Semos Javascript Academy
                           </h5>
                           <p className="text-warning mb-0 font-inter">
-                            University of Macedonia
+                            Semos Computer Education Center
                           </p>
                         </div>
                         <Badge bg="secondary" className="font-mono">
-                          2014 - 2018
+                          2018 - 2019
                         </Badge>
                       </div>
                       <p className="text-light font-inter mb-0">
-                        Specialized in Software Engineering and Web Development.
-                        Graduated with honors (GPA: 3.8/4.0)
+                        Completed a Web Development program covering modern
+                        technologies and tools including HTML5, CSS3,
+                        JavaScript, Node.js, MongoDB, React, Redux, TypeScript,
+                        Git, HTTP, and REST. Gained hands-on experience building
+                        full-stack applications and mastering both frontend and
+                        backend development workflows.
                       </p>
                     </div>
                   </Card.Body>
@@ -212,7 +187,10 @@ const ResumePage: React.FC = () => {
               {/* Right Column */}
               <Col lg={4}>
                 {/* Skills Section */}
-                <Card className="mb-4 bg-dark border-secondary">
+                <Card
+                  className="mb-4 border-secondary"
+                  style={{ backgroundColor: "#1E1E2F" }}
+                >
                   <Card.Body className="p-4">
                     <h4 className="text-warning mb-4 font-poppins">
                       <svg
@@ -231,12 +209,13 @@ const ResumePage: React.FC = () => {
                       <h6 className="text-light font-inter mb-2">Frontend</h6>
                       <div className="d-flex flex-wrap gap-2">
                         {[
-                          "React",
-                          "TypeScript",
                           "JavaScript",
+                          "TypeScript",
+                          "React",
+                          "Redux",
                           "HTML5",
                           "CSS3",
-                          "Bootstrap",
+                          "Tailwind CSS",
                         ].map((skill) => (
                           <Badge
                             key={skill}
@@ -254,10 +233,10 @@ const ResumePage: React.FC = () => {
                       <h6 className="text-light font-inter mb-2">Backend</h6>
                       <div className="d-flex flex-wrap gap-2">
                         {[
-                          "Node.js",
-                          "Express",
-                          "Python",
-                          "PHP",
+                          "C#",
+                          ".NET Core",
+                          "Entity Framework Core",
+                          "Unit Testing",
                           "REST APIs",
                         ].map((skill) => (
                           <Badge
@@ -275,18 +254,16 @@ const ResumePage: React.FC = () => {
                     <div className="mb-3">
                       <h6 className="text-light font-inter mb-2">Database</h6>
                       <div className="d-flex flex-wrap gap-2">
-                        {["MySQL", "PostgreSQL", "MongoDB", "Redis"].map(
-                          (skill) => (
-                            <Badge
-                              key={skill}
-                              bg="warning"
-                              text="dark"
-                              className="font-mono"
-                            >
-                              {skill}
-                            </Badge>
-                          )
-                        )}
+                        {["MySQL"].map((skill) => (
+                          <Badge
+                            key={skill}
+                            bg="warning"
+                            text="dark"
+                            className="font-mono"
+                          >
+                            {skill}
+                          </Badge>
+                        ))}
                       </div>
                     </div>
 
@@ -295,25 +272,26 @@ const ResumePage: React.FC = () => {
                         Tools & Others
                       </h6>
                       <div className="d-flex flex-wrap gap-2">
-                        {["Git", "Docker", "AWS", "Linux", "Agile"].map(
-                          (skill) => (
-                            <Badge
-                              key={skill}
-                              bg="warning"
-                              text="dark"
-                              className="font-mono"
-                            >
-                              {skill}
-                            </Badge>
-                          )
-                        )}
+                        {["Git", "Docker", "AWS", "Agile"].map((skill) => (
+                          <Badge
+                            key={skill}
+                            bg="warning"
+                            text="dark"
+                            className="font-mono"
+                          >
+                            {skill}
+                          </Badge>
+                        ))}
                       </div>
                     </div>
                   </Card.Body>
                 </Card>
 
                 {/* Languages Section */}
-                <Card className="mb-4 bg-dark border-secondary">
+                <Card
+                  className="mb-4 border-secondary"
+                  style={{ backgroundColor: "#1E1E2F" }}
+                >
                   <Card.Body className="p-4">
                     <h4 className="text-warning mb-4 font-poppins">
                       <svg
@@ -346,15 +324,18 @@ const ResumePage: React.FC = () => {
 
                     <div className="mb-3">
                       <div className="d-flex justify-content-between align-items-center mb-1">
-                        <span className="text-light font-inter">Serbian</span>
-                        <Badge bg="info">Intermediate</Badge>
+                        <span className="text-light font-inter">German</span>
+                        <Badge bg="info">Beginner</Badge>
                       </div>
                     </div>
                   </Card.Body>
                 </Card>
 
                 {/* Certifications */}
-                <Card className="bg-dark border-secondary">
+                <Card
+                  className="border-secondary"
+                  style={{ backgroundColor: "#1E1E2F" }}
+                >
                   <Card.Body className="p-4">
                     <h4 className="text-warning mb-4 font-poppins">
                       <svg
@@ -371,29 +352,20 @@ const ResumePage: React.FC = () => {
 
                     <div className="mb-3">
                       <h6 className="text-light font-inter mb-1">
-                        AWS Cloud Practitioner
+                        Querying Data with Transact-SQL - Exam 761
                       </h6>
-                      <p className="text-muted font-mono small mb-0">
-                        Amazon Web Services (2023)
-                      </p>
                     </div>
 
                     <div className="mb-3">
                       <h6 className="text-light font-inter mb-1">
-                        React Developer
+                        Programming in Microsoft C# - Exam 70-483
                       </h6>
-                      <p className="text-muted font-mono small mb-0">
-                        Meta (Facebook) (2022)
-                      </p>
                     </div>
 
                     <div>
                       <h6 className="text-light font-inter mb-1">
-                        JavaScript Algorithms
+                        Oracle Certified Associate, Java SE 7 Programmer
                       </h6>
-                      <p className="text-muted font-mono small mb-0">
-                        freeCodeCamp (2021)
-                      </p>
                     </div>
                   </Card.Body>
                 </Card>

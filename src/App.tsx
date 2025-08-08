@@ -2,9 +2,9 @@ import React, { useState } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import NavBar from "./components/NavBar/NavBar";
 import HomePage from "./components/HomePage/HomePage";
-import ContactPage from "./components/ContactPage";
-import ResumePage from "./components/ResumePage";
-import PortfolioPage from "./components/PortfolioPage";
+import ContactPage from "./components/ContactPage/ContactPage";
+import ResumePage from "./components/ResumePage/ResumePage";
+import PortfolioPage from "./components/PortfolioPage/PortfolioPage";
 import "./index.css";
 
 function App() {
