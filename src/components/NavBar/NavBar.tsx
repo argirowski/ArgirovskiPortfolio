@@ -3,7 +3,7 @@ import { Navbar, Nav, Container } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUser } from "@fortawesome/free-solid-svg-icons";
 import "./NavBar.css";
-import { NavBarProps } from "../interfaces";
+import { NavBarProps } from "../../common/interfaces";
 
 const NavBar: React.FC<NavBarProps> = ({ activeSection, onNavClick }) => {
   return (

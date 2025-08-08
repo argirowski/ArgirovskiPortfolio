@@ -91,25 +91,6 @@ html {
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
-/* Profile Image Styling */
-.profile-image-container {
-  position: relative;
-  display: inline-block;
-}
-
-.profile-image {
-  border: 4px solid rgba(255, 255, 255, 0.2);
-  transition: all 0.3s ease;
-  background: linear-gradient(145deg, #667eea, #764ba2);
-  padding: 8px;
-}
-
-.profile-image:hover {
-  transform: scale(1.05) rotate(2deg);
-  border-color: #ffc107;
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
-}
-
 /* Two-column layout adjustments */
 .text-content {
   padding-left: 2rem;
