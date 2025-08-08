@@ -29,6 +29,9 @@
   color: #fff;
   border: none;
   transition: background 0.2s;
+  padding: 0.5rem 1rem;
+  border-radius: 0.3rem;
+  box-shadow: 0 0.1rem 0.5rem rgba(0, 0, 0, 0.04);
 }
 .project-card .btn-custom:hover,
 .project-card .btn-custom:focus {
@@ -51,10 +54,12 @@
   background: transparent !important;
   margin-right: 0.3rem;
   margin-top: 0.2rem;
+  padding: 0.5rem;
 }
 
 .category-badge {
   background-color: #2d2d2d !important;
   color: #f5f5f5 !important;
   border: none !important;
+  padding: 0.8rem;
 }
