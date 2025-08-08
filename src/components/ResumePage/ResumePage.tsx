@@ -1,17 +1,10 @@
 import React from "react";
 import { Container, Row, Col, Card, Badge, Button } from "react-bootstrap";
+import "./ResumePage.css";
 
 const ResumePage: React.FC = () => {
   return (
-    <section
-      style={{
-        minHeight: "100vh",
-        paddingTop: "100px",
-        paddingBottom: "50px",
-        backgroundColor: "#F9FAFB",
-        color: "#1F2937",
-      }}
-    >
+    <section className="resume-section">
       <Container>
         {/* Header Section */}
         <Row className="justify-content-center mb-5">
@@ -31,10 +24,7 @@ const ResumePage: React.FC = () => {
               {/* Left Column */}
               <Col lg={8}>
                 {/* Experience Section */}
-                <Card
-                  className="mb-4 border-secondary"
-                  style={{ backgroundColor: "#1E1E2F" }}
-                >
+                <Card className="mb-4 border-secondary resume-card">
                   <Card.Body className="p-4">
                     <h3 className="text-warning mb-4 font-poppins">
                       <svg
@@ -139,10 +129,7 @@ const ResumePage: React.FC = () => {
                 </Card>
 
                 {/* Education Section */}
-                <Card
-                  className="mb-4 border-secondary"
-                  style={{ backgroundColor: "#1E1E2F" }}
-                >
+                <Card className="mb-4 border-secondary resume-card">
                   <Card.Body className="p-4">
                     <h3 className="text-warning mb-4 font-poppins">
                       <svg
@@ -187,10 +174,7 @@ const ResumePage: React.FC = () => {
               {/* Right Column */}
               <Col lg={4}>
                 {/* Skills Section */}
-                <Card
-                  className="mb-4 border-secondary"
-                  style={{ backgroundColor: "#1E1E2F" }}
-                >
+                <Card className="mb-4 border-secondary resume-card">
                   <Card.Body className="p-4">
                     <h4 className="text-warning mb-4 font-poppins">
                       <svg
@@ -332,10 +316,7 @@ const ResumePage: React.FC = () => {
                 </Card>
 
                 {/* Certifications */}
-                <Card
-                  className="border-secondary"
-                  style={{ backgroundColor: "#1E1E2F" }}
-                >
+                <Card className="border-secondary resume-card">
                   <Card.Body className="p-4">
                     <h4 className="text-warning mb-4 font-poppins">
                       <svg

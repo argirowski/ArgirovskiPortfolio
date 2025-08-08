@@ -83,17 +83,17 @@ const PortfolioPage: React.FC = () => {
             <Row className="g-4">
               {featuredProjects.map((project) => (
                 <Col key={project.id} lg={6} xl={4}>
-                  <Card className="h-100 bg-dark border-secondary project-card">
+                  <Card className="h-100 border-secondary project-card">
                     <Card.Body className="p-4 d-flex flex-column">
                       <div className="mb-2">
-                        <Badge bg="secondary" className="font-mono me-2">
+                        <Badge className="font-mono me-2 category-badge">
                           {project.category}
                         </Badge>
                       </div>
-                      <Card.Title className="text-light font-poppins h5 mb-3">
+                      <Card.Title className="font-poppins h5 mb-3">
                         {project.title}
                       </Card.Title>
-                      <Card.Text className="text-light font-inter mb-3 flex-grow-1">
+                      <Card.Text className="font-inter mb-3 flex-grow-1">
                         {project.description}
                       </Card.Text>
                       <div className="mb-3">
@@ -101,8 +101,7 @@ const PortfolioPage: React.FC = () => {
                           {project.technologies.map((tech) => (
                             <Badge
                               key={tech}
-                              bg="outline-warning"
-                              className="font-mono small"
+                              className="font-mono small tech-badge"
                             >
                               {tech}
                             </Badge>
@@ -111,12 +110,11 @@ const PortfolioPage: React.FC = () => {
                       </div>
                       <div className="d-flex gap-2 mt-auto">
                         <Button
-                          variant="outline-light"
                           size="sm"
                           href={project.githubUrl}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="font-inter fw-semibold flex-fill"
+                          className="font-inter fw-semibold flex-fill btn-custom"
                         >
                           <svg
                             width="16"

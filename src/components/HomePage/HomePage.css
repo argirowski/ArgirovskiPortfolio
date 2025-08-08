@@ -66,12 +66,11 @@
 .profile-image {
   border: 0.25rem solid rgba(255, 255, 255, 0.2);
   transition: all 0.3s ease;
-  background: linear-gradient(145deg, #667eea, #764ba2);
+  background-color: #f8f8f8;
   padding: 0.5rem;
 }
 
 .profile-image:hover {
-  transform: scale(1.05) rotate(2deg);
-  border-color: #ffc107;
+  transform: scale(1.05);
   box-shadow: 0 1.25rem 2.5rem rgba(0, 0, 0, 0.3);
 }

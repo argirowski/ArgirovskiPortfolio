@@ -1,0 +1,11 @@
+.resume-section {
+  min-height: 100vh;
+  padding-top: 6.25rem;
+  padding-bottom: 3.125rem;
+  background-color: #f8f8f8;
+  color: #1a1a1a;
+}
+
+.resume-card {
+  background-color: #ffffff !important;
+}

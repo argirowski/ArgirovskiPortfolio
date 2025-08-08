@@ -107,35 +107,6 @@ html {
   }
 }
 
-/* Portfolio project cards */
-.project-card {
-  transition: all 0.3s ease;
-  border: 1px solid #495057 !important;
-  overflow: hidden;
-}
-
-.project-card:hover {
-  transform: translateY(-8px);
-  border-color: #ffc107 !important;
-  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
-}
-
-.project-card .card-img-top {
-  transition: all 0.3s ease;
-}
-
-.project-card:hover .card-img-top {
-  transform: scale(1.05);
-}
-
-.project-card .btn {
-  transition: all 0.2s ease;
-}
-
-.project-card .btn:hover {
-  transform: translateY(-2px);
-}
-
 /* Badge styling for portfolio */
 .badge.bg-outline-warning {
   border: 1px solid #ffc107;
