@@ -1,46 +1,48 @@
 import React from "react";
 import { Container, Row, Col, Card, Badge, Button } from "react-bootstrap";
+import "./PortfolioPage.css";
 
 const PortfolioPage: React.FC = () => {
-  // Dummy project data
   const projects = [
     {
       id: 1,
-      title: "E-Commerce Platform",
+      title: "E-Commerce Store",
       description:
-        "A full-stack e-commerce application with user authentication, shopping cart, payment integration, and admin dashboard. Built with modern web technologies for optimal performance.",
-      image:
-        "https://via.placeholder.com/400x250/667eea/ffffff?text=E-Commerce+Platform",
-      technologies: ["React", "Node.js", "MongoDB", "Stripe", "JWT"],
+        "A full-stack web application built with .NET and React, using C# for backend logic and TypeScript for the frontend. Features Redux for state management, Material UI for styling, Entity Framework for data access, and ASP.NET Core Identity for secure authentication.",
+      technologies: ["React", "TypeScript", "Entity Framework", ".NET"],
       category: "Full Stack",
-      demoUrl: "https://demo-ecommerce.com",
-      githubUrl: "https://github.com/gjorgji/ecommerce-platform",
+      githubUrl: "https://github.com/argirowski/ECommerceStore",
       featured: true,
     },
     {
       id: 2,
-      title: "Task Management App",
+      title: "Reactivities Social App",
       description:
-        "A collaborative task management application with real-time updates, team collaboration features, and project tracking capabilities.",
-      image:
-        "https://via.placeholder.com/400x250/764ba2/ffffff?text=Task+Manager",
-      technologies: ["React", "TypeScript", "Firebase", "Material-UI"],
-      category: "Frontend",
-      demoUrl: "https://demo-taskmanager.com",
-      githubUrl: "https://github.com/gjorgji/task-manager",
+        "A full-stack web app built with .NET 9.0 and React (TypeScript), featuring Clean Architecture with CQRS + Mediator, Entity Framework Core, and ASP.NET Core Identity. Includes real-time updates via SignalR and a custom photo upload widget with Dropzone and Cropper. The frontend uses MobX for state management. Designed as a multi-project solution with scalable, production-ready architecture.",
+      technologies: [
+        "React Typescript",
+        "ASP.NET Core Web API",
+        "Entity Framework Core",
+        "CQRS + MediatR",
+      ],
+      category: "Full Stack",
+      githubUrl: "https://github.com/argirowski/Reactivities",
       featured: true,
     },
     {
-      id: 6,
-      title: "API Gateway Service",
+      id: 3,
+      title: "Dating App",
       description:
-        "A microservices API gateway with authentication, rate limiting, logging, and request routing capabilities.",
-      image:
-        "https://via.placeholder.com/400x250/9b59b6/ffffff?text=API+Gateway",
-      technologies: ["Node.js", "Express", "Redis", "Docker", "AWS"],
-      category: "Backend",
-      demoUrl: null,
-      githubUrl: "https://github.com/gjorgji/api-gateway",
+        "A full-stack web app built with .NET 8 and Angular 18, featuring JWT-based authentication, Entity Framework Core for data persistence, and real-time communication via SignalR. Includes drag-and-drop photo uploads to the cloud, private messaging, dynamic filtering/sorting/paging, and Angular notifications. Designed with best practices for scalable architecture and clean error handling.",
+      technologies: [
+        ".NET 8",
+        "Angular 18",
+        "Entity Framework Core",
+        "JWT Authentication",
+        "Filtering, sorting, and paging",
+      ],
+      category: "Full Stack",
+      githubUrl: "https://github.com/argirowski/DatingApp",
       featured: true,
     },
   ];
@@ -48,21 +50,13 @@ const PortfolioPage: React.FC = () => {
   const featuredProjects = projects.filter((project) => project.featured);
 
   return (
-    <section
-      style={{
-        minHeight: "100vh",
-        paddingTop: "100px",
-        paddingBottom: "50px",
-        backgroundColor: "#F9FAFB",
-        color: "#1F2937",
-      }}
-    >
+    <section className="portfolio-section">
       <Container>
         {/* Header Section */}
         <Row className="justify-content-center mb-5">
           <Col lg={8} className="text-center">
             <h1 className="display-3 fw-bold mb-4 font-poppins">
-              My <span className="text-warning">Portfolio</span>
+              My Portfolio
             </h1>
             <p className="lead fs-4 font-inter mb-4">
               A showcase of my recent projects and technical expertise. Each
@@ -90,21 +84,6 @@ const PortfolioPage: React.FC = () => {
               {featuredProjects.map((project) => (
                 <Col key={project.id} lg={6} xl={4}>
                   <Card className="h-100 bg-dark border-secondary project-card">
-                    <div className="position-relative">
-                      <Card.Img
-                        variant="top"
-                        src={project.image}
-                        alt={project.title}
-                        style={{ height: "200px", objectFit: "cover" }}
-                      />
-                      <Badge
-                        bg="warning"
-                        text="dark"
-                        className="position-absolute top-0 start-0 m-2 font-mono"
-                      >
-                        Featured
-                      </Badge>
-                    </div>
                     <Card.Body className="p-4 d-flex flex-column">
                       <div className="mb-2">
                         <Badge bg="secondary" className="font-mono me-2">
@@ -131,27 +110,6 @@ const PortfolioPage: React.FC = () => {
                         </div>
                       </div>
                       <div className="d-flex gap-2 mt-auto">
-                        {project.demoUrl && (
-                          <Button
-                            variant="warning"
-                            size="sm"
-                            href={project.demoUrl}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="font-inter fw-semibold flex-fill"
-                          >
-                            <svg
-                              width="16"
-                              height="16"
-                              fill="currentColor"
-                              viewBox="0 0 24 24"
-                              className="me-1"
-                            >
-                              <path d="M14,3V5H17.59L7.76,14.83L9.17,16.24L19,6.41V10H21V3M19,19H5V5H12V3H5C3.89,3 3,3.9 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V12H19V19Z" />
-                            </svg>
-                            Demo
-                          </Button>
-                        )}
                         <Button
                           variant="outline-light"
                           size="sm"

@@ -2,7 +2,7 @@
 #nav-portfolio.active,
 #nav-resume.active,
 #nav-contact.active {
-  color: #ffffff !important; /* Example active color */
+  color: #ffffff !important;
 }
 #nav-home:hover,
 #nav-portfolio:hover,

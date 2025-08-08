@@ -1,0 +1,27 @@
+.contact-card {
+  background-color: #1e1e2f;
+}
+
+.contact-card * {
+  color: #1a1a1a !important;
+}
+
+.contact-social-btn {
+  background-color: #2d2d2d !important;
+  border: none !important;
+  color: #fff !important;
+}
+.contact-social-btn:hover {
+  background-color: #3a3a3a !important;
+  color: #fff !important;
+}
+.contact-section {
+  min-height: 100vh;
+  padding-top: 100px;
+  background-color: #f8f8f8;
+  color: #1a1a1a;
+}
+
+.contact-card {
+  background-color: #ffffff;
+}

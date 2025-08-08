@@ -1,17 +1,10 @@
 import React from "react";
 import { Container, Row, Col, Card, Form, Button } from "react-bootstrap";
+import "./ContactPage.css";
 
 const ContactPage: React.FC = () => {
   return (
-    <section
-      className="d-flex align-items-center"
-      style={{
-        minHeight: "100vh",
-        paddingTop: "100px",
-        backgroundColor: "#F9FAFB",
-        color: "#1F2937",
-      }}
-    >
+    <section className="d-flex align-items-center contact-section">
       <Container>
         <Row className="justify-content-center">
           <Col lg={8}>
@@ -28,10 +21,7 @@ const ContactPage: React.FC = () => {
             <Row className="g-4">
               {/* Contact Information */}
               <Col md={12}>
-                <Card
-                  className="h-100 border-secondary"
-                  style={{ backgroundColor: "#1E1E2F" }}
-                >
+                <Card className="h-100 border-secondary contact-card">
                   <Card.Body className="p-4">
                     <h4 className="text-light mb-4 font-poppins">
                       Contact Information
@@ -80,22 +70,20 @@ const ContactPage: React.FC = () => {
                       </h6>
                       <div className="d-flex gap-3">
                         <Button
-                          variant="outline-warning"
                           size="sm"
                           href="https://linkedin.com/in/your-profile"
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="px-3 py-2"
+                          className="px-3 py-2 contact-social-btn"
                         >
                           LinkedIn
                         </Button>
                         <Button
-                          variant="outline-warning"
                           size="sm"
                           href="https://github.com/your-username"
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="px-3 py-2"
+                          className="px-3 py-2 contact-social-btn"
                         >
                           GitHub
                         </Button>
