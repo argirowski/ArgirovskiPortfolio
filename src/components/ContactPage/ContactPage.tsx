@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Row, Col, Card, Form, Button } from "react-bootstrap";
+import { Container, Row, Col, Card, Button } from "react-bootstrap";
 import "./ContactPage.css";
 
 const ContactPage: React.FC = () => {

@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Row, Col, Card, Badge, Button } from "react-bootstrap";
+import { Container, Row, Col, Card, Badge } from "react-bootstrap";
 import "./ResumePage.css";
 
 const ResumePage: React.FC = () => {

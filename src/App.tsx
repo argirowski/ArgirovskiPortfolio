@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import NavBar from "./components/NavBar/NavBar";
 import HomePage from "./components/HomePage/HomePage";
 import ContactPage from "./components/ContactPage/ContactPage";
@@ -9,7 +9,7 @@ import "./index.css";
 function App() {
   const [activeSection, setActiveSection] = useState("home");
 
-  React.useEffect(() => {
+  useEffect(() => {
     const sectionIds = ["home", "portfolio", "resume", "contact"];
     const sections = sectionIds.map((id) => document.getElementById(id));
     const observer = new window.IntersectionObserver(
