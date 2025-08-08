@@ -9,6 +9,39 @@ import "./index.css";
 function App() {
   const [activeSection, setActiveSection] = useState("home");
 
+  React.useEffect(() => {
+    const sectionIds = ["home", "portfolio", "resume", "contact"];
+    const sections = sectionIds.map((id) => document.getElementById(id));
+    const observer = new window.IntersectionObserver(
+      (entries) => {
+        const visible = entries.filter((e) => e.isIntersecting);
+        if (visible.length > 0) {
+          // Pick the section closest to the top
+          const topMost = visible.reduce((prev, curr) =>
+            prev.boundingClientRect.top < curr.boundingClientRect.top
+              ? prev
+              : curr
+          );
+          setActiveSection(topMost.target.id);
+        }
+      },
+      {
+        root: null,
+        rootMargin: "0px",
+        threshold: 0.2,
+      }
+    );
+    sections.forEach((section) => {
+      if (section) observer.observe(section);
+    });
+    return () => {
+      sections.forEach((section) => {
+        if (section) observer.unobserve(section);
+      });
+      observer.disconnect();
+    };
+  }, []);
+
   const handleNavClick = (section: string) => {
     setActiveSection(section);
     const el = document.getElementById(section);

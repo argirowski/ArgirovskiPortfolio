@@ -1,12 +1,20 @@
+#nav-home.active,
+#nav-portfolio.active,
+#nav-resume.active,
+#nav-contact.active {
+  color: #ffffff !important; /* Example active color */
+}
+#nav-home:hover,
+#nav-portfolio:hover,
+#nav-resume:hover,
+#nav-contact:hover {
+  color: #f0f0f0 !important;
+  transition: color 0.3s ease;
+}
 .navbar-custom {
   background-color: #1a1a1a !important;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(10px);
-}
-
-.navbar-dark .navbar-nav .nav-link:hover {
-  color: #f0f0f0 !important;
-  transition: color 0.3s ease;
 }
 
 .navbar-dark .navbar-nav .nav-link {
