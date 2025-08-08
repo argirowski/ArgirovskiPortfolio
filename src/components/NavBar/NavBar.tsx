@@ -28,7 +28,7 @@ const NavBar: React.FC<NavBarProps> = ({ activeSection, onNavClick }) => {
             as="button"
             type="button"
             onClick={() => onNavClick("home")}
-            className="me-3 fs-5 text-primary fw-bold"
+            className="me-3 fs-5 text-primary"
             style={{ background: "none", border: "none", cursor: "pointer" }}
           >
             Home
