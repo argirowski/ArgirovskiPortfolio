@@ -4,6 +4,7 @@ import HomePage from "./components/HomePage/HomePage";
 import ContactPage from "./components/ContactPage/ContactPage";
 import ResumePage from "./components/ResumePage/ResumePage";
 import PortfolioPage from "./components/PortfolioPage/PortfolioPage";
+import Footer from "./components/Footer/Footer";
 import "./index.css";
 
 function App() {
@@ -65,6 +66,7 @@ function App() {
       <section id="contact">
         <ContactPage />
       </section>
+      <Footer />
     </div>
   );
 }
