@@ -24,7 +24,7 @@ const PortfolioPage: React.FC = () => {
 
         <Row className="mb-5">
           <Col>
-            <h2 className="h3 text-warning mb-4 font-poppins">
+            <h2 className="h3 mb-4 font-poppins">
               <FontAwesomeIcon icon={faStar} />
               Featured Projects
             </h2>

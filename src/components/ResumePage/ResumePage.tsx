@@ -31,7 +31,7 @@ const ResumePage: React.FC = () => {
               <Col lg={8}>
                 <Card className="mb-4 border-secondary resume-card">
                   <Card.Body className="p-4">
-                    <h3 className="text-warning mb-4 font-poppins">
+                    <h3 className="mb-4 font-poppins">
                       <FontAwesomeIcon icon={faBriefcase} className="me-2" />
                       Work Experience
                     </h3>
@@ -125,7 +125,7 @@ const ResumePage: React.FC = () => {
 
                 <Card className="mb-4 border-secondary resume-card">
                   <Card.Body className="p-4">
-                    <h3 className="text-warning mb-4 font-poppins">
+                    <h3 className="mb-4 font-poppins">
                       <FontAwesomeIcon
                         icon={faGraduationCap}
                         className="me-2"
@@ -163,7 +163,7 @@ const ResumePage: React.FC = () => {
               <Col lg={4}>
                 <Card className="mb-4 border-secondary resume-card">
                   <Card.Body className="p-4">
-                    <h4 className="text-warning mb-4 font-poppins">
+                    <h4 className="mb-4 font-poppins">
                       <FontAwesomeIcon icon={faMarker} className="me-2" />
                       Technical Skills
                     </h4>
@@ -232,7 +232,7 @@ const ResumePage: React.FC = () => {
 
                 <Card className="mb-4 border-secondary resume-card">
                   <Card.Body className="p-4">
-                    <h4 className="text-warning mb-4 font-poppins">
+                    <h4 className="mb-4 font-poppins">
                       <FontAwesomeIcon icon={faEarthEurope} className="me-2" />
                       Languages
                     </h4>
@@ -261,7 +261,7 @@ const ResumePage: React.FC = () => {
                 </Card>
                 <Card className="border-secondary resume-card">
                   <Card.Body className="p-4">
-                    <h4 className="text-warning mb-4 font-poppins">
+                    <h4 className="mb-4 font-poppins">
                       <FontAwesomeIcon icon={faCircleCheck} className="me-2" />
                       Certifications
                     </h4>

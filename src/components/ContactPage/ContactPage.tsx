@@ -57,7 +57,7 @@ const ContactPage: React.FC = () => {
                       <div className="d-flex gap-3">
                         <Button
                           size="sm"
-                          href="https://linkedin.com/in/your-profile"
+                          href="https://www.linkedin.com/in/gjorgji-argirovski/"
                           target="_blank"
                           rel="noopener noreferrer"
                           className="px-3 py-2 contact-social-btn"
@@ -66,7 +66,7 @@ const ContactPage: React.FC = () => {
                         </Button>
                         <Button
                           size="sm"
-                          href="https://github.com/your-username"
+                          href="https://github.com/argirowski"
                           target="_blank"
                           rel="noopener noreferrer"
                           className="px-3 py-2 contact-social-btn"
