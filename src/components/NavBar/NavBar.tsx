@@ -3,11 +3,7 @@ import { Navbar, Nav, Container } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUser } from "@fortawesome/free-solid-svg-icons";
 import "./NavBar.css";
-
-interface NavBarProps {
-  activeSection: string;
-  onNavClick: (section: string) => void;
-}
+import { NavBarProps } from "../interfaces";
 
 const NavBar: React.FC<NavBarProps> = ({ activeSection, onNavClick }) => {
   return (
@@ -32,7 +28,6 @@ const NavBar: React.FC<NavBarProps> = ({ activeSection, onNavClick }) => {
             className={`me-3 fs-5 text-primary${
               activeSection === "home" ? " active" : ""
             }`}
-            style={{ background: "none", border: "none", cursor: "pointer" }}
           >
             Home
           </Nav.Link>
@@ -44,7 +39,6 @@ const NavBar: React.FC<NavBarProps> = ({ activeSection, onNavClick }) => {
             className={`me-3 fs-5${
               activeSection === "portfolio" ? " active" : ""
             }`}
-            style={{ background: "none", border: "none", cursor: "pointer" }}
           >
             Portfolio
           </Nav.Link>
@@ -56,7 +50,6 @@ const NavBar: React.FC<NavBarProps> = ({ activeSection, onNavClick }) => {
             className={`me-3 fs-5${
               activeSection === "resume" ? " active" : ""
             }`}
-            style={{ background: "none", border: "none", cursor: "pointer" }}
           >
             Resume
           </Nav.Link>
@@ -66,7 +59,6 @@ const NavBar: React.FC<NavBarProps> = ({ activeSection, onNavClick }) => {
             type="button"
             onClick={() => onNavClick("contact")}
             className={`fs-5${activeSection === "contact" ? " active" : ""}`}
-            style={{ background: "none", border: "none", cursor: "pointer" }}
           >
             Contact
           </Nav.Link>

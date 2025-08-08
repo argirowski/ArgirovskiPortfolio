@@ -4,6 +4,7 @@
 #nav-contact.active {
   color: #ffffff !important;
 }
+
 #nav-home:hover,
 #nav-portfolio:hover,
 #nav-resume:hover,
@@ -11,6 +12,16 @@
   color: #f0f0f0 !important;
   transition: color 0.3s ease;
 }
+
+#nav-home,
+#nav-portfolio,
+#nav-resume,
+#nav-contact {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
 .navbar-custom {
   background-color: #1a1a1a !important;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
