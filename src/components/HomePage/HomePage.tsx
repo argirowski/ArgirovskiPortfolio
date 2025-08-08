@@ -1,7 +1,6 @@
 import React from "react";
 import "./HomePage.css";
 import { Container, Row, Col, Button } from "react-bootstrap";
-import { useNavigate } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
 import { profileImage, RESUME_PDF_URL } from "../../assets";
@@ -11,11 +10,8 @@ interface HomePageProps {
 }
 
 const HomePage: React.FC<HomePageProps> = ({ onNavClick }) => {
-  const navigate = useNavigate();
-
   const handleContactClick = () => {
     onNavClick("contact");
-    navigate("/contact");
   };
 
   const handleDownloadCV = () => {

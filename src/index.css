@@ -41,13 +41,6 @@ code {
   pointer-events: none;
 }
 
-/* Custom navbar background */
-.navbar-custom {
-  background-color: #1e1e2f !important;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(10px);
-}
-
 /* Smooth scrolling */
 
 html {
