@@ -3,10 +3,10 @@ import { Container, Row, Col, Card, Badge } from "react-bootstrap";
 import "./ResumePage.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
-  faBriefcase,
-  faGraduationCap,
-  faMarker,
-  faCircleCheck,
+  faLaptopCode,
+  faBuildingColumns,
+  faGear,
+  faAward,
   faEarthEurope,
 } from "@fortawesome/free-solid-svg-icons";
 
@@ -32,7 +32,7 @@ const ResumePage: React.FC = () => {
                 <Card className="mb-4 border-secondary resume-card">
                   <Card.Body className="p-4">
                     <h3 className="mb-4 font-poppins">
-                      <FontAwesomeIcon icon={faBriefcase} className="me-2" />
+                      <FontAwesomeIcon icon={faLaptopCode} className="me-2" />
                       Work Experience
                     </h3>
 
@@ -127,7 +127,7 @@ const ResumePage: React.FC = () => {
                   <Card.Body className="p-4">
                     <h3 className="mb-4 font-poppins">
                       <FontAwesomeIcon
-                        icon={faGraduationCap}
+                        icon={faBuildingColumns}
                         className="me-2"
                       />
                       Education
@@ -164,7 +164,7 @@ const ResumePage: React.FC = () => {
                 <Card className="mb-4 border-secondary resume-card">
                   <Card.Body className="p-4">
                     <h4 className="mb-4 font-poppins">
-                      <FontAwesomeIcon icon={faMarker} className="me-2" />
+                      <FontAwesomeIcon icon={faGear} className="me-2" />
                       Technical Skills
                     </h4>
 
@@ -262,7 +262,7 @@ const ResumePage: React.FC = () => {
                 <Card className="border-secondary resume-card">
                   <Card.Body className="p-4">
                     <h4 className="mb-4 font-poppins">
-                      <FontAwesomeIcon icon={faCircleCheck} className="me-2" />
+                      <FontAwesomeIcon icon={faAward} className="me-2" />
                       Certifications
                     </h4>
 

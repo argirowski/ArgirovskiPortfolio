@@ -3,7 +3,7 @@ import { Container, Row, Col, Card, Badge, Button } from "react-bootstrap";
 import "./PortfolioPage.css";
 import { featuredProjects } from "../../common/utils";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faStar } from "@fortawesome/free-solid-svg-icons";
+import { faShield } from "@fortawesome/free-solid-svg-icons";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 
 const PortfolioPage: React.FC = () => {
@@ -25,7 +25,7 @@ const PortfolioPage: React.FC = () => {
         <Row>
           <Col>
             <h2 className="h3 mb-4 font-poppins">
-              <FontAwesomeIcon icon={faStar} />
+              <FontAwesomeIcon icon={faShield} />
               Featured Projects
             </h2>
             <Row className="g-4">

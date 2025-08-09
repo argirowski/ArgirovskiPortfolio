@@ -13,7 +13,14 @@ export const projects = [
     title: "E-Commerce Store",
     description:
       "A full-stack web application built with .NET and React, using C# for backend logic and TypeScript for the frontend. Features Redux for state management, Material UI for styling, Entity Framework for data access, and ASP.NET Core Identity for secure authentication.",
-    technologies: ["React", "TypeScript", "Entity Framework", ".NET"],
+    technologies: [
+      "React",
+      "TypeScript",
+      "Entity Framework",
+      ".NET",
+      "Material UI",
+      "ASP.NET Core Identity",
+    ],
     category: "Full Stack",
     githubUrl: "https://github.com/argirowski/ECommerceStore",
     featured: true,
