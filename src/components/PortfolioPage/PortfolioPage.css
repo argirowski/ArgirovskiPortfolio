@@ -33,19 +33,12 @@
   border-radius: 0.3rem;
   box-shadow: 0 0.1rem 0.5rem rgba(0, 0, 0, 0.04);
 }
+
 .project-card .btn-custom:hover,
 .project-card .btn-custom:focus {
   background-color: #3a3a3a;
   color: #fff;
   transform: translateY(-2px);
-}
-
-.project-card .card-img-top {
-  transition: all 0.3s ease;
-}
-
-.project-card:hover .card-img-top {
-  transform: scale(1.05);
 }
 
 .tech-badge {

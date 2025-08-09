@@ -50,39 +50,24 @@ const ContactPage: React.FC = () => {
                         </p>
                       </div>
                     </div>
-
-                    <div className="mt-4">
-                      <div className="d-flex flex-column gap-2">
-                        <a
-                          href="https://www.linkedin.com/in/gjorgji-argirovski/"
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="contact-social-icon d-flex align-items-center py-2"
-                        >
-                          <FontAwesomeIcon
-                            icon={faLinkedin}
-                            size="lg"
-                            className="me-2"
-                          />
-                          <span className="text-light font-poppins">
-                            Follow me on LinkedIn
-                          </span>
-                        </a>
-                        <a
-                          href="https://github.com/argirowski"
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="contact-social-icon d-flex align-items-center py-2"
-                        >
-                          <FontAwesomeIcon
-                            icon={faGithub}
-                            size="lg"
-                            className="me-2"
-                          />
-                          <span className="text-light font-poppins">
-                            Follow me on GitHub
-                          </span>
-                        </a>
+                    <div className="mb-3 d-flex align-items-center">
+                      <div className="me-3">
+                        <FontAwesomeIcon icon={faLinkedin} size="lg" />
+                      </div>
+                      <div>
+                        <p className="text-light mb-0 font-inter">
+                          Follow me on LinkedIn
+                        </p>
+                      </div>
+                    </div>
+                    <div className="mb-3 d-flex align-items-center">
+                      <div className="me-3">
+                        <FontAwesomeIcon icon={faGithub} size="lg" />
+                      </div>
+                      <div>
+                        <p className="text-light mb-0 font-inter">
+                          Follow me on GitHub
+                        </p>
                       </div>
                     </div>
                   </Card.Body>
