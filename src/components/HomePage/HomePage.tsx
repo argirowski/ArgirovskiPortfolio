@@ -36,7 +36,7 @@ const HomePage: React.FC<HomePageProps> = ({ onNavClick }) => {
                 <Button
                   size="lg"
                   onClick={() => handleDownloadCV(RESUME_PDF_URL)}
-                  className="px-4 py-2 fw-semibold home-btn-download"
+                  className="px-4 py-2 fw-semibold home-btn-contact"
                 >
                   <FontAwesomeIcon icon={faFileArrowDown} className="me-2" />
                   Download CV
@@ -59,7 +59,7 @@ const HomePage: React.FC<HomePageProps> = ({ onNavClick }) => {
                   href="https://www.linkedin.com/in/gjorgji-argirovski/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="px-4 py-2 fw-semibold home-btn-download home-btn-linkedin"
+                  className="px-4 py-2 fw-semibold home home-btn-contact"
                 >
                   <FontAwesomeIcon icon={faLinkedin} className="me-2" />
                   LinkedIn
@@ -70,7 +70,7 @@ const HomePage: React.FC<HomePageProps> = ({ onNavClick }) => {
                   href="https://github.com/argirowski"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="px-4 py-2 fw-semibold home-btn-download home-btn-github"
+                  className="px-4 py-2 fw-semibold home home-btn-contact"
                 >
                   <FontAwesomeIcon icon={faGithub} className="me-2" />
                   GitHub

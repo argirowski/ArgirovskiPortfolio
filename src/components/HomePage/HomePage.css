@@ -24,21 +24,16 @@
   box-shadow: 0 0.75rem 1.5rem rgba(0, 0, 0, 0.15);
 }
 
-.home-btn-download {
-  height: 4rem;
-  width: 12rem;
-  background-color: #2d2d2d !important;
-  color: #f5f5f5 !important;
-  border: none !important;
-  transition: all 0.3s ease !important;
-}
-.home-btn-download:hover {
-  background-color: #3a3a3a !important;
+@media (max-width: 991.98px) {
+  .text-content .d-flex.flex-column {
+    align-items: center !important;
+    justify-content: center !important;
+  }
 }
 
 .home-btn-contact {
-  height: 4rem;
-  width: 12rem;
+  height: 3rem;
+  width: 13rem;
   background-color: #2d2d2d !important;
   color: #f5f5f5 !important;
   border: none !important;
@@ -53,33 +48,4 @@
 
 .home-btn-contact:hover {
   background-color: #3a3a3a !important;
-}
-
-.home-social-linkedin {
-  color: #2d2d2d !important;
-  font-size: 3rem !important;
-  transition: all 0.3s ease !important;
-  transform: scale(1);
-}
-.home-social-linkedin:hover {
-  color: #000000 !important;
-  transform: scale(1.1);
-}
-
-.home-social-github {
-  color: #1f2937 !important;
-  font-size: 3rem !important;
-  transition: all 0.3s ease !important;
-  transform: scale(1);
-}
-.home-social-github:hover {
-  color: #000000 !important;
-  transform: scale(1.1);
-}
-
-@media (max-width: 991.98px) {
-  .text-content .d-flex.flex-column {
-    align-items: center !important;
-    justify-content: center !important;
-  }
 }
