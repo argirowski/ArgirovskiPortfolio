@@ -14,7 +14,7 @@ const ContactPage: React.FC = () => {
             <div className="text-center mb-5">
               <h1 className="display-3 fw-bold mb-4">Let's get in touch</h1>
               <p className="lead fs-4">
-                I’m always open to new opportunities and collaborations — reach
+                I’m always open to new opportunities and collaborations. Reach
                 out anytime!
               </p>
             </div>
