@@ -47,7 +47,7 @@ const ResumePage: React.FC = () => {
                           </p>
                         </div>
                         <Badge className="font-mono year-badge">
-                          2022 - 2025
+                          Sep 2022 - Feb 2025
                         </Badge>
                       </div>
                       <ul className="text-light font-inter">
@@ -90,7 +90,7 @@ const ResumePage: React.FC = () => {
                           </p>
                         </div>
                         <Badge bg="secondary" className="font-mono year-badge">
-                          2021 - 2022
+                          Jun 2021 - Jun 2022
                         </Badge>
                       </div>
                       <ul className="text-light font-inter">
@@ -144,7 +144,7 @@ const ResumePage: React.FC = () => {
                           </p>
                         </div>
                         <Badge bg="secondary" className="font-mono year-badge">
-                          2018 - 2019
+                          May 2018 - Jan 2019
                         </Badge>
                       </div>
                       <p className="text-light font-inter mb-0">
