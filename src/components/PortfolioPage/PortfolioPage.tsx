@@ -12,10 +12,8 @@ const PortfolioPage: React.FC = () => {
       <Container>
         <Row className="justify-content-center mb-5">
           <Col lg={8} className="text-center">
-            <h1 className="display-3 fw-bold mb-4 font-poppins">
-              My Portfolio
-            </h1>
-            <p className="lead fs-4 font-inter mb-4">
+            <h1 className="display-3 fw-bold mb-4">My Portfolio</h1>
+            <p className="lead fs-4 mb-4">
               A showcase of my recent projects and technical expertise. Each
               project demonstrates different aspects of modern web development.
             </p>
@@ -24,7 +22,7 @@ const PortfolioPage: React.FC = () => {
 
         <Row>
           <Col>
-            <h2 className="h3 mb-4 font-poppins">
+            <h2 className="h3 mb-4">
               <FontAwesomeIcon icon={faShield} />
               Featured Projects
             </h2>
@@ -34,23 +32,20 @@ const PortfolioPage: React.FC = () => {
                   <Card className="h-100 border-secondary project-card">
                     <Card.Body className="p-4 d-flex flex-column">
                       <div className="mb-2">
-                        <Badge className="font-mono me-2 category-badge">
+                        <Badge className="me-2 category-badge">
                           {project.category}
                         </Badge>
                       </div>
-                      <Card.Title className="font-poppins h5 mb-3">
+                      <Card.Title className="h5 mb-3">
                         {project.title}
                       </Card.Title>
-                      <Card.Text className="font-inter mb-3 flex-grow-1">
+                      <Card.Text className="mb-3 flex-grow-1">
                         {project.description}
                       </Card.Text>
                       <div className="mb-3">
                         <div className="d-flex flex-wrap gap-1">
                           {project.technologies.map((tech) => (
-                            <Badge
-                              key={tech}
-                              className="font-mono small tech-badge"
-                            >
+                            <Badge key={tech} className="small tech-badge">
                               {tech}
                             </Badge>
                           ))}
@@ -62,7 +57,7 @@ const PortfolioPage: React.FC = () => {
                           href={project.githubUrl}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="font-inter fw-semibold flex-fill btn-custom"
+                          className="fw-semibold flex-fill btn-custom"
                         >
                           <FontAwesomeIcon icon={faGithub} />
                           Code

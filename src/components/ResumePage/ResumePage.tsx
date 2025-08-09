@@ -17,8 +17,8 @@ const ResumePage: React.FC = () => {
         <Row className="justify-content-center mb-5">
           <Col lg={10}>
             <div className="text-center mb-4">
-              <h1 className="display-3 fw-bold mb-3 font-poppins">My Resume</h1>
-              <p className="lead fs-4 font-inter mb-4">
+              <h1 className="display-3 fw-bold mb-3">My Resume</h1>
+              <p className="lead fs-4 mb-4">
                 Full Stack Developer with expertise in modern web technologies
               </p>
             </div>
@@ -31,7 +31,7 @@ const ResumePage: React.FC = () => {
               <Col lg={8}>
                 <Card className="mb-4 border-secondary resume-card">
                   <Card.Body className="p-4">
-                    <h3 className="mb-4 font-poppins">
+                    <h3 className="mb-4">
                       <FontAwesomeIcon icon={faLaptopCode} className="me-2" />
                       Work Experience
                     </h3>
@@ -39,18 +39,16 @@ const ResumePage: React.FC = () => {
                     <div className="mb-4">
                       <div className="d-flex justify-content-between align-items-start mb-2">
                         <div>
-                          <h5 className="text-light font-poppins mb-1">
+                          <h5 className="text-light mb-1">
                             Software Developer
                           </h5>
-                          <p className="text-warning mb-0 font-inter">
-                            Damilah
-                          </p>
+                          <p className="text-warning mb-0">Damilah</p>
                         </div>
-                        <Badge className="font-mono year-badge">
+                        <Badge className="year-badge">
                           Sep 2022 - Feb 2025
                         </Badge>
                       </div>
-                      <ul className="text-light font-inter">
+                      <ul className="text-light">
                         <li>
                           Built modern, responsive user interfaces using React
                           with TypeScript, ensuring type safety and maintainable
@@ -82,18 +80,16 @@ const ResumePage: React.FC = () => {
                     <div className="mb-4">
                       <div className="d-flex justify-content-between align-items-start mb-2">
                         <div>
-                          <h5 className="text-light font-poppins mb-1">
+                          <h5 className="text-light mb-1">
                             Software Developer
                           </h5>
-                          <p className="text-warning mb-0 font-inter">
-                            CodeIT Solution
-                          </p>
+                          <p className="text-warning mb-0">CodeIT Solution</p>
                         </div>
-                        <Badge bg="secondary" className="font-mono year-badge">
+                        <Badge bg="secondary" className="year-badge">
                           Jun 2021 - Jun 2022
                         </Badge>
                       </div>
-                      <ul className="text-light font-inter">
+                      <ul className="text-light">
                         <li>
                           Developed and maintained full-stack applications using
                           .NET Core and C#, ensuring scalable and efficient
@@ -125,7 +121,7 @@ const ResumePage: React.FC = () => {
 
                 <Card className="mb-4 border-secondary resume-card">
                   <Card.Body className="p-4">
-                    <h3 className="mb-4 font-poppins">
+                    <h3 className="mb-4">
                       <FontAwesomeIcon
                         icon={faBuildingColumns}
                         className="me-2"
@@ -136,18 +132,18 @@ const ResumePage: React.FC = () => {
                     <div className="mb-3">
                       <div className="d-flex justify-content-between align-items-start mb-2">
                         <div>
-                          <h5 className="text-light font-poppins mb-1">
+                          <h5 className="text-light mb-1">
                             Web Developer, Semos Javascript Academy
                           </h5>
-                          <p className="text-warning mb-0 font-inter">
+                          <p className="text-warning mb-0">
                             Semos Computer Education Center
                           </p>
                         </div>
-                        <Badge bg="secondary" className="font-mono year-badge">
+                        <Badge bg="secondary" className="year-badge">
                           May 2018 - Jan 2019
                         </Badge>
                       </div>
-                      <p className="text-light font-inter mb-0">
+                      <p className="text-light mb-0">
                         Completed a Web Development program covering modern
                         technologies and tools including HTML5, CSS3,
                         JavaScript, Node.js, MongoDB, React, Redux, TypeScript,
@@ -163,13 +159,13 @@ const ResumePage: React.FC = () => {
               <Col lg={4}>
                 <Card className="mb-4 border-secondary resume-card">
                   <Card.Body className="p-4">
-                    <h4 className="mb-4 font-poppins">
+                    <h4 className="mb-4">
                       <FontAwesomeIcon icon={faGear} className="me-2" />
                       Technical Skills
                     </h4>
 
                     <div className="mb-3">
-                      <h6 className="text-light font-inter mb-2">Frontend</h6>
+                      <h6 className="text-light mb-2">Frontend</h6>
                       <div className="d-flex flex-wrap gap-2">
                         {[
                           "JavaScript",
@@ -179,7 +175,7 @@ const ResumePage: React.FC = () => {
                           "Responsive Design",
                           "Tailwind CSS",
                         ].map((skill) => (
-                          <Badge key={skill} className="font-mono skill-badge">
+                          <Badge key={skill} className="skill-badge">
                             {skill}
                           </Badge>
                         ))}
@@ -187,7 +183,7 @@ const ResumePage: React.FC = () => {
                     </div>
 
                     <div className="mb-3">
-                      <h6 className="text-light font-inter mb-2">Backend</h6>
+                      <h6 className="text-light mb-2">Backend</h6>
                       <div className="d-flex flex-wrap gap-2">
                         {[
                           "C#",
@@ -196,7 +192,7 @@ const ResumePage: React.FC = () => {
                           "REST APIs",
                           "Unit Testing",
                         ].map((skill) => (
-                          <Badge key={skill} className="font-mono skill-badge">
+                          <Badge key={skill} className="skill-badge">
                             {skill}
                           </Badge>
                         ))}
@@ -204,10 +200,10 @@ const ResumePage: React.FC = () => {
                     </div>
 
                     <div className="mb-3">
-                      <h6 className="text-light font-inter mb-2">Database</h6>
+                      <h6 className="text-light mb-2">Database</h6>
                       <div className="d-flex flex-wrap gap-2">
                         {["SQL", "Microsoft SQL Server"].map((skill) => (
-                          <Badge key={skill} className="font-mono skill-badge">
+                          <Badge key={skill} className="skill-badge">
                             {skill}
                           </Badge>
                         ))}
@@ -215,9 +211,7 @@ const ResumePage: React.FC = () => {
                     </div>
 
                     <div className="mb-3">
-                      <h6 className="text-light font-inter mb-2">
-                        Tools & Others
-                      </h6>
+                      <h6 className="text-light mb-2">Tools & Others</h6>
                       <div className="d-flex flex-wrap gap-2">
                         {[
                           "Git / GitHub",
@@ -225,7 +219,7 @@ const ResumePage: React.FC = () => {
                           "Microsoft Azure",
                           "Agile Methodology",
                         ].map((skill) => (
-                          <Badge key={skill} className="font-mono skill-badge">
+                          <Badge key={skill} className="skill-badge">
                             {skill}
                           </Badge>
                         ))}
@@ -236,28 +230,28 @@ const ResumePage: React.FC = () => {
 
                 <Card className="mb-4 border-secondary resume-card">
                   <Card.Body className="p-4">
-                    <h4 className="mb-4 font-poppins">
+                    <h4 className="mb-4">
                       <FontAwesomeIcon icon={faEarthEurope} className="me-2" />
                       Languages
                     </h4>
 
                     <div className="mb-3">
                       <div className="d-flex justify-content-between align-items-center mb-1">
-                        <span className="font-inter">Macedonian</span>
+                        <span>Macedonian</span>
                         <Badge className="language-badge">Native</Badge>
                       </div>
                     </div>
 
                     <div className="mb-3">
                       <div className="d-flex justify-content-between align-items-center mb-1">
-                        <span className="font-inter">English</span>
+                        <span>English</span>
                         <Badge className="language-badge">Fluent</Badge>
                       </div>
                     </div>
 
                     <div className="mb-3">
                       <div className="d-flex justify-content-between align-items-center mb-1">
-                        <span className="font-inter">German</span>
+                        <span>German</span>
                         <Badge className="language-badge">Beginner</Badge>
                       </div>
                     </div>
@@ -265,13 +259,13 @@ const ResumePage: React.FC = () => {
                 </Card>
                 <Card className="border-secondary resume-card">
                   <Card.Body className="p-4">
-                    <h4 className="mb-4 font-poppins">
+                    <h4 className="mb-4">
                       <FontAwesomeIcon icon={faAward} className="me-2" />
                       Certifications
                     </h4>
 
                     <div className="mb-3">
-                      <h6 className="text-light font-inter mb-1">
+                      <h6 className="text-light mb-1">
                         <a
                           href="https://www.credly.com/badges/ab2660b7-4db1-4515-9e0d-56238e6c1e45"
                           target="_blank"
@@ -284,7 +278,7 @@ const ResumePage: React.FC = () => {
                     </div>
 
                     <div className="mb-3">
-                      <h6 className="text-light font-inter mb-1">
+                      <h6 className="text-light mb-1">
                         <a
                           href="https://www.credly.com/badges/49fceafe-9455-40c1-988c-dd6500def154"
                           target="_blank"
@@ -297,7 +291,7 @@ const ResumePage: React.FC = () => {
                     </div>
 
                     <div>
-                      <h6 className="text-light font-inter mb-1">
+                      <h6 className="text-light mb-1">
                         <a
                           href="https://www.credly.com/badges/b9f7aeda-e73b-483c-820e-90fccfa1278f"
                           target="_blank"

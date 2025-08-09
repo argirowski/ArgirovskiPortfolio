@@ -47,7 +47,7 @@
   color: #1d4b7a !important;
   font-family: inherit !important;
   font-size: inherit !important;
-  font-weight: inherit !important;
+  font-weight: 500 !important;
   text-decoration: none !important;
 }
 .resume-cert-link:hover {

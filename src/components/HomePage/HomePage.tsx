@@ -25,7 +25,7 @@ const HomePage: React.FC<HomePageProps> = ({ onNavClick }) => {
 
           <Col lg={6}>
             <div className="text-content">
-              <h1 className="display-2 fw-bold mb-4">Hi, I'm Gjorgji</h1>
+              <h1 className="display-2 fw-bold mb-4">Welcome!</h1>
               <p className="lead fs-4 mb-4">
                 I'm a Full Stack Developer who loves building web experiences
                 that look great and work even better. Whether it's a slick UI or
