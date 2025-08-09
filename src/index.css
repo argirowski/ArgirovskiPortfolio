@@ -14,6 +14,20 @@ code {
     "Courier New", monospace;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+@keyframes floating {
+  0%,
+  100% {
+    transform: translateY(0px) scale(1);
+  }
+  50% {
+    transform: translateY(-20px) scale(1.05);
+  }
+}
+
 /* Typography utility classes */
 .bg-gradient-primary {
   background: #28292b;
@@ -39,34 +53,6 @@ code {
       transparent 50%
     );
   pointer-events: none;
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
-.hero-section::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000"><defs><radialGradient id="b" cx="50%" cy="50%" r="50%"><stop offset="0%" style="stop-color:rgba(255,255,255,0.1)"/><stop offset="100%" style="stop-color:rgba(255,255,255,0)"/></radialGradient></defs><circle cx="50%" cy="50%" r="50%" fill="url(%23b)"/></svg>')
-    no-repeat center center;
-  background-size: 200% 200%;
-  animation: floating 6s ease-in-out infinite;
-  pointer-events: none;
-}
-
-@keyframes floating {
-  0%,
-  100% {
-    transform: translateY(0px) scale(1);
-  }
-  50% {
-    transform: translateY(-20px) scale(1.05);
-  }
 }
 
 /* Card hover effects */

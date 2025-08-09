@@ -10,7 +10,7 @@ import { handleDownloadCV } from "../../common/utils";
 
 const HomePage: React.FC<HomePageProps> = ({ onNavClick }) => {
   return (
-    <section className="hero-section d-flex align-items-center">
+    <section className="home-page-section d-flex align-items-center">
       <Container>
         <Row className="align-items-center h-100">
           <Col lg={6} className="text-center mb-5 mb-lg-0">
