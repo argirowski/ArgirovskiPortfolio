@@ -3,6 +3,7 @@ import { Container, Row, Col, Card, Button } from "react-bootstrap";
 import "./ContactPage.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope, faPhone } from "@fortawesome/free-solid-svg-icons";
+import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
 
 const ContactPage: React.FC = () => {
   return (
@@ -51,28 +52,37 @@ const ContactPage: React.FC = () => {
                     </div>
 
                     <div className="mt-4">
-                      <h6 className="text-light mb-3 font-poppins">
-                        Follow me on:
-                      </h6>
-                      <div className="d-flex gap-3">
-                        <Button
-                          size="sm"
+                      <div className="d-flex flex-column gap-2">
+                        <a
                           href="https://www.linkedin.com/in/gjorgji-argirovski/"
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="px-3 py-2 contact-social-btn"
+                          className="contact-social-icon d-flex align-items-center py-2"
                         >
-                          LinkedIn
-                        </Button>
-                        <Button
-                          size="sm"
+                          <FontAwesomeIcon
+                            icon={faLinkedin}
+                            size="lg"
+                            className="me-2"
+                          />
+                          <span className="text-light font-poppins">
+                            Follow me on LinkedIn
+                          </span>
+                        </a>
+                        <a
                           href="https://github.com/argirowski"
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="px-3 py-2 contact-social-btn"
+                          className="contact-social-icon d-flex align-items-center py-2"
                         >
-                          GitHub
-                        </Button>
+                          <FontAwesomeIcon
+                            icon={faGithub}
+                            size="lg"
+                            className="me-2"
+                          />
+                          <span className="text-light font-poppins">
+                            Follow me on GitHub
+                          </span>
+                        </a>
                       </div>
                     </div>
                   </Card.Body>
