@@ -176,8 +176,7 @@ const ResumePage: React.FC = () => {
                           "TypeScript",
                           "React",
                           "Redux",
-                          "HTML5",
-                          "CSS3",
+                          "Responsive Design",
                           "Tailwind CSS",
                         ].map((skill) => (
                           <Badge key={skill} className="font-mono skill-badge">
@@ -194,8 +193,8 @@ const ResumePage: React.FC = () => {
                           "C#",
                           ".NET Core",
                           "Entity Framework Core",
-                          "Unit Testing",
                           "REST APIs",
+                          "Unit Testing",
                         ].map((skill) => (
                           <Badge key={skill} className="font-mono skill-badge">
                             {skill}
@@ -207,7 +206,7 @@ const ResumePage: React.FC = () => {
                     <div className="mb-3">
                       <h6 className="text-light font-inter mb-2">Database</h6>
                       <div className="d-flex flex-wrap gap-2">
-                        {["MySQL"].map((skill) => (
+                        {["SQL", "Microsoft SQL Server"].map((skill) => (
                           <Badge key={skill} className="font-mono skill-badge">
                             {skill}
                           </Badge>
@@ -220,7 +219,12 @@ const ResumePage: React.FC = () => {
                         Tools & Others
                       </h6>
                       <div className="d-flex flex-wrap gap-2">
-                        {["Git", "Docker", "AWS", "Agile"].map((skill) => (
+                        {[
+                          "Git / GitHub",
+                          "Docker",
+                          "Microsoft Azure",
+                          "Agile Methodology",
+                        ].map((skill) => (
                           <Badge key={skill} className="font-mono skill-badge">
                             {skill}
                           </Badge>
@@ -268,19 +272,41 @@ const ResumePage: React.FC = () => {
 
                     <div className="mb-3">
                       <h6 className="text-light font-inter mb-1">
-                        Querying Data with Transact-SQL - Exam 761
+                        <a
+                          href="https://www.credly.com/badges/ab2660b7-4db1-4515-9e0d-56238e6c1e45"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="resume-cert-link"
+                        >
+                          Querying Data with Transact-SQL - Exam 761
+                        </a>
                       </h6>
                     </div>
 
                     <div className="mb-3">
                       <h6 className="text-light font-inter mb-1">
-                        Programming in Microsoft C# - Exam 70-483
+                        <a
+                          href="https://www.credly.com/badges/49fceafe-9455-40c1-988c-dd6500def154"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="resume-cert-link"
+                        >
+                          Programming in Microsoft C# - Exam 70-483
+                        </a>
                       </h6>
                     </div>
 
                     <div>
                       <h6 className="text-light font-inter mb-1">
-                        Oracle Certified Associate, Java SE 7 Programmer
+                        <a
+                          href="https://www.credly.com/badges/b9f7aeda-e73b-483c-820e-90fccfa1278f"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="resume-cert-link"
+                          style={{ color: "inherit", textDecoration: "none" }}
+                        >
+                          Oracle Certified Associate, Java SE 7 Programmer
+                        </a>
                       </h6>
                     </div>
                   </Card.Body>
