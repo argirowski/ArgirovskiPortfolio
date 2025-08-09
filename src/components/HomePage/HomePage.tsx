@@ -30,7 +30,8 @@ const HomePage: React.FC<HomePageProps> = ({ onNavClick }) => {
                 I'm a Full Stack Developer who loves building web experiences
                 that look great and work even better. Whether it's a slick UI or
                 smooth backend logic, I’m all about making the web feel
-                effortless.
+                effortless. Feel free to reach out or explore my work — just
+                click a button below!
               </p>
               <div className="d-flex flex-column flex-md-row gap-3 mb-2">
                 <Button

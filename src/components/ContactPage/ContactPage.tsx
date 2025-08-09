@@ -14,8 +14,8 @@ const ContactPage: React.FC = () => {
             <div className="text-center mb-5">
               <h1 className="display-3 fw-bold mb-4">Let's get in touch</h1>
               <p className="lead fs-4">
-                I'd love to hear from you. Send me a message and I'll respond as
-                soon as possible.
+                I’m always open to new opportunities and collaborations — reach
+                out anytime!
               </p>
             </div>
 
@@ -23,7 +23,7 @@ const ContactPage: React.FC = () => {
               <Col md={12}>
                 <Card className="h-100 border-secondary contact-card">
                   <Card.Body className="p-4">
-                    <h4 className="text-light mb-4">Contact Information</h4>
+                    <h4 className="text-light mb-4">How to Connect</h4>
 
                     <div className="mb-3 d-flex align-items-center">
                       <div className="me-3">

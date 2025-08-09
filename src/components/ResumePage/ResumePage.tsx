@@ -17,9 +17,10 @@ const ResumePage: React.FC = () => {
         <Row className="justify-content-center mb-5">
           <Col lg={10}>
             <div className="text-center mb-4">
-              <h1 className="display-3 fw-bold mb-3">My Resume</h1>
+              <h1 className="display-3 fw-bold mb-3">Professional Profile</h1>
               <p className="lead fs-4 mb-4">
-                Full Stack Developer with expertise in modern web technologies
+                Overview of my professional journey, education, skills, and
+                credentials.
               </p>
             </div>
           </Col>

@@ -1,7 +1,7 @@
 import React from "react";
 import { Navbar, Nav, Container, Offcanvas } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faUser } from "@fortawesome/free-solid-svg-icons";
+import { faUser } from "@fortawesome/free-regular-svg-icons";
 import "./NavBar.css";
 import { NavBarProps } from "../../common/interfaces";
 

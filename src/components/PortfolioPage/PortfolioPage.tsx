@@ -12,10 +12,10 @@ const PortfolioPage: React.FC = () => {
       <Container>
         <Row className="justify-content-center mb-5">
           <Col lg={8} className="text-center">
-            <h1 className="display-3 fw-bold mb-4">My Portfolio</h1>
+            <h1 className="display-3 fw-bold mb-4">Selected Projects</h1>
             <p className="lead fs-4 mb-4">
-              A showcase of my recent projects and technical expertise. Each
-              project demonstrates different aspects of modern web development.
+              Take a look at some of my favorite projects that showcase my web
+              development skills and style.
             </p>
           </Col>
         </Row>
@@ -24,7 +24,7 @@ const PortfolioPage: React.FC = () => {
           <Col>
             <h2 className="h3 mb-4">
               <FontAwesomeIcon icon={faShield} />
-              Featured Projects
+              Top Picks
             </h2>
             <Row className="g-4">
               {featuredProjects.map((project) => (
