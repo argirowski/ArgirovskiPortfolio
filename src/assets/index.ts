@@ -4,7 +4,7 @@
 export { default as profileImage } from "./images/gjorgji-argirovski-cv-image.jpg";
 
 // Documents - served from public folder
-export const RESUME_PDF_URL = "/Gjorgji-Argirovski-CV.pdf";
+export const RESUME_PDF_URL = "/ArgirovskiPortfolio/Gjorgji-Argirovski-CV.pdf";
 
 // You can add more assets here as needed
 // Example:
