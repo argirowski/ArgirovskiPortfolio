@@ -31,9 +31,7 @@ const NavBar: React.FC<NavBarProps> = ({ activeSection, onNavClick }) => {
           aria-labelledby="offcanvas-navbar-label"
           placement="end"
         >
-          <Offcanvas.Header closeButton>
-            {/* Removed Offcanvas.Title to hide the Menu heading */}
-          </Offcanvas.Header>
+          <Offcanvas.Header closeButton />
           <Offcanvas.Body>
             <Nav className="ms-auto">
               <Nav.Link
