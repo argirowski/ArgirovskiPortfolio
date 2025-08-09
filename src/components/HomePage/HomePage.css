@@ -49,3 +49,9 @@
 .home-btn-contact:hover {
   background-color: #3a3a3a !important;
 }
+
+@media (max-width: 1199.98px) and (min-width: 992px) {
+  .home-btn-contact {
+    font-size: 1.1rem;
+  }
+}
