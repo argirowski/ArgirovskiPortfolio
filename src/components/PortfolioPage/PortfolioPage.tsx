@@ -22,7 +22,7 @@ const PortfolioPage: React.FC = () => {
           </Col>
         </Row>
 
-        <Row className="mb-5">
+        <Row>
           <Col>
             <h2 className="h3 mb-4 font-poppins">
               <FontAwesomeIcon icon={faStar} />
