@@ -24,7 +24,7 @@
 }
 
 .project-card .btn-custom {
-  background-color: #2d2d2d;
+  background-color: #0f2742;
   color: #fff;
   border: none;
   transition: background 0.2s;
@@ -35,7 +35,7 @@
 
 .project-card .btn-custom:hover,
 .project-card .btn-custom:focus {
-  background-color: #3a3a3a;
+  background-color: #1d4b7a;
   color: #fff;
   transform: translateY(-2px);
 }

@@ -31,33 +31,17 @@ const ContactPage: React.FC = () => {
 
                     <div className="mb-3 d-flex align-items-center">
                       <div className="me-3">
-                        <FontAwesomeIcon icon={faEnvelope} size="lg" />
-                      </div>
-                      <div>
-                        <p className="text-light mb-0 font-inter">
-                          gjorgji.argirovski@gmail.com
-                        </p>
-                      </div>
-                    </div>
-
-                    <div className="mb-3 d-flex align-items-center">
-                      <div className="me-3">
-                        <FontAwesomeIcon icon={faPhone} size="lg" />
-                      </div>
-                      <div>
-                        <p className="text-light mb-0 font-inter">
-                          +389 78 418 844
-                        </p>
-                      </div>
-                    </div>
-                    <div className="mb-3 d-flex align-items-center">
-                      <div className="me-3">
                         <FontAwesomeIcon icon={faLinkedin} size="lg" />
                       </div>
                       <div>
-                        <p className="text-light mb-0 font-inter">
+                        <a
+                          href="https://www.linkedin.com/in/gjorgji-argirovski/"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="text-light mb-0 font-inter contact-social-link"
+                        >
                           Follow me on LinkedIn
-                        </p>
+                        </a>
                       </div>
                     </div>
                     <div className="mb-3 d-flex align-items-center">
@@ -65,8 +49,36 @@ const ContactPage: React.FC = () => {
                         <FontAwesomeIcon icon={faGithub} size="lg" />
                       </div>
                       <div>
-                        <p className="text-light mb-0 font-inter">
+                        <a
+                          href="https://github.com/argirowski"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="text-light mb-0 font-inter contact-social-link"
+                        >
                           Follow me on GitHub
+                        </a>
+                      </div>
+                    </div>
+                    <div className="mb-3 d-flex align-items-center">
+                      <div className="me-3">
+                        <FontAwesomeIcon icon={faEnvelope} size="lg" />
+                      </div>
+                      <div>
+                        <a
+                          href="mailto:gjorgji.argirovski@gmail.com"
+                          className="text-light mb-0 font-inter contact-social-link"
+                        >
+                          gjorgji.argirovski@gmail.com
+                        </a>
+                      </div>
+                    </div>
+                    <div className="mb-3 d-flex align-items-center">
+                      <div className="me-3">
+                        <FontAwesomeIcon icon={faPhone} size="lg" />
+                      </div>
+                      <div>
+                        <p className="text-light mb-0 font-inter">
+                          +389 78 418 844
                         </p>
                       </div>
                     </div>

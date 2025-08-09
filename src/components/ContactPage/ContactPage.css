@@ -26,3 +26,13 @@
 .contact-card {
   background-color: #ffffff;
 }
+
+.contact-social-link {
+  color: #0f2742 !important;
+  text-decoration: none !important;
+}
+
+.contact-social-link:hover {
+  color: #1d4b7a !important;
+  border-bottom: 1px solid #1d4b7a;
+}

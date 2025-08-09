@@ -19,18 +19,19 @@
   pointer-events: none;
 }
 
+.profile-image-container {
+  position: relative;
+  display: inline-block;
+}
+
 .profile-image {
   max-width: 23rem;
   width: 100%;
   border: 0.25rem solid rgba(255, 255, 255, 0.2);
+  border-radius: 20%;
   transition: transform 0.25s ease, box-shadow 0.25s ease;
   background-color: #f8f8f8;
   padding: 0.5rem;
-}
-
-.profile-image-container {
-  position: relative;
-  display: inline-block;
 }
 
 .profile-image:hover {
@@ -63,7 +64,7 @@
 .home-btn-contact {
   height: 3rem;
   width: 13rem;
-  background-color: #2d2d2d !important;
+  background-color: #0f2742 !important;
   color: #f5f5f5 !important;
   border: none !important;
   transition: all 0.3s ease !important;
@@ -76,7 +77,7 @@
 }
 
 .home-btn-contact:hover {
-  background-color: #3a3a3a !important;
+  background-color: #1d4b7a !important;
 }
 
 @media (max-width: 1199.98px) and (min-width: 992px) {
