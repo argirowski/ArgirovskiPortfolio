@@ -18,7 +18,7 @@ const HomePage: React.FC<HomePageProps> = ({ onNavClick }) => {
               <img
                 src={profileImage}
                 alt="Gjorgji Argirovski"
-                className="img-fluid rounded-circle shadow-lg profile-image"
+                className="img-fluid rounded-circle profile-image"
               />
             </div>
           </Col>

@@ -6,8 +6,22 @@
 }
 
 .profile-image {
-  max-width: 21.875rem;
+  max-width: 23rem;
   width: 100%;
+  border: 0.25rem solid rgba(255, 255, 255, 0.2);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  background-color: #f8f8f8;
+  padding: 0.5rem;
+}
+
+.profile-image-container {
+  position: relative;
+  display: inline-block;
+}
+
+.profile-image:hover {
+  transform: scale(1.015);
+  box-shadow: 0 0.75rem 1.5rem rgba(0, 0, 0, 0.15);
 }
 
 .home-btn-download {
@@ -61,24 +75,6 @@
 .home-social-github:hover {
   color: #000000 !important;
   transform: scale(1.1);
-}
-
-/* Profile Image Styling */
-.profile-image-container {
-  position: relative;
-  display: inline-block;
-}
-
-.profile-image {
-  border: 0.25rem solid rgba(255, 255, 255, 0.2);
-  transition: all 0.3s ease;
-  background-color: #f8f8f8;
-  padding: 0.5rem;
-}
-
-.profile-image:hover {
-  transform: scale(1.05);
-  box-shadow: 0 1.25rem 2.5rem rgba(0, 0, 0, 0.3);
 }
 
 @media (max-width: 991.98px) {
