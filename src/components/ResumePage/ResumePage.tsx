@@ -46,7 +46,7 @@ const ResumePage: React.FC = () => {
                           <p className="text-warning mb-0">Damilah</p>
                         </div>
                         <Badge className="year-badge">
-                          Sep 2022 - Feb 2025
+                          Jul 2022 - Feb 2025
                         </Badge>
                       </div>
                       <ul className="text-light">
@@ -87,7 +87,7 @@ const ResumePage: React.FC = () => {
                           <p className="text-warning mb-0">CodeIT Solution</p>
                         </div>
                         <Badge bg="secondary" className="year-badge">
-                          Jun 2021 - Jun 2022
+                          Jan 2021 - Jun 2022
                         </Badge>
                       </div>
                       <ul className="text-light">
