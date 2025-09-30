@@ -75,8 +75,6 @@ export const projects = [
   },
 ];
 
-export const featuredProjects = projects.filter((project) => project.featured);
-
 export const technicalSkills = {
   frontend: [
     "JavaScript",

@@ -1,7 +1,7 @@
 import React from "react";
 import { Container, Row, Col, Card, Badge, Button } from "react-bootstrap";
 import "./PortfolioPage.css";
-import { featuredProjects } from "../../common/utils";
+import { projects } from "../../common/utils";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faShield } from "@fortawesome/free-solid-svg-icons";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
@@ -27,7 +27,7 @@ const PortfolioPage: React.FC = () => {
               Top Picks
             </h2>
             <Row className="g-4">
-              {featuredProjects.map((project) => (
+              {projects.map((project) => (
                 <Col key={project.id} lg={6} xl={4}>
                   <Card className="h-100 border-secondary project-card">
                     <Card.Body className="p-4 d-flex flex-column">
