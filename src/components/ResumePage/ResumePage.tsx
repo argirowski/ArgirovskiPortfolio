@@ -23,8 +23,8 @@ const ResumePage: React.FC = () => {
         <Row className="justify-content-center mb-5">
           <Col lg={10}>
             <div className="text-center mb-4">
-              <h1 className="display-3 fw-bold mb-3">Professional Profile</h1>
-              <p className="lead fs-4 mb-4">
+              <h1 className="resume-page-title mb-3">Professional Profile</h1>
+              <p className="resume-page-text">
                 Overview of my professional journey, education, skills, and
                 credentials.
               </p>
@@ -36,7 +36,7 @@ const ResumePage: React.FC = () => {
           <Col lg={10}>
             <Row className="g-4">
               <Col lg={8}>
-                <Card className="mb-4 border-secondary resume-card">
+                <Card className="mb-4 resume-card">
                   <Card.Body className="p-4">
                     <h3 className="mb-4">
                       <FontAwesomeIcon icon={faLaptopCode} className="me-2" />
@@ -52,8 +52,8 @@ const ResumePage: React.FC = () => {
                       >
                         <div className="d-flex justify-content-between align-items-start mb-2">
                           <div>
-                            <h5 className="text-light mb-1">{job.position}</h5>
-                            <p className="text-warning mb-0">{job.company}</p>
+                            <h5 className="mb-1">{job.position}</h5>
+                            <p className="mb-0">{job.company}</p>
                           </div>
                           <Badge
                             className={
@@ -64,7 +64,7 @@ const ResumePage: React.FC = () => {
                             {job.period}
                           </Badge>
                         </div>
-                        <ul className="text-light">
+                        <ul className="">
                           {job.responsibilities.map(
                             (responsibility, respIndex) => (
                               <li key={respIndex}>{responsibility}</li>
@@ -76,7 +76,7 @@ const ResumePage: React.FC = () => {
                   </Card.Body>
                 </Card>
 
-                <Card className="mb-4 border-secondary resume-card">
+                <Card className="mb-4 resume-card">
                   <Card.Body className="p-4">
                     <h3 className="mb-4">
                       <FontAwesomeIcon
@@ -89,10 +89,10 @@ const ResumePage: React.FC = () => {
                     <div className="mb-3">
                       <div className="d-flex justify-content-between align-items-start mb-2">
                         <div>
-                          <h5 className="text-light mb-1">
+                          <h5 className="mb-1">
                             Web Developer, Semos Javascript Academy
                           </h5>
-                          <p className="text-warning mb-0">
+                          <p className="mb-0">
                             Semos Computer Education Center
                           </p>
                         </div>
@@ -100,7 +100,7 @@ const ResumePage: React.FC = () => {
                           May 2018 - Jan 2019
                         </Badge>
                       </div>
-                      <p className="text-light mb-0">
+                      <p className="mb-0">
                         Completed a Web Development program covering modern
                         technologies and tools including HTML5, CSS3,
                         JavaScript, Node.js, MongoDB, React, Redux, TypeScript,
@@ -114,7 +114,7 @@ const ResumePage: React.FC = () => {
               </Col>
 
               <Col lg={4}>
-                <Card className="mb-4 border-secondary resume-card">
+                <Card className="mb-4 resume-card">
                   <Card.Body className="p-4">
                     <h4 className="mb-4">
                       <FontAwesomeIcon icon={faGear} className="me-2" />
@@ -122,7 +122,7 @@ const ResumePage: React.FC = () => {
                     </h4>
 
                     <div className="mb-3">
-                      <h6 className="text-light mb-2">Frontend</h6>
+                      <h6 className="mb-2">Frontend</h6>
                       <div className="d-flex flex-wrap gap-2">
                         {technicalSkills.frontend.map((skill) => (
                           <Badge key={skill} className="skill-badge">
@@ -133,7 +133,7 @@ const ResumePage: React.FC = () => {
                     </div>
 
                     <div className="mb-3">
-                      <h6 className="text-light mb-2">Backend</h6>
+                      <h6 className="mb-2">Backend</h6>
                       <div className="d-flex flex-wrap gap-2">
                         {technicalSkills.backend.map((skill) => (
                           <Badge key={skill} className="skill-badge">
@@ -144,7 +144,7 @@ const ResumePage: React.FC = () => {
                     </div>
 
                     <div className="mb-3">
-                      <h6 className="text-light mb-2">Database</h6>
+                      <h6 className="mb-2">Database</h6>
                       <div className="d-flex flex-wrap gap-2">
                         {technicalSkills.database.map((skill) => (
                           <Badge key={skill} className="skill-badge">
@@ -155,7 +155,7 @@ const ResumePage: React.FC = () => {
                     </div>
 
                     <div className="mb-3">
-                      <h6 className="text-light mb-2">Tools & Others</h6>
+                      <h6 className="mb-2">Tools & Others</h6>
                       <div className="d-flex flex-wrap gap-2">
                         {technicalSkills.tools.map((skill) => (
                           <Badge key={skill} className="skill-badge">
@@ -167,7 +167,7 @@ const ResumePage: React.FC = () => {
                   </Card.Body>
                 </Card>
 
-                <Card className="mb-4 border-secondary resume-card">
+                <Card className="mb-4 resume-card">
                   <Card.Body className="p-4">
                     <h4 className="mb-4">
                       <FontAwesomeIcon icon={faEarthEurope} className="me-2" />
@@ -189,7 +189,7 @@ const ResumePage: React.FC = () => {
                     ))}
                   </Card.Body>
                 </Card>
-                <Card className="border-secondary resume-card">
+                <Card className="resume-card">
                   <Card.Body className="p-4">
                     <h4 className="mb-4">
                       <FontAwesomeIcon icon={faAward} className="me-2" />
@@ -203,7 +203,7 @@ const ResumePage: React.FC = () => {
                           index < certifications.length - 1 ? "mb-3" : ""
                         }
                       >
-                        <h6 className="text-light mb-1">
+                        <h6 className="mb-1">
                           <a
                             href={cert.url}
                             target="_blank"

@@ -12,8 +12,8 @@ const PortfolioPage: React.FC = () => {
       <Container>
         <Row className="justify-content-center mb-5">
           <Col lg={8} className="text-center">
-            <h1 className="display-3 fw-bold mb-4">Selected Projects</h1>
-            <p className="lead fs-4 mb-4">
+            <h1 className="mb-4">Selected Projects</h1>
+            <p className="mb-4">
               Take a look at some of my favorite projects that showcase my web
               development skills and style.
             </p>
@@ -29,7 +29,7 @@ const PortfolioPage: React.FC = () => {
             <Row className="g-4">
               {projects.map((project) => (
                 <Col key={project.id} lg={6} xl={4}>
-                  <Card className="h-100 border-secondary project-card">
+                  <Card className="h-100 project-card">
                     <Card.Body className="p-4 d-flex flex-column">
                       <div className="mb-2">
                         <Badge className="me-2 category-badge">
@@ -57,7 +57,7 @@ const PortfolioPage: React.FC = () => {
                           href={project.githubUrl}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="fw-semibold flex-fill btn-custom"
+                          className="flex-fill btn-custom"
                         >
                           <FontAwesomeIcon icon={faGithub} />
                           Code

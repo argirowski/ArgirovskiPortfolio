@@ -5,30 +5,28 @@
   background-color: #f8f8f8;
   color: #1a1a1a;
 }
-.contact-card {
-  background-color: #1e1e2f;
+
+.contact-page-title {
+  font-weight: 700 !important;
+  font-size: 4.5rem;
+  line-height: 1.2;
 }
 
-.contact-card * {
-  color: #1a1a1a !important;
-}
-
-.contact-social-btn {
-  background-color: #2d2d2d !important;
-  border: none !important;
-  color: #fff !important;
-}
-.contact-social-btn:hover {
-  background-color: #3a3a3a !important;
-  color: #fff !important;
+.contact-page-text {
+  font-size: 1.5rem;
+  font-weight: 300;
 }
 
 .contact-card {
   background-color: #ffffff;
+  color: #1a1a1a !important;
+  border: 2px solid #e3e6ea;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .contact-social-link {
-  color: #0f2742 !important;
+  color: #420f16 !important;
   font-weight: 500 !important;
   text-decoration: none !important;
 }

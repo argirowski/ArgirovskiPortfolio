@@ -25,8 +25,8 @@ const HomePage: React.FC<HomePageProps> = ({ onNavClick }) => {
 
           <Col lg={6}>
             <div className="text-content">
-              <h1 className="display-2 fw-bold mb-4">Welcome!</h1>
-              <p className="lead fs-4 mb-4">
+              <h1 className="mb-4">Welcome!</h1>
+              <p className="mb-4">
                 I'm a Full Stack Developer who loves building web experiences
                 that look great and work even better. Whether it's a slick UI or
                 smooth backend logic, I’m all about making the web feel
@@ -37,7 +37,7 @@ const HomePage: React.FC<HomePageProps> = ({ onNavClick }) => {
                 <Button
                   size="lg"
                   onClick={() => handleDownloadCV(RESUME_PDF_URL)}
-                  className="px-4 py-2 fw-semibold home-btn-contact"
+                  className="px-4 py-2 home-btn-contact"
                 >
                   <FontAwesomeIcon icon={faFileArrowDown} className="me-2" />
                   Download CV
@@ -46,7 +46,7 @@ const HomePage: React.FC<HomePageProps> = ({ onNavClick }) => {
                   size="lg"
                   as="a"
                   href="mailto:gjorgji.argirovski@gmail.com"
-                  className="px-4 py-2 fw-semibold home-btn-contact"
+                  className="px-4 py-2 home-btn-contact"
                 >
                   <FontAwesomeIcon icon={faEnvelope} className="me-2" />
                   Contact
@@ -60,7 +60,7 @@ const HomePage: React.FC<HomePageProps> = ({ onNavClick }) => {
                   href="https://www.linkedin.com/in/gjorgji-argirovski/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="px-4 py-2 fw-semibold home home-btn-contact"
+                  className="px-4 py-2 home-btn-contact"
                 >
                   <FontAwesomeIcon icon={faLinkedin} className="me-2" />
                   LinkedIn
@@ -71,7 +71,7 @@ const HomePage: React.FC<HomePageProps> = ({ onNavClick }) => {
                   href="https://github.com/argirowski"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="px-4 py-2 fw-semibold home home-btn-contact"
+                  className="px-4 py-2 home-btn-contact"
                 >
                   <FontAwesomeIcon icon={faGithub} className="me-2" />
                   GitHub

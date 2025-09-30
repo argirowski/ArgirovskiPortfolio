@@ -25,6 +25,7 @@
 
 .project-card .btn-custom {
   background-color: #0f2742;
+  font-weight: 600;
   color: #fff;
   border: none;
   transition: background 0.2s;

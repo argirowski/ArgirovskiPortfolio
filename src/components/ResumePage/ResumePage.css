@@ -5,6 +5,17 @@
   color: #1a1a1a;
 }
 
+.resume-page-title {
+  font-weight: 700 !important;
+  font-size: 4.5rem;
+  line-height: 1.2;
+}
+
+.resume-page-text {
+  font-size: 1.25rem;
+  font-weight: 300;
+}
+
 .resume-card {
   background-color: #ffffff !important;
 }
