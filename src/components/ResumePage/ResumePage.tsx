@@ -1,6 +1,12 @@
 import React from "react";
 import { Container, Row, Col, Card, Badge } from "react-bootstrap";
 import "./ResumePage.css";
+import {
+  technicalSkills,
+  languages,
+  certifications,
+  workExperience,
+} from "../../common/utils";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faLaptopCode,
@@ -37,86 +43,36 @@ const ResumePage: React.FC = () => {
                       Work Experience
                     </h3>
 
-                    <div className="mb-4">
-                      <div className="d-flex justify-content-between align-items-start mb-2">
-                        <div>
-                          <h5 className="text-light mb-1">
-                            Software Developer
-                          </h5>
-                          <p className="text-warning mb-0">Damilah</p>
+                    {workExperience.map((job, index) => (
+                      <div
+                        key={`${job.company}-${job.period}`}
+                        className={
+                          index < workExperience.length - 1 ? "mb-4" : ""
+                        }
+                      >
+                        <div className="d-flex justify-content-between align-items-start mb-2">
+                          <div>
+                            <h5 className="text-light mb-1">{job.position}</h5>
+                            <p className="text-warning mb-0">{job.company}</p>
+                          </div>
+                          <Badge
+                            className={
+                              index === 0 ? "year-badge" : "year-badge"
+                            }
+                            bg={index === 0 ? undefined : "secondary"}
+                          >
+                            {job.period}
+                          </Badge>
                         </div>
-                        <Badge className="year-badge">
-                          Jul 2022 - Feb 2025
-                        </Badge>
+                        <ul className="text-light">
+                          {job.responsibilities.map(
+                            (responsibility, respIndex) => (
+                              <li key={respIndex}>{responsibility}</li>
+                            )
+                          )}
+                        </ul>
                       </div>
-                      <ul className="text-light">
-                        <li>
-                          Built modern, responsive user interfaces using React
-                          with TypeScript, ensuring type safety and maintainable
-                          code structure.
-                        </li>
-                        <li>
-                          Developed scalable backend APIs and business logic
-                          using .NET Core, enabling seamless data flow across
-                          the stack.
-                        </li>
-                        <li>
-                          Employed Entity Framework Core for efficient data
-                          access and object-relational mapping, following best
-                          practices for database interaction.
-                        </li>
-                        <li>
-                          Designed and implemented sleek, utility-first UI
-                          components with Tailwind CSS, focusing on clean,
-                          accessible, mobile-first design.
-                        </li>
-                        <li>
-                          Collaborated in a full-stack environment, contributing
-                          to both frontend features and backend architecture,
-                          delivering cohesive end-to-end solutions.
-                        </li>
-                      </ul>
-                    </div>
-
-                    <div className="mb-4">
-                      <div className="d-flex justify-content-between align-items-start mb-2">
-                        <div>
-                          <h5 className="text-light mb-1">
-                            Software Developer
-                          </h5>
-                          <p className="text-warning mb-0">CodeIT Solution</p>
-                        </div>
-                        <Badge bg="secondary" className="year-badge">
-                          Jan 2021 - Jun 2022
-                        </Badge>
-                      </div>
-                      <ul className="text-light">
-                        <li>
-                          Developed and maintained full-stack applications using
-                          .NET Core and C#, ensuring scalable and efficient
-                          backend architecture.
-                        </li>
-                        <li>
-                          Built responsive, user-centric front-end interfaces
-                          with React and styled components using Bootstrap for
-                          modern, accessible UI design.
-                        </li>
-                        <li>
-                          Designed and queried SQL-based relational databases,
-                          optimizing performance for key operations.
-                        </li>
-                        <li>
-                          Utilized Entity Framework Core for object-relational
-                          mapping, enhancing productivity and consistency in
-                          data management.
-                        </li>
-                        <li>
-                          Collaborated on both frontend and backend solutions,
-                          contributing to end-to-end application features and
-                          delivery.
-                        </li>
-                      </ul>
-                    </div>
+                    ))}
                   </Card.Body>
                 </Card>
 
@@ -168,14 +124,7 @@ const ResumePage: React.FC = () => {
                     <div className="mb-3">
                       <h6 className="text-light mb-2">Frontend</h6>
                       <div className="d-flex flex-wrap gap-2">
-                        {[
-                          "JavaScript",
-                          "TypeScript",
-                          "React",
-                          "Redux",
-                          "Responsive Design",
-                          "Tailwind CSS",
-                        ].map((skill) => (
+                        {technicalSkills.frontend.map((skill) => (
                           <Badge key={skill} className="skill-badge">
                             {skill}
                           </Badge>
@@ -186,13 +135,7 @@ const ResumePage: React.FC = () => {
                     <div className="mb-3">
                       <h6 className="text-light mb-2">Backend</h6>
                       <div className="d-flex flex-wrap gap-2">
-                        {[
-                          "C#",
-                          ".NET Core",
-                          "Entity Framework Core",
-                          "REST APIs",
-                          "Unit Testing",
-                        ].map((skill) => (
+                        {technicalSkills.backend.map((skill) => (
                           <Badge key={skill} className="skill-badge">
                             {skill}
                           </Badge>
@@ -203,7 +146,7 @@ const ResumePage: React.FC = () => {
                     <div className="mb-3">
                       <h6 className="text-light mb-2">Database</h6>
                       <div className="d-flex flex-wrap gap-2">
-                        {["SQL", "Microsoft SQL Server"].map((skill) => (
+                        {technicalSkills.database.map((skill) => (
                           <Badge key={skill} className="skill-badge">
                             {skill}
                           </Badge>
@@ -214,12 +157,7 @@ const ResumePage: React.FC = () => {
                     <div className="mb-3">
                       <h6 className="text-light mb-2">Tools & Others</h6>
                       <div className="d-flex flex-wrap gap-2">
-                        {[
-                          "Git / GitHub",
-                          "Docker",
-                          "Microsoft Azure",
-                          "Agile Methodology",
-                        ].map((skill) => (
+                        {technicalSkills.tools.map((skill) => (
                           <Badge key={skill} className="skill-badge">
                             {skill}
                           </Badge>
@@ -236,26 +174,19 @@ const ResumePage: React.FC = () => {
                       Languages
                     </h4>
 
-                    <div className="mb-3">
-                      <div className="d-flex justify-content-between align-items-center mb-1">
-                        <span>Macedonian</span>
-                        <Badge className="language-badge">Native</Badge>
+                    {languages.map((language, index) => (
+                      <div
+                        key={language.name}
+                        className={index < languages.length - 1 ? "mb-3" : ""}
+                      >
+                        <div className="d-flex justify-content-between align-items-center mb-1">
+                          <span>{language.name}</span>
+                          <Badge className="language-badge">
+                            {language.level}
+                          </Badge>
+                        </div>
                       </div>
-                    </div>
-
-                    <div className="mb-3">
-                      <div className="d-flex justify-content-between align-items-center mb-1">
-                        <span>English</span>
-                        <Badge className="language-badge">Fluent</Badge>
-                      </div>
-                    </div>
-
-                    <div className="mb-3">
-                      <div className="d-flex justify-content-between align-items-center mb-1">
-                        <span>German</span>
-                        <Badge className="language-badge">Beginner</Badge>
-                      </div>
-                    </div>
+                    ))}
                   </Card.Body>
                 </Card>
                 <Card className="border-secondary resume-card">
@@ -265,45 +196,26 @@ const ResumePage: React.FC = () => {
                       Certifications
                     </h4>
 
-                    <div className="mb-3">
-                      <h6 className="text-light mb-1">
-                        <a
-                          href="https://www.credly.com/badges/ab2660b7-4db1-4515-9e0d-56238e6c1e45"
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="resume-cert-link"
-                        >
-                          Querying Data with Transact-SQL - Exam 761
-                        </a>
-                      </h6>
-                    </div>
-
-                    <div className="mb-3">
-                      <h6 className="text-light mb-1">
-                        <a
-                          href="https://www.credly.com/badges/49fceafe-9455-40c1-988c-dd6500def154"
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="resume-cert-link"
-                        >
-                          Programming in Microsoft C# - Exam 70-483
-                        </a>
-                      </h6>
-                    </div>
-
-                    <div>
-                      <h6 className="text-light mb-1">
-                        <a
-                          href="https://www.credly.com/badges/b9f7aeda-e73b-483c-820e-90fccfa1278f"
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="resume-cert-link"
-                          style={{ color: "inherit", textDecoration: "none" }}
-                        >
-                          Oracle Certified Associate, Java SE 7 Programmer
-                        </a>
-                      </h6>
-                    </div>
+                    {certifications.map((cert, index) => (
+                      <div
+                        key={cert.title}
+                        className={
+                          index < certifications.length - 1 ? "mb-3" : ""
+                        }
+                      >
+                        <h6 className="text-light mb-1">
+                          <a
+                            href={cert.url}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="resume-cert-link"
+                            style={{ color: "inherit", textDecoration: "none" }}
+                          >
+                            {cert.title}
+                          </a>
+                        </h6>
+                      </div>
+                    ))}
                   </Card.Body>
                 </Card>
               </Col>

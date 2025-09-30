@@ -8,7 +8,7 @@ const Footer: React.FC = () => (
     <div className="container">
       <span className="footer-text">
         <FontAwesomeIcon icon={faCopyright} className="me-1" />
-        {new Date().getFullYear()} Gjorgji Argirovski. All rights reserved.
+        {new Date().getFullYear()} Gjorgji Argirovski.
       </span>
     </div>
   </footer>

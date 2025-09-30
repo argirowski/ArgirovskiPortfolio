@@ -76,3 +76,80 @@ export const projects = [
 ];
 
 export const featuredProjects = projects.filter((project) => project.featured);
+
+export const technicalSkills = {
+  frontend: [
+    "JavaScript",
+    "TypeScript",
+    "React",
+    "Redux",
+    "Responsive Design",
+    "Tailwind CSS",
+  ],
+  backend: [
+    "C#",
+    ".NET Core",
+    "Entity Framework Core",
+    "REST APIs",
+    "Unit Testing",
+  ],
+  database: ["SQL", "Microsoft SQL Server"],
+  tools: ["Git / GitHub", "Docker", "Microsoft Azure", "Agile Methodology"],
+};
+
+export const languages = [
+  {
+    name: "Macedonian",
+    level: "Native",
+  },
+  {
+    name: "English",
+    level: "Fluent",
+  },
+  {
+    name: "German",
+    level: "Beginner",
+  },
+];
+
+export const certifications = [
+  {
+    title: "Querying Data with Transact-SQL - Exam 761",
+    url: "https://www.credly.com/badges/ab2660b7-4db1-4515-9e0d-56238e6c1e45",
+  },
+  {
+    title: "Programming in Microsoft C# - Exam 70-483",
+    url: "https://www.credly.com/badges/49fceafe-9455-40c1-988c-dd6500def154",
+  },
+  {
+    title: "Oracle Certified Associate, Java SE 7 Programmer",
+    url: "https://www.credly.com/badges/b9f7aeda-e73b-483c-820e-90fccfa1278f",
+  },
+];
+
+export const workExperience = [
+  {
+    position: "Software Developer",
+    company: "Damilah",
+    period: "Jul 2022 - Feb 2025",
+    responsibilities: [
+      "Built modern, responsive user interfaces using React with TypeScript, ensuring type safety and maintainable code structure.",
+      "Developed scalable backend APIs and business logic using .NET Core, enabling seamless data flow across the stack.",
+      "Employed Entity Framework Core for efficient data access and object-relational mapping, following best practices for database interaction.",
+      "Designed and implemented sleek, utility-first UI components with Tailwind CSS, focusing on clean, accessible, mobile-first design.",
+      "Collaborated in a full-stack environment, contributing to both frontend features and backend architecture, delivering cohesive end-to-end solutions.",
+    ],
+  },
+  {
+    position: "Software Developer",
+    company: "CodeIT Solution",
+    period: "Jan 2021 - Jun 2022",
+    responsibilities: [
+      "Developed and maintained full-stack applications using .NET Core and C#, ensuring scalable and efficient backend architecture.",
+      "Built responsive, user-centric front-end interfaces with React and styled components using Bootstrap for modern, accessible UI design.",
+      "Designed and queried SQL-based relational databases, optimizing performance for key operations.",
+      "Utilized Entity Framework Core for object-relational mapping, enhancing productivity and consistency in data management.",
+      "Collaborated on both frontend and backend solutions, contributing to end-to-end application features and delivery.",
+    ],
+  },
+];
