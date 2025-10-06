@@ -4,12 +4,13 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCopyright } from "@fortawesome/free-regular-svg-icons";
 
 const Footer: React.FC = () => (
-  <footer className="footer-section text-center py-4">
-    <div className="container footer-text">
-      <FontAwesomeIcon icon={faCopyright} className="me-1" />
-      {new Date().getFullYear()} Gjorgji Argirovski.
-    </div>
-  </footer>
+  <div>Footer Section</div>
+  // <footer className="footer-section text-center py-4">
+  //   <div className="container footer-text">
+  //     <FontAwesomeIcon icon={faCopyright} className="me-1" />
+  //     {new Date().getFullYear()} Gjorgji Argirovski.
+  //   </div>
+  // </footer>
 );
 
 export default Footer;
