@@ -45,7 +45,7 @@ const ResumePage: React.FC = () => {
                   >
                     <div className="flex justify-between items-start mb-2">
                       <div>
-                        <h4 className="mb-1 text-lg font-semibold">
+                        <h4 className="mb-1 text-lg font-semibold text-contact-heading">
                           {job.position}
                         </h4>
                         <p className="mb-0 text-contact-card-text">
@@ -83,7 +83,7 @@ const ResumePage: React.FC = () => {
                   >
                     <div className="flex justify-between items-start mb-2">
                       <div>
-                        <h4 className="mb-1 text-lg font-semibold">
+                        <h4 className="mb-1 text-lg font-semibold text-contact-heading">
                           {edu.title}
                         </h4>
                         <p className="mb-0 text-contact-card-text">
