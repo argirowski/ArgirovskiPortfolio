@@ -1,5 +1,4 @@
 import React from "react";
-import "./PortfolioPage.css";
 import { projects } from "../../common/utils";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faShield } from "@fortawesome/free-solid-svg-icons";
