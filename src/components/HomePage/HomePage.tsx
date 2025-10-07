@@ -9,7 +9,11 @@ import { handleDownloadCV } from "../../common/utils";
 
 const HomePage: React.FC<HomePageProps> = ({ onNavClick }) => {
   return (
-    <div>Home Page Section</div>
+    <>
+      <div className="font-sans">This uses Inter (global default)</div>
+      <div className="font-open-sans">This uses Open Sans</div>
+      <div className="font-jetbrains">This uses JetBrains Mono</div>
+    </>
     // <section className="home-page-section d-flex align-items-center">
     //   <Container>
     //     <Row className="align-items-center h-100">
