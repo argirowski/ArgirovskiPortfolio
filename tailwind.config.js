@@ -40,6 +40,9 @@ module.exports = {
         "contact-link": "#0f2742",
         // Contact link hover color
         "contact-link-hover": "#1d4b7a",
+        // Badge colors
+        "badge-bg": "#2d2d2d",
+        "badge-text": "#f5f5f5",
       },
     },
   },

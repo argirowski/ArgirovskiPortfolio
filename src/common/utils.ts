@@ -151,3 +151,13 @@ export const workExperience = [
     ],
   },
 ];
+
+export const education = [
+  {
+    title: "Web Developer, Semos Javascript Academy",
+    institution: "Semos Computer Education Center",
+    period: "May 2018 - Jan 2019",
+    description:
+      "Completed a Web Development program covering modern technologies and tools including HTML5, CSS3, JavaScript, Node.js, MongoDB, React, Redux, TypeScript, Git, HTTP, and REST. Gained hands-on experience building full-stack applications and mastering both frontend and backend development workflows.",
+  },
+];
