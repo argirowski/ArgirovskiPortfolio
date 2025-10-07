@@ -1,5 +1,4 @@
 import React from "react";
-import "./HomePage.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope, faFileArrowDown } from "@fortawesome/free-solid-svg-icons";
@@ -10,82 +9,79 @@ import { handleDownloadCV } from "../../common/utils";
 const HomePage: React.FC<HomePageProps> = ({ onNavClick }) => {
   return (
     <>
-      <div className="font-sans">This uses Inter (global default)</div>
-      <div className="font-open-sans">This uses Open Sans</div>
-      <div className="font-jetbrains">This uses JetBrains Mono</div>
+      <section className="min-h-screen flex items-center justify-center bg-contact-bg px-4">
+        <div className="text-left w-full max-w-6xl">
+          {/* Home Content */}
+          <div className="grid grid-cols-12 gap-6 mx-auto">
+            {/* Left Half - 6 columns */}
+            <div className="col-span-6">
+              <img
+                src={profileImage}
+                alt="Gjorgji Argirovski"
+                className="max-w-sm w-full h-auto rounded-3xl shadow-md mb-4 p-2"
+              />
+            </div>
+
+            {/* Right Half - 6 columns */}
+            <div className="col-span-6">
+              <h1 className="text-7xl font-bold leading-tight text-contact-heading text-left">
+                Welcome.
+              </h1>
+              <h2 className="text-2xl font-light mt-6 text-contact-heading text-left">
+                I am a Full Stack Developer who loves building web experiences
+                that look great and work even better. Whether it is a slick UI
+                or smooth backend logic, I am all about making the web feel
+                effortless. Feel free to reach out or explore my work, just
+                click a button below!
+              </h2>
+
+              {/* Buttons Section - Split into two halves */}
+              <div className="mt-8 grid grid-cols-2 gap-4">
+                {/* Left buttons half */}
+                <div className="space-y-4">
+                  <button
+                    onClick={() => handleDownloadCV(RESUME_PDF_URL)}
+                    className="w-full bg-contact-link hover:bg-contact-link-hover text-white py-3 px-6 rounded-lg text-sm font-medium transition-colors duration-200 flex items-center justify-center gap-2"
+                  >
+                    <FontAwesomeIcon icon={faFileArrowDown} />
+                    Download CV
+                  </button>
+                  <a
+                    href="mailto:gjorgji.argirovski@gmail.com"
+                    className="w-full bg-contact-link hover:bg-contact-link-hover text-white py-3 px-6 rounded-lg text-sm font-medium transition-colors duration-200 flex items-center justify-center gap-2"
+                  >
+                    <FontAwesomeIcon icon={faEnvelope} />
+                    Contact
+                  </a>
+                </div>
+
+                {/* Right buttons half */}
+                <div className="space-y-4">
+                  <a
+                    href="https://www.linkedin.com/in/gjorgji-argirovski/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-full bg-contact-link hover:bg-contact-link-hover text-white py-3 px-6 rounded-lg text-sm font-medium transition-colors duration-200 flex items-center justify-center gap-2"
+                  >
+                    <FontAwesomeIcon icon={faLinkedin} />
+                    LinkedIn
+                  </a>
+                  <a
+                    href="https://github.com/argirowski"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-full bg-contact-link hover:bg-contact-link-hover text-white py-3 px-6 rounded-lg text-sm font-medium transition-colors duration-200 flex items-center justify-center gap-2"
+                  >
+                    <FontAwesomeIcon icon={faGithub} />
+                    GitHub
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </>
-    // <section className="home-page-section d-flex align-items-center">
-    //   <Container>
-    //     <Row className="align-items-center h-100">
-    //       <Col lg={6} className="text-center mb-5 mb-lg-0">
-    //         <div className="profile-image-container">
-    //           <img
-    //             src={profileImage}
-    //             alt="Gjorgji Argirovski"
-    //             className="img-fluid profile-image"
-    //           />
-    //         </div>
-    //       </Col>
-
-    //       <Col lg={6}>
-    //         <div className="text-content">
-    //           <h1 className="mb-4">Welcome!</h1>
-    //           <p className="mb-4">
-    //             I'm a Full Stack Developer who loves building web experiences
-    //             that look great and work even better. Whether it's a slick UI or
-    //             smooth backend logic, I’m all about making the web feel
-    //             effortless. Feel free to reach out or explore my work, just
-    //             click a button below!
-    //           </p>
-    //           <div className="d-flex flex-column flex-md-row gap-3 mb-2">
-    //             <Button
-    //               size="lg"
-    //               onClick={() => handleDownloadCV(RESUME_PDF_URL)}
-    //               className="px-4 py-2 home-btn-contact"
-    //             >
-    //               <FontAwesomeIcon icon={faFileArrowDown} className="me-2" />
-    //               Download CV
-    //             </Button>
-    //             <Button
-    //               size="lg"
-    //               as="a"
-    //               href="mailto:gjorgji.argirovski@gmail.com"
-    //               className="px-4 py-2 home-btn-contact"
-    //             >
-    //               <FontAwesomeIcon icon={faEnvelope} className="me-2" />
-    //               Contact
-    //             </Button>
-    //           </div>
-
-    //           <div className="d-flex flex-column flex-md-row gap-3 mb-5 justify-content-center justify-content-lg-start">
-    //             <Button
-    //               size="lg"
-    //               as="a"
-    //               href="https://www.linkedin.com/in/gjorgji-argirovski/"
-    //               target="_blank"
-    //               rel="noopener noreferrer"
-    //               className="px-4 py-2 home-btn-contact"
-    //             >
-    //               <FontAwesomeIcon icon={faLinkedin} className="me-2" />
-    //               LinkedIn
-    //             </Button>
-    //             <Button
-    //               size="lg"
-    //               as="a"
-    //               href="https://github.com/argirowski"
-    //               target="_blank"
-    //               rel="noopener noreferrer"
-    //               className="px-4 py-2 home-btn-contact"
-    //             >
-    //               <FontAwesomeIcon icon={faGithub} className="me-2" />
-    //               GitHub
-    //             </Button>
-    //           </div>
-    //         </div>
-    //       </Col>
-    //     </Row>
-    //   </Container>
-    // </section>
   );
 };
 
