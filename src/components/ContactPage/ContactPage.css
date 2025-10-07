@@ -3,13 +3,13 @@
   padding-top: 6.25rem;
   padding-bottom: 5rem;
   background-color: #f8f8f8;
-  color: #1a1a1a;
 }
 
 .contact-page-title {
   font-weight: 700 !important;
   font-size: 4.5rem;
   line-height: 1.2;
+  color: #1a1a1a;
 }
 
 .contact-page-text {

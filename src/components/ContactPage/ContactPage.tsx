@@ -6,84 +6,61 @@ import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
 
 const ContactPage: React.FC = () => {
   return (
-    <div>Contact Section</div>
-    // <section className="d-flex align-items-center contact-section">
-    //   <Container>
-    //     <Row className="justify-content-center">
-    //       <Col lg={8}>
-    //         <div className="text-center mb-5">
-    //           <h1 className="contact-page-title mb-4">Let's get in touch</h1>
-    //           <p className="contact-page-text">
-    //             I’m always open to new opportunities and collaborations. Reach
-    //             out anytime!
-    //           </p>
-    //         </div>
+    <>
+      <section className="min-h-screen flex items-center justify-center bg-contact-bg">
+        <div className="text-center">
+          <h1 className="text-7xl font-bold leading-tight text-contact-heading">
+            Let's get in touch
+          </h1>
+          <h2 className="text-2xl font-light mt-6 text-contact-heading">
+            I'm always open to new opportunities and collaborations. Reach out
+            anytime!
+          </h2>
 
-    //         <Row className="g-4">
-    //           <Col md={12}>
-    //             <Card className="h-100 contact-card">
-    //               <Card.Body className="p-4">
-    //                 <h4 className="mb-4">How to Connect</h4>
-
-    //                 <div className="mb-3 d-flex align-items-center">
-    //                   <div className="me-3">
-    //                     <FontAwesomeIcon icon={faLinkedin} size="lg" />
-    //                   </div>
-    //                   <div>
-    //                     <a
-    //                       href="https://www.linkedin.com/in/gjorgji-argirovski/"
-    //                       target="_blank"
-    //                       rel="noopener noreferrer"
-    //                       className="mb-0 contact-social-link"
-    //                     >
-    //                       Follow me on LinkedIn
-    //                     </a>
-    //                   </div>
-    //                 </div>
-    //                 <div className="mb-3 d-flex align-items-center">
-    //                   <div className="me-3">
-    //                     <FontAwesomeIcon icon={faGithub} size="lg" />
-    //                   </div>
-    //                   <div>
-    //                     <a
-    //                       href="https://github.com/argirowski"
-    //                       target="_blank"
-    //                       rel="noopener noreferrer"
-    //                       className="mb-0 contact-social-link"
-    //                     >
-    //                       Follow me on GitHub
-    //                     </a>
-    //                   </div>
-    //                 </div>
-    //                 <div className="mb-3 d-flex align-items-center">
-    //                   <div className="me-3">
-    //                     <FontAwesomeIcon icon={faEnvelope} size="lg" />
-    //                   </div>
-    //                   <div>
-    //                     <a
-    //                       href="mailto:gjorgji.argirovski@gmail.com"
-    //                       className="mb-0 contact-social-link"
-    //                     >
-    //                       gjorgji.argirovski@gmail.com
-    //                     </a>
-    //                   </div>
-    //                 </div>
-    //                 <div className="mb-3 d-flex align-items-center">
-    //                   <div className="me-3">
-    //                     <FontAwesomeIcon icon={faPhone} size="lg" />
-    //                   </div>
-    //                   <div>
-    //                     <p className="mb-0">+389 78 418 844</p>
-    //                   </div>
-    //                 </div>
-    //               </Card.Body>
-    //             </Card>
-    //           </Col>
-    //         </Row>
-    //       </Col>
-    //     </Row>
-    //   </Container>
-    // </section>
+          {/* Contact Card */}
+          <div className="mt-12 mx-auto bg-contact-card-bg text-contact-card-text border-2 border-contact-card-border rounded-lg shadow-md p-8">
+            <h4 className="text-2xl font-semibold text-contact-heading text-left mb-4">
+              How to Connect
+            </h4>
+            <div className="flex items-center gap-3">
+              <FontAwesomeIcon icon={faLinkedin} size="lg" />
+              <a
+                href="https://www.linkedin.com/in/gjorgji-argirovski/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-contact-link hover:text-contact-link-hover"
+              >
+                Follow me on LinkedIn
+              </a>
+            </div>
+            <div className="flex items-center gap-3 mt-3">
+              <FontAwesomeIcon icon={faGithub} size="lg" />
+              <a
+                href="https://github.com/argirowski"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-contact-link hover:text-contact-link-hover"
+              >
+                Follow me on GitHub
+              </a>
+            </div>
+            <div className="flex items-center gap-3 mt-3">
+              <FontAwesomeIcon icon={faEnvelope} size="lg" />
+              <a
+                href="mailto:gjorgji.argirovski@gmail.com"
+                className="text-contact-link hover:text-contact-link-hover"
+              >
+                gjorgji.argirovski@gmail.com
+              </a>
+            </div>
+            <div className="flex items-center gap-3 mt-3">
+              <FontAwesomeIcon icon={faPhone} size="lg" />
+              <p className="text-contact-card-text m-0">+389 78 418 844</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </>
   );
 };
 

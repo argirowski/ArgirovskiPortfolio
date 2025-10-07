@@ -28,6 +28,18 @@ module.exports = {
         // Footer colors extracted from existing design
         "footer-bg": "#1a1a1a",
         "footer-text": "#e5e5e5",
+        // Contact page background
+        "contact-bg": "#f8f8f8",
+        // Contact page heading color
+        "contact-heading": "#1a1a1a",
+        // Contact card colors
+        "contact-card-bg": "#ffffff",
+        "contact-card-text": "#1a1a1a",
+        "contact-card-border": "#e3e6ea",
+        // Contact link color
+        "contact-link": "#0f2742",
+        // Contact link hover color
+        "contact-link-hover": "#1d4b7a",
       },
     },
   },
