@@ -33,18 +33,19 @@ const ResumePage: React.FC = () => {
             <div className="col-span-8 space-y-6">
               {/* First card in left column */}
               <div className="bg-contact-card-bg text-contact-card-text border-2 border-contact-card-border rounded-lg shadow-md p-8">
-                <h4 className="text-2xl font-semibold text-contact-heading text-left mb-4 flex items-center gap-3">
-                  <FontAwesomeIcon icon={faLaptopCode} />
+                <h3 className="text-2xl font-semibold text-contact-heading text-left mb-4">
+                  <FontAwesomeIcon icon={faLaptopCode} className="mr-3" />
                   Work Experience
-                </h4>
+                </h3>
                 <p>Professional experience content will go here</p>
               </div>
 
               {/* Second card in left column */}
               <div className="bg-contact-card-bg text-contact-card-text border-2 border-contact-card-border rounded-lg shadow-md p-8">
-                <h4 className="text-2xl font-semibold text-contact-heading text-left mb-4">
+                <h3 className="text-2xl font-semibold text-contact-heading text-left mb-4">
+                  <FontAwesomeIcon icon={faBuildingColumns} className="mr-3" />
                   Education
-                </h4>
+                </h3>
                 <p>Education content will go here</p>
               </div>
             </div>
@@ -53,25 +54,28 @@ const ResumePage: React.FC = () => {
             <div className="col-span-4 space-y-6">
               {/* First card in right column */}
               <div className="bg-contact-card-bg text-contact-card-text border-2 border-contact-card-border rounded-lg shadow-md p-8">
-                <h4 className="text-2xl font-semibold text-contact-heading text-left mb-4">
+                <h3 className="text-2xl font-semibold text-contact-heading text-left mb-4">
+                  <FontAwesomeIcon icon={faGear} className="mr-3" />
                   Technical Skills
-                </h4>
+                </h3>
                 <p>Technical skills content will go here</p>
               </div>
 
               {/* Second card in right column */}
               <div className="bg-contact-card-bg text-contact-card-text border-2 border-contact-card-border rounded-lg shadow-md p-8">
-                <h4 className="text-2xl font-semibold text-contact-heading text-left mb-4">
+                <h3 className="text-2xl font-semibold text-contact-heading text-left mb-4">
+                  <FontAwesomeIcon icon={faEarthEurope} className="mr-3" />
                   Languages
-                </h4>
+                </h3>
                 <p>Languages content will go here</p>
               </div>
 
               {/* Third card in right column */}
               <div className="bg-contact-card-bg text-contact-card-text border-2 border-contact-card-border rounded-lg shadow-md p-8">
-                <h4 className="text-2xl font-semibold text-contact-heading text-left mb-4">
+                <h3 className="text-2xl font-semibold text-contact-heading text-left mb-4">
+                  <FontAwesomeIcon icon={faAward} className="mr-3" />
                   Certifications
-                </h4>
+                </h3>
                 <p>Certifications content will go here</p>
               </div>
             </div>
