@@ -9,10 +9,10 @@ const PortfolioPage: React.FC = () => {
     <>
       <section className="min-h-screen flex items-center justify-center bg-contact-bg px-4">
         <div className="text-left w-full max-w-7xl">
-          <h1 className="text-7xl font-bold leading-tight text-contact-heading text-center">
+          <h1 className="text-7xl font-bold leading-tight text-contact-heading text-center max-[900px]:text-5xl">
             Selected Projects
           </h1>
-          <h2 className="text-2xl font-light mt-6 text-contact-heading text-center">
+          <h2 className="text-2xl font-light mt-6 text-contact-heading text-center max-[900px]:text-xl">
             Take a look at some of my favorite projects that showcase my web
             development skills and style.
           </h2>
@@ -27,17 +27,20 @@ const PortfolioPage: React.FC = () => {
             {/* Project Cards Grid */}
             <div className="grid grid-cols-12 gap-6">
               {projects.map((project) => (
-                <div key={project.id} className="col-span-4">
+                <div
+                  key={project.id}
+                  className="col-span-4 max-[900px]:col-span-6"
+                >
                   <div className="bg-contact-card-bg text-contact-card-text border-2 border-contact-card-border rounded-lg shadow-md p-8 h-full flex flex-col">
                     <div className="mb-2">
                       <span className="px-4 py-2 bg-badge-bg text-badge-text text-sm font-medium rounded-lg me-2">
                         {project.category}
                       </span>
                     </div>
-                    <h4 className="text-xl font-semibold text-contact-heading mb-3">
+                    <h4 className="text-xl font-semibold text-contact-heading mb-3 max-[900px]:text-lg">
                       {project.title}
                     </h4>
-                    <p className="text-contact-card-text mb-3 flex-grow">
+                    <p className="text-contact-card-text mb-3 flex-grow max-[900px]:text-sm">
                       {project.description}
                     </p>
                     <div className="mb-3">
