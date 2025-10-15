@@ -7,7 +7,7 @@ import { faGithub } from "@fortawesome/free-brands-svg-icons";
 const PortfolioPage: React.FC = () => {
   return (
     <>
-      <section className="min-h-screen flex items-center justify-center bg-contact-bg px-4">
+      <section className="min-h-screen flex items-center justify-center bg-contact-bg px-4 max-md:pb-12">
         <div className="text-left w-full max-w-7xl">
           <h1 className="text-7xl font-bold leading-tight text-contact-heading text-center max-[900px]:text-5xl">
             Selected Projects
@@ -29,7 +29,7 @@ const PortfolioPage: React.FC = () => {
               {projects.map((project) => (
                 <div
                   key={project.id}
-                  className="col-span-4 max-[900px]:col-span-6"
+                  className="col-span-4 max-[900px]:col-span-6 max-md:col-span-12"
                 >
                   <div className="bg-contact-card-bg text-contact-card-text border-2 border-contact-card-border rounded-lg shadow-md p-8 h-full flex flex-col">
                     <div className="mb-2">

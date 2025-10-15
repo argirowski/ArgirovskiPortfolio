@@ -9,12 +9,12 @@ import { handleDownloadCV } from "../../common/utils";
 const HomePage: React.FC<HomePageProps> = ({ onNavClick }) => {
   return (
     <>
-      <section className="min-h-screen flex items-center justify-center bg-contact-bg px-4">
+      <section className="min-h-screen flex items-center justify-center bg-contact-bg px-4 max-md:pb-12">
         <div className="text-left w-full max-w-6xl">
           {/* Home Content */}
           <div className="grid grid-cols-12 gap-6 mx-auto">
             {/* Left Half - 6 columns */}
-            <div className="col-span-6">
+            <div className="col-span-6 max-md:col-span-12 max-md:flex max-md:justify-center">
               <img
                 src={profileImage}
                 alt="Gjorgji Argirovski"
@@ -23,7 +23,7 @@ const HomePage: React.FC<HomePageProps> = ({ onNavClick }) => {
             </div>
 
             {/* Right Half - 6 columns */}
-            <div className="col-span-6">
+            <div className="col-span-6 max-md:col-span-12 max-md:flex max-md:flex-col max-md:items-center max-md:text-center">
               <h1 className="text-7xl font-bold leading-tight text-contact-heading text-left max-[900px]:text-5xl">
                 Welcome !
               </h1>
@@ -37,7 +37,7 @@ const HomePage: React.FC<HomePageProps> = ({ onNavClick }) => {
 
               {/* Buttons Section - Split into two halves */}
               <div className="mt-8 grid grid-cols-2 gap-4">
-                <div className="grid grid-cols-2 gap-4 max-md:grid-cols-1 max-md:gap-4 col-span-12 max-md:col-span-12">
+                <div className="grid grid-cols-2 gap-4 max-[400px]:grid-cols-1 max-md:gap-4 col-span-12 max-md:col-span-12">
                   {/* Left buttons half */}
                   <div className="space-y-4">
                     <button
