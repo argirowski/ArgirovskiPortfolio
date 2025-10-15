@@ -8,17 +8,17 @@ const ContactPage: React.FC = () => {
     <>
       <section className="min-h-screen flex items-center justify-center bg-contact-bg">
         <div className="text-center">
-          <h1 className="text-7xl font-bold leading-tight text-contact-heading">
+          <h1 className="text-7xl font-bold leading-tight text-contact-heading text-center max-[900px]:text-5xl">
             Let's get in touch
           </h1>
-          <h2 className="text-2xl font-light mt-6 text-contact-heading">
+          <h2 className="text-2xl font-light mt-6 text-contact-heading text-center max-[900px]:text-xl">
             I'm always open to new opportunities and collaborations. Reach out
             anytime!
           </h2>
 
           {/* Contact Card */}
           <div className="mt-12 mx-auto bg-contact-card-bg text-contact-card-text border-2 border-contact-card-border rounded-lg shadow-md p-8">
-            <h3 className="text-2xl font-semibold text-contact-heading text-left mb-4">
+            <h3 className="text-2xl font-semibold text-contact-heading text-left mb-4 max-[900px]:text-xl">
               How to Connect
             </h3>
             <div className="flex items-center gap-3">

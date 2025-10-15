@@ -19,7 +19,7 @@ const PortfolioPage: React.FC = () => {
 
           {/* Portfolio content will go here */}
           <div className="mt-12">
-            <h3 className="text-2xl font-semibold text-contact-heading text-left mb-4">
+            <h3 className="text-2xl font-semibold text-contact-heading text-left mb-4 max-[900px]:text-xl">
               <FontAwesomeIcon icon={faShield} className="mr-3" />
               Top Picks
             </h3>
