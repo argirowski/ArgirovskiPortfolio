@@ -31,10 +31,10 @@ const ResumePage: React.FC = () => {
           {/* Resume Cards */}
           <div className="mt-12 grid grid-cols-12 gap-6 mx-auto">
             {/* Main Resume Card - 8 columns */}
-            <div className="col-span-8 max-[900px]:col-span-12 space-y-6">
+            <div className="col-span-8 max-lg:col-span-12 space-y-6">
               {/* First card in left column */}
               <div className="bg-contact-card-bg text-contact-card-text border-2 border-contact-card-border rounded-lg shadow-md p-8">
-                <h3 className="text-2xl font-semibold text-contact-heading text-left mb-4 max-[900px]:text-xl">
+                <h3 className="text-2xl font-semibold text-contact-heading text-left mb-4 max-sm:text-xl">
                   <FontAwesomeIcon icon={faLaptopCode} className="mr-3" />
                   Work Experience
                 </h3>
@@ -45,7 +45,7 @@ const ResumePage: React.FC = () => {
                   >
                     <div className="flex justify-between items-start mb-2">
                       <div>
-                        <h4 className="text-xl font-semibold text-contact-heading mb-1 max-[900px]:text-lg">
+                        <h4 className="text-xl font-semibold text-contact-heading mb-1 max-sm:text-lg">
                           {job.position}
                         </h4>
                         <p className="mb-0 text-contact-card-text">
@@ -60,7 +60,7 @@ const ResumePage: React.FC = () => {
                       {job.responsibilities.map((responsibility, respIndex) => (
                         <li
                           key={respIndex}
-                          className="max-[900px]:text-sm text-contact-card-text mb-1"
+                          className="max-sm:text-sm text-contact-card-text mb-1"
                         >
                           {responsibility}
                         </li>
@@ -72,7 +72,7 @@ const ResumePage: React.FC = () => {
 
               {/* Second card in left column */}
               <div className="bg-contact-card-bg text-contact-card-text border-2 border-contact-card-border rounded-lg shadow-md p-8">
-                <h3 className="text-2xl font-semibold text-contact-heading text-left mb-4 max-[900px]:text-xl">
+                <h3 className="text-2xl font-semibold text-contact-heading text-left mb-4 max-sm:text-xl">
                   <FontAwesomeIcon icon={faBuildingColumns} className="mr-3" />
                   Education
                 </h3>
@@ -83,7 +83,7 @@ const ResumePage: React.FC = () => {
                   >
                     <div className="flex justify-between items-start mb-2">
                       <div>
-                        <h4 className="text-xl font-semibold text-contact-heading mb-1 max-[900px]:text-lg">
+                        <h4 className="text-xl font-semibold text-contact-heading mb-1 max-sm:text-lg">
                           {edu.title}
                         </h4>
                         <p className="mb-0 text-contact-card-text">
@@ -94,7 +94,7 @@ const ResumePage: React.FC = () => {
                         {edu.period}
                       </span>
                     </div>
-                    <p className="max-[900px]:text-sm text-contact-card-text">
+                    <p className="max-sm:text-sm text-contact-card-text">
                       {edu.description}
                     </p>
                   </div>
@@ -103,10 +103,10 @@ const ResumePage: React.FC = () => {
             </div>
 
             {/* Side Card - 4 columns */}
-            <div className="col-span-4 max-[900px]:col-span-12 space-y-6">
+            <div className="col-span-4 max-lg:col-span-12 space-y-6">
               {/* First card in right column */}
               <div className="bg-contact-card-bg text-contact-card-text border-2 border-contact-card-border rounded-lg shadow-md p-8">
-                <h3 className="text-2xl font-semibold text-contact-heading text-left mb-4 max-[900px]:text-xl">
+                <h3 className="text-2xl font-semibold text-contact-heading text-left mb-4 max-sm:text-xl">
                   <FontAwesomeIcon icon={faGear} className="mr-3" />
                   Technical Skills
                 </h3>
@@ -174,7 +174,7 @@ const ResumePage: React.FC = () => {
 
               {/* Second card in right column */}
               <div className="bg-contact-card-bg text-contact-card-text border-2 border-contact-card-border rounded-lg shadow-md p-8">
-                <h3 className="text-2xl font-semibold text-contact-heading text-left mb-4 max-[900px]:text-xl">
+                <h3 className="text-2xl font-semibold text-contact-heading text-left mb-4 max-sm:text-xl">
                   <FontAwesomeIcon icon={faEarthEurope} className="mr-3" />
                   Languages
                 </h3>
@@ -184,7 +184,7 @@ const ResumePage: React.FC = () => {
                     className={index < languages.length - 1 ? "mb-3" : ""}
                   >
                     <div className="flex justify-between items-center mb-1">
-                      <span className="max-[900px]:text-sm text-contact-card-text">
+                      <span className="max-sm:text-sm text-contact-card-text">
                         {language.name}
                       </span>
                       <span className="px-3 py-2 bg-badge-bg text-badge-text text-sm font-medium border-0 rounded-lg ml-2">
@@ -197,7 +197,7 @@ const ResumePage: React.FC = () => {
 
               {/* Third card in right column */}
               <div className="bg-contact-card-bg text-contact-card-text border-2 border-contact-card-border rounded-lg shadow-md p-8">
-                <h3 className="text-2xl font-semibold text-contact-heading text-left mb-4 max-[900px]:text-xl">
+                <h3 className="text-2xl font-semibold text-contact-heading text-left mb-4 max-sm:text-xl">
                   <FontAwesomeIcon icon={faAward} className="mr-3" />
                   Certifications
                 </h3>

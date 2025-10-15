@@ -42,14 +42,14 @@ const HomePage: React.FC<HomePageProps> = ({ onNavClick }) => {
                   <div className="space-y-4">
                     <button
                       onClick={() => handleDownloadCV(RESUME_PDF_URL)}
-                      className="w-[13rem] max-[900px]:w-[12rem] max-[830px]:w-[11rem] h-12 bg-contact-link hover:bg-contact-link-hover text-white rounded-lg text-lg max-[900px]:text-base font-medium transition-colors duration-200 flex items-center justify-center gap-2"
+                      className="w-[13rem] max-[900px]:w-[12rem] max-[830px]:w-[11rem] h-12 bg-contact-link hover:bg-contact-link-hover text-white rounded-lg text-lg font-medium transition-colors duration-200 flex items-center justify-center gap-2"
                     >
                       <FontAwesomeIcon icon={faFileArrowDown} />
                       Download CV
                     </button>
                     <a
                       href="mailto:gjorgji.argirovski@gmail.com"
-                      className="w-[13rem] max-[900px]:w-[12rem] max-[830px]:w-[11rem] h-12 bg-contact-link hover:bg-contact-link-hover text-white rounded-lg text-lg max-[900px]:text-base font-medium transition-colors duration-200 flex items-center justify-center gap-2"
+                      className="w-[13rem] max-[900px]:w-[12rem] max-[830px]:w-[11rem] h-12 bg-contact-link hover:bg-contact-link-hover text-white rounded-lg text-lg font-medium transition-colors duration-200 flex items-center justify-center gap-2"
                     >
                       <FontAwesomeIcon icon={faEnvelope} />
                       Contact
@@ -62,7 +62,7 @@ const HomePage: React.FC<HomePageProps> = ({ onNavClick }) => {
                       href="https://www.linkedin.com/in/gjorgji-argirovski/"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="w-[13rem] max-[900px]:w-[12rem] max-[830px]:w-[11rem] h-12 bg-contact-link hover:bg-contact-link-hover text-white rounded-lg text-lg max-[900px]:text-base font-medium transition-colors duration-200 flex items-center justify-center gap-2"
+                      className="w-[13rem] max-[900px]:w-[12rem] max-[830px]:w-[11rem] h-12 bg-contact-link hover:bg-contact-link-hover text-white rounded-lg text-lg font-medium transition-colors duration-200 flex items-center justify-center gap-2"
                     >
                       <FontAwesomeIcon icon={faLinkedin} />
                       LinkedIn
@@ -71,7 +71,7 @@ const HomePage: React.FC<HomePageProps> = ({ onNavClick }) => {
                       href="https://github.com/argirowski"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="w-[13rem] max-[900px]:w-[12rem] max-[830px]:w-[11rem] h-12 bg-contact-link hover:bg-contact-link-hover text-white rounded-lg text-lg max-[900px]:text-base font-medium transition-colors duration-200 flex items-center justify-center gap-2"
+                      className="w-[13rem] max-[900px]:w-[12rem] max-[830px]:w-[11rem] h-12 bg-contact-link hover:bg-contact-link-hover text-white rounded-lg text-lg font-medium transition-colors duration-200 flex items-center justify-center gap-2"
                     >
                       <FontAwesomeIcon icon={faGithub} />
                       GitHub

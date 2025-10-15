@@ -18,7 +18,7 @@ const ContactPage: React.FC = () => {
 
           {/* Contact Card */}
           <div className="mt-12 mx-auto bg-contact-card-bg text-contact-card-text border-2 border-contact-card-border rounded-lg shadow-md p-8">
-            <h3 className="text-2xl font-semibold text-contact-heading text-left mb-4 max-[900px]:text-xl">
+            <h3 className="text-2xl font-semibold text-contact-heading text-left mb-4 max-sm:text-xl">
               How to Connect
             </h3>
             <div className="flex items-center gap-3">

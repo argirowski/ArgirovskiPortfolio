@@ -19,7 +19,7 @@ const PortfolioPage: React.FC = () => {
 
           {/* Portfolio content will go here */}
           <div className="mt-12">
-            <h3 className="text-2xl font-semibold text-contact-heading text-left mb-4 max-[900px]:text-xl">
+            <h3 className="text-2xl font-semibold text-contact-heading text-left mb-4 max-sm:text-xl">
               <FontAwesomeIcon icon={faShield} className="mr-3" />
               Top Picks
             </h3>
@@ -29,7 +29,7 @@ const PortfolioPage: React.FC = () => {
               {projects.map((project) => (
                 <div
                   key={project.id}
-                  className="col-span-4 max-[900px]:col-span-6 max-md:col-span-12"
+                  className="col-span-4 max-lg:col-span-6 max-md:col-span-12"
                 >
                   <div className="bg-contact-card-bg text-contact-card-text border-2 border-contact-card-border rounded-lg shadow-md p-8 h-full flex flex-col">
                     <div className="mb-2">
@@ -37,10 +37,10 @@ const PortfolioPage: React.FC = () => {
                         {project.category}
                       </span>
                     </div>
-                    <h4 className="text-xl font-semibold text-contact-heading mb-3 max-[900px]:text-lg">
+                    <h4 className="text-xl font-semibold text-contact-heading mb-3 max-sm:text-lg">
                       {project.title}
                     </h4>
-                    <p className="text-contact-card-text mb-3 flex-grow max-[900px]:text-sm">
+                    <p className="text-contact-card-text mb-3 flex-grow max-sm:text-sm">
                       {project.description}
                     </p>
                     <div className="mb-3">
