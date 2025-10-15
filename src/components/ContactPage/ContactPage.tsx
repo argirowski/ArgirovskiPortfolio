@@ -6,7 +6,7 @@ import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
 const ContactPage: React.FC = () => {
   return (
     <>
-      <section className="min-h-screen flex items-center justify-center bg-contact-bg">
+      <section className="min-h-screen flex items-center justify-center bg-contact-bg px-4">
         <div className="text-center">
           <h1 className="text-7xl font-bold leading-tight text-contact-heading text-center max-[900px]:text-5xl">
             Let's get in touch
