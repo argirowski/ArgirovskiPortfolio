@@ -24,10 +24,10 @@ const HomePage: React.FC<HomePageProps> = ({ onNavClick }) => {
 
             {/* Right Half - 6 columns */}
             <div className="col-span-6">
-              <h1 className="text-7xl font-bold leading-tight text-contact-heading text-left">
-                Welcome.
+              <h1 className="text-7xl font-bold leading-tight text-contact-heading text-left max-[900px]:text-5xl">
+                Welcome !
               </h1>
-              <h2 className="text-2xl font-light mt-6 text-contact-heading text-left">
+              <h2 className="text-2xl font-light mt-6 text-contact-heading text-left max-[900px]:text-xl">
                 I am a Full Stack Developer who loves building web experiences
                 that look great and work even better. Whether it is a slick UI
                 or smooth backend logic, I am all about making the web feel
@@ -37,44 +37,46 @@ const HomePage: React.FC<HomePageProps> = ({ onNavClick }) => {
 
               {/* Buttons Section - Split into two halves */}
               <div className="mt-8 grid grid-cols-2 gap-4">
-                {/* Left buttons half */}
-                <div className="space-y-4">
-                  <button
-                    onClick={() => handleDownloadCV(RESUME_PDF_URL)}
-                    className="w-full bg-contact-link hover:bg-contact-link-hover text-white py-3 px-6 rounded-lg text-sm font-medium transition-colors duration-200 flex items-center justify-center gap-2"
-                  >
-                    <FontAwesomeIcon icon={faFileArrowDown} />
-                    Download CV
-                  </button>
-                  <a
-                    href="mailto:gjorgji.argirovski@gmail.com"
-                    className="w-full bg-contact-link hover:bg-contact-link-hover text-white py-3 px-6 rounded-lg text-sm font-medium transition-colors duration-200 flex items-center justify-center gap-2"
-                  >
-                    <FontAwesomeIcon icon={faEnvelope} />
-                    Contact
-                  </a>
-                </div>
+                <div className="grid grid-cols-2 gap-4 max-md:grid-cols-1 max-md:gap-4 col-span-12 max-md:col-span-12">
+                  {/* Left buttons half */}
+                  <div className="space-y-4">
+                    <button
+                      onClick={() => handleDownloadCV(RESUME_PDF_URL)}
+                      className="w-[13rem] max-[900px]:w-[12rem] max-[830px]:w-[11rem] h-12 bg-contact-link hover:bg-contact-link-hover text-white rounded-lg text-lg max-[900px]:text-base font-medium transition-colors duration-200 flex items-center justify-center gap-2"
+                    >
+                      <FontAwesomeIcon icon={faFileArrowDown} />
+                      Download CV
+                    </button>
+                    <a
+                      href="mailto:gjorgji.argirovski@gmail.com"
+                      className="w-[13rem] max-[900px]:w-[12rem] max-[830px]:w-[11rem] h-12 bg-contact-link hover:bg-contact-link-hover text-white rounded-lg text-lg max-[900px]:text-base font-medium transition-colors duration-200 flex items-center justify-center gap-2"
+                    >
+                      <FontAwesomeIcon icon={faEnvelope} />
+                      Contact
+                    </a>
+                  </div>
 
-                {/* Right buttons half */}
-                <div className="space-y-4">
-                  <a
-                    href="https://www.linkedin.com/in/gjorgji-argirovski/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="w-full bg-contact-link hover:bg-contact-link-hover text-white py-3 px-6 rounded-lg text-sm font-medium transition-colors duration-200 flex items-center justify-center gap-2"
-                  >
-                    <FontAwesomeIcon icon={faLinkedin} />
-                    LinkedIn
-                  </a>
-                  <a
-                    href="https://github.com/argirowski"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="w-full bg-contact-link hover:bg-contact-link-hover text-white py-3 px-6 rounded-lg text-sm font-medium transition-colors duration-200 flex items-center justify-center gap-2"
-                  >
-                    <FontAwesomeIcon icon={faGithub} />
-                    GitHub
-                  </a>
+                  {/* Right buttons half */}
+                  <div className="space-y-4">
+                    <a
+                      href="https://www.linkedin.com/in/gjorgji-argirovski/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="w-[13rem] max-[900px]:w-[12rem] max-[830px]:w-[11rem] h-12 bg-contact-link hover:bg-contact-link-hover text-white rounded-lg text-lg max-[900px]:text-base font-medium transition-colors duration-200 flex items-center justify-center gap-2"
+                    >
+                      <FontAwesomeIcon icon={faLinkedin} />
+                      LinkedIn
+                    </a>
+                    <a
+                      href="https://github.com/argirowski"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="w-[13rem] max-[900px]:w-[12rem] max-[830px]:w-[11rem] h-12 bg-contact-link hover:bg-contact-link-hover text-white rounded-lg text-lg max-[900px]:text-base font-medium transition-colors duration-200 flex items-center justify-center gap-2"
+                    >
+                      <FontAwesomeIcon icon={faGithub} />
+                      GitHub
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
