@@ -45,7 +45,7 @@ const ResumePage: React.FC = () => {
                   >
                     <div className="flex justify-between items-start mb-2">
                       <div>
-                        <h4 className="mb-1 text-lg font-semibold text-contact-heading">
+                        <h4 className="text-xl font-semibold text-contact-heading mb-1 max-[900px]:text-lg">
                           {job.position}
                         </h4>
                         <p className="mb-0 text-contact-card-text">
@@ -60,7 +60,7 @@ const ResumePage: React.FC = () => {
                       {job.responsibilities.map((responsibility, respIndex) => (
                         <li
                           key={respIndex}
-                          className="text-sm text-contact-card-text mb-1"
+                          className="max-[900px]:text-sm text-contact-card-text mb-1"
                         >
                           {responsibility}
                         </li>
@@ -83,7 +83,7 @@ const ResumePage: React.FC = () => {
                   >
                     <div className="flex justify-between items-start mb-2">
                       <div>
-                        <h4 className="mb-1 text-lg font-semibold text-contact-heading">
+                        <h4 className="text-xl font-semibold text-contact-heading mb-1 max-[900px]:text-lg">
                           {edu.title}
                         </h4>
                         <p className="mb-0 text-contact-card-text">
@@ -94,7 +94,7 @@ const ResumePage: React.FC = () => {
                         {edu.period}
                       </span>
                     </div>
-                    <p className="mb-0 text-contact-card-text">
+                    <p className="max-[900px]:text-sm text-contact-card-text">
                       {edu.description}
                     </p>
                   </div>
@@ -184,7 +184,7 @@ const ResumePage: React.FC = () => {
                     className={index < languages.length - 1 ? "mb-3" : ""}
                   >
                     <div className="flex justify-between items-center mb-1">
-                      <span className="text-contact-card-text">
+                      <span className="max-[900px]:text-sm text-contact-card-text">
                         {language.name}
                       </span>
                       <span className="px-3 py-2 bg-badge-bg text-badge-text text-sm font-medium border-0 rounded-lg ml-2">
