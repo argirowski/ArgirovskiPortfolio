@@ -6,7 +6,7 @@ import { NavBarProps } from "../../common/interfaces";
 const NavBar: React.FC<NavBarProps> = ({ activeSection, onNavClick }) => {
   return (
     <>
-      <nav className="sticky top-0 z-50 bg-footer-bg text-footer-text py-6">
+      <nav className="sticky top-0 z-50 bg-footer-bg text-footer-text py-6 h-20">
         <div className="flex items-center justify-between px-4 max-w-6xl mx-auto">
           {/* Left side - Brand */}
           <button
