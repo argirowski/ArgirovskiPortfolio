@@ -82,21 +82,17 @@ const ResumePage: React.FC = () => {
                     className={index < education.length - 1 ? "mb-4" : ""}
                   >
                     <div className="flex justify-between items-start mb-2">
-                      <div className="flex justify-between items-start mb-2 max-sm:flex-col max-sm:gap-1">
-                        <div className="flex justify-between items-start mb-2 max-sm:flex-col-reverse max-sm:gap-1">
-                          <div>
-                            <h4 className="text-xl font-semibold text-contact-heading mb-1 max-sm:text-lg">
-                              {edu.title}
-                            </h4>
-                            <p className="mb-0 text-contact-card-text">
-                              {edu.institution}
-                            </p>
-                          </div>
-                          <span className="px-3 py-2 bg-badge-bg text-badge-text text-sm max-sm:text-xs font-medium border-0 rounded-lg max-sm:w-full max-sm:text-left">
-                            {edu.period}
-                          </span>
-                        </div>
+                      <div>
+                        <h4 className="text-xl font-semibold text-contact-heading mb-1 max-sm:text-lg">
+                          {edu.title}
+                        </h4>
+                        <p className="mb-0 text-contact-card-text">
+                          {edu.institution}
+                        </p>
                       </div>
+                      <span className="px-3 py-2 bg-badge-bg text-badge-text text-sm max-sm:text-xs font-medium border-0 rounded-lg">
+                        {edu.period}
+                      </span>
                     </div>
                     <p className="max-sm:text-sm text-contact-card-text">
                       {edu.description}
