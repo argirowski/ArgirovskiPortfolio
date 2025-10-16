@@ -32,19 +32,19 @@ const PortfolioPage: React.FC = () => {
                   className="col-span-4 max-lg:col-span-6 max-md:col-span-12"
                 >
                   <div className="bg-contact-card-bg text-contact-card-text border-2 border-contact-card-border rounded-lg shadow-md p-8 h-full flex flex-col">
-                    <div className="mb-2">
-                      <span className="px-4 py-2 bg-badge-bg text-badge-text text-sm font-medium rounded-lg me-2">
+                    <div>
+                      <span className="px-4 py-2 bg-badge-bg text-badge-text text-sm max-sm:text-xs font-medium rounded-lg me-2">
                         {project.category}
                       </span>
                     </div>
-                    <h4 className="text-xl font-semibold text-contact-heading mb-3 max-sm:text-lg">
+                    <h4 className="text-xl font-semibold text-contact-heading my-3 max-sm:text-lg">
                       {project.title}
                     </h4>
                     <p className="text-contact-card-text mb-3 flex-grow max-sm:text-sm">
                       {project.description}
                     </p>
-                    <div className="mb-3">
-                      <div className="flex flex-wrap gap-1">
+                    <div className="mb-4">
+                      <div className="flex flex-wrap gap-2">
                         {project.technologies.map((tech) => (
                           <span
                             key={tech}
