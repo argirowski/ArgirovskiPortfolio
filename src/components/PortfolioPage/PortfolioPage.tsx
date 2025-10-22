@@ -31,7 +31,7 @@ const PortfolioPage: React.FC = () => {
                   key={project.id}
                   className="col-span-4 max-lg:col-span-6 max-md:col-span-12"
                 >
-                  <div className="bg-contact-card-bg text-contact-card-text border-2 border-contact-card-border rounded-lg shadow-md p-8 h-full flex flex-col">
+                  <div className="bg-contact-card-bg text-contact-card-text border border-contact-card-border rounded-lg shadow-md p-8 h-full flex flex-col">
                     <div>
                       <span className="px-4 py-2 bg-badge-bg text-badge-text text-sm max-sm:text-xs font-medium rounded-lg me-2">
                         {project.category}

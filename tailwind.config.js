@@ -38,7 +38,7 @@ module.exports = {
         // Contact card colors
         "contact-card-bg": "#ffffff",
         "contact-card-text": "#1a1a1a",
-        "contact-card-border": "#e3e6ea",
+        "contact-card-border": "#a8adb1",
         // Contact link color
         "contact-link": "#0f2742",
         // Contact link hover color
