@@ -2,12 +2,13 @@ import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUser } from "@fortawesome/free-regular-svg-icons";
 import { NavBarProps } from "../../common/interfaces";
+import MobileMenuHamburger from "./MobileMenuHamburger";
 
 const NavBar: React.FC<NavBarProps> = ({ activeSection, onNavClick }) => {
   return (
     <>
       <nav className="sticky top-0 z-50 bg-footer-bg text-footer-text py-6 h-20">
-        <div className="flex items-center justify-between px-4 max-w-6xl mx-auto">
+        <div className="flex items-center justify-between px-4 max-w-6xl mx-auto relative">
           {/* Left side - Brand */}
           <button
             type="button"
@@ -18,8 +19,8 @@ const NavBar: React.FC<NavBarProps> = ({ activeSection, onNavClick }) => {
             Gjorgji Argirovski
           </button>
 
-          {/* Right side - Navigation items */}
-          <div className="flex items-center gap-4">
+          {/* Right side - Navigation items (hidden on small screens) */}
+          <div className="hidden sm:flex items-center gap-4">
             <button
               id="nav-home"
               type="button"
@@ -68,6 +69,14 @@ const NavBar: React.FC<NavBarProps> = ({ activeSection, onNavClick }) => {
             >
               Contact
             </button>
+          </div>
+
+          {/* Mobile: hamburger button (shown on screens < sm) */}
+          <div className="sm:hidden">
+            <MobileMenuHamburger
+              activeSection={activeSection}
+              onNavClick={onNavClick}
+            />
           </div>
         </div>
       </nav>
