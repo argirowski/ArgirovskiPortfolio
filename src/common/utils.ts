@@ -46,12 +46,12 @@ export const projects = [
     description:
       "A backend web application built with ASP.NET Core and C#, following Clean Architecture with CQRS. Features MS SQL with Entity Framework Core, secure API access via authentication and authorization, custom middleware, file handling, and Serilog logging. Includes automated tests and CI/CD pipelines for deployment to Azure.",
     technologies: [
-      ".ASP.NET Core",
-      "Entity Framework Core",
       "CQRS + Clean Architecture",
-      "Serilog",
       "Authentication & Authorization",
+      "Serilog",
       "Azure + CI/CD Pipelines",
+      "Entity Framework Core",
+      ".ASP.NET Core",
     ],
     category: "Backend",
     githubUrl: "https://github.com/argirowski/RestaurantApp",
@@ -87,9 +87,9 @@ export const technicalSkills = {
   backend: [
     "C#",
     ".NET Core",
-    "Entity Framework Core",
     "REST APIs",
     "Unit Testing",
+    "Entity Framework Core",
   ],
   database: ["SQL", "Microsoft SQL Server"],
   tools: ["Git / GitHub", "Docker", "Microsoft Azure", "Agile Methodology"],
