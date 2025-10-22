@@ -28,6 +28,9 @@ module.exports = {
         // Footer colors extracted from existing design
         "footer-bg": "#1a1a1a",
         "footer-text": "#e5e5e5",
+        // Navbar accent colors
+        "nav-hover": "#4DA3FF",
+        "nav-active": "#1E90FF",
         // Contact page background
         "contact-bg": "#f8f8f8",
         // Contact page heading color

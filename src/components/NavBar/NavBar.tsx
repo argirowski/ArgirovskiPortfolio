@@ -11,7 +11,7 @@ const NavBar: React.FC<NavBarProps> = ({ activeSection, onNavClick }) => {
           {/* Left side - Brand */}
           <button
             type="button"
-            className="font-bold text-3xl flex items-center bg-transparent border-0 cursor-pointer text-footer-text hover:opacity-80 transition-opacity duration-200"
+            className="font-bold text-2xl md:text-3xl flex items-center bg-transparent border-0 cursor-pointer text-footer-text hover:text-nav-hover hover:opacity-80 transition-colors duration-150"
             onClick={() => onNavClick("home")}
           >
             <FontAwesomeIcon icon={faUser} className="mr-2" />
@@ -24,9 +24,9 @@ const NavBar: React.FC<NavBarProps> = ({ activeSection, onNavClick }) => {
               id="nav-home"
               type="button"
               onClick={() => onNavClick("home")}
-              className={`text-lg font-medium px-4 py-2 rounded-md transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-footer-text/50 hover:bg-footer-text/10 ${
+              className={`text-base md:text-lg font-medium px-2 py-1 transition-colors duration-150 focus:outline-none focus-visible:ring-2 focus-visible:ring-nav-active/50 hover:text-nav-hover ${
                 activeSection === "home"
-                  ? "bg-footer-text/20 text-footer-bg"
+                  ? "text-nav-active"
                   : "text-footer-text"
               }`}
             >
@@ -36,9 +36,9 @@ const NavBar: React.FC<NavBarProps> = ({ activeSection, onNavClick }) => {
               id="nav-portfolio"
               type="button"
               onClick={() => onNavClick("portfolio")}
-              className={`text-lg font-medium px-4 py-2 rounded-md transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-footer-text/50 hover:bg-footer-text/10 ${
+              className={`text-base md:text-lg font-medium px-2 py-1 transition-colors duration-150 focus:outline-none focus-visible:ring-2 focus-visible:ring-nav-active/50 hover:text-nav-hover ${
                 activeSection === "portfolio"
-                  ? "bg-footer-text/20 text-footer-bg"
+                  ? "text-nav-active"
                   : "text-footer-text"
               }`}
             >
@@ -48,9 +48,9 @@ const NavBar: React.FC<NavBarProps> = ({ activeSection, onNavClick }) => {
               id="nav-resume"
               type="button"
               onClick={() => onNavClick("resume")}
-              className={`text-lg font-medium px-4 py-2 rounded-md transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-footer-text/50 hover:bg-footer-text/10 ${
+              className={`text-base md:text-lg font-medium px-2 py-1 transition-colors duration-150 focus:outline-none focus-visible:ring-2 focus-visible:ring-nav-active/50 hover:text-nav-hover ${
                 activeSection === "resume"
-                  ? "bg-footer-text/20 text-footer-bg"
+                  ? "text-nav-active"
                   : "text-footer-text"
               }`}
             >
@@ -60,9 +60,9 @@ const NavBar: React.FC<NavBarProps> = ({ activeSection, onNavClick }) => {
               id="nav-contact"
               type="button"
               onClick={() => onNavClick("contact")}
-              className={`text-lg font-medium px-4 py-2 rounded-md transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-footer-text/50 hover:bg-footer-text/10 ${
+              className={`text-base md:text-lg font-medium px-2 py-1 transition-colors duration-150 focus:outline-none focus-visible:ring-2 focus-visible:ring-nav-active/50 hover:text-nav-hover ${
                 activeSection === "contact"
-                  ? "bg-footer-text/20 text-footer-bg"
+                  ? "text-nav-active"
                   : "text-footer-text"
               }`}
             >
