@@ -51,7 +51,7 @@ const MobileMenuHamburger: React.FC<MobileMenuHamburgerProps> = ({
       </button>
 
       {open && (
-        <div className="absolute right-0 mt-2 w-48 bg-footer-bg border border-gray-800 rounded-md shadow-lg py-2 z-50">
+        <div className="absolute right-0 mt-3 w-48 bg-footer-bg border border-gray-800 rounded-md shadow-lg py-2 z-50">
           <button
             className={`w-full text-left px-4 py-2 text-base md:text-lg ${
               activeSection === "home" ? "text-nav-active" : "text-footer-text"

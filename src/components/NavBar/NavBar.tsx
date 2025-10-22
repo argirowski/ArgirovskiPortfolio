@@ -2,7 +2,7 @@ import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUser } from "@fortawesome/free-regular-svg-icons";
 import { NavBarProps } from "../../common/interfaces";
-import MobileMenuHamburger from "./MobileMenuHamburger";
+import MobileMenuHamburger from "../MobileMenuHamburger/MobileMenuHamburger";
 
 const NavBar: React.FC<NavBarProps> = ({ activeSection, onNavClick }) => {
   return (
@@ -25,7 +25,7 @@ const NavBar: React.FC<NavBarProps> = ({ activeSection, onNavClick }) => {
               id="nav-home"
               type="button"
               onClick={() => onNavClick("home")}
-              className={`text-base md:text-lg font-medium px-2 py-1 transition-colors duration-150 focus:outline-none focus-visible:ring-2 focus-visible:ring-nav-active/50 hover:text-nav-hover ${
+              className={`text-base md:text-lg font-semibold px-3 md:px-4 py-1 md:py-2 transition-colors duration-150 focus:outline-none focus-visible:ring-2 focus-visible:ring-nav-active/50 hover:text-nav-hover ${
                 activeSection === "home"
                   ? "text-nav-active"
                   : "text-footer-text"
@@ -37,7 +37,7 @@ const NavBar: React.FC<NavBarProps> = ({ activeSection, onNavClick }) => {
               id="nav-portfolio"
               type="button"
               onClick={() => onNavClick("portfolio")}
-              className={`text-base md:text-lg font-medium px-2 py-1 transition-colors duration-150 focus:outline-none focus-visible:ring-2 focus-visible:ring-nav-active/50 hover:text-nav-hover ${
+              className={`text-base md:text-lg font-semibold px-3 md:px-4 py-1 md:py-2 transition-colors duration-150 focus:outline-none focus-visible:ring-2 focus-visible:ring-nav-active/50 hover:text-nav-hover ${
                 activeSection === "portfolio"
                   ? "text-nav-active"
                   : "text-footer-text"
@@ -49,7 +49,7 @@ const NavBar: React.FC<NavBarProps> = ({ activeSection, onNavClick }) => {
               id="nav-resume"
               type="button"
               onClick={() => onNavClick("resume")}
-              className={`text-base md:text-lg font-medium px-2 py-1 transition-colors duration-150 focus:outline-none focus-visible:ring-2 focus-visible:ring-nav-active/50 hover:text-nav-hover ${
+              className={`text-base md:text-lg font-semibold px-3 md:px-4 py-1 md:py-2 transition-colors duration-150 focus:outline-none focus-visible:ring-2 focus-visible:ring-nav-active/50 hover:text-nav-hover ${
                 activeSection === "resume"
                   ? "text-nav-active"
                   : "text-footer-text"
@@ -61,7 +61,7 @@ const NavBar: React.FC<NavBarProps> = ({ activeSection, onNavClick }) => {
               id="nav-contact"
               type="button"
               onClick={() => onNavClick("contact")}
-              className={`text-base md:text-lg font-medium px-2 py-1 transition-colors duration-150 focus:outline-none focus-visible:ring-2 focus-visible:ring-nav-active/50 hover:text-nav-hover ${
+              className={`text-base md:text-lg font-semibold px-3 md:px-4 py-1 md:py-2 transition-colors duration-150 focus:outline-none focus-visible:ring-2 focus-visible:ring-nav-active/50 hover:text-nav-hover ${
                 activeSection === "contact"
                   ? "text-nav-active"
                   : "text-footer-text"
