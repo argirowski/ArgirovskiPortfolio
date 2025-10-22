@@ -13,6 +13,12 @@ function App() {
   useEffect(() => {
     const sectionIds = ["home", "portfolio", "resume", "contact"];
     const sections = sectionIds.map((id) => document.getElementById(id));
+
+    // Account for the sticky navbar height so intersection calculations
+    // and scrollTo behavior place content below the navbar.
+    const nav = document.querySelector("nav");
+    const navHeight = nav ? nav.getBoundingClientRect().height : 0;
+
     const observer = new window.IntersectionObserver(
       (entries) => {
         const visible = entries.filter((e) => e.isIntersecting);
@@ -28,13 +34,17 @@ function App() {
       },
       {
         root: null,
-        rootMargin: "0px",
+        // shift the root upward by the nav height so sections intersect
+        // when they appear below the sticky navbar
+        rootMargin: `-${navHeight}px 0px 0px 0px`,
         threshold: 0.2,
       }
     );
+
     sections.forEach((section) => {
       if (section) observer.observe(section);
     });
+
     return () => {
       sections.forEach((section) => {
         if (section) observer.unobserve(section);
@@ -47,7 +57,11 @@ function App() {
     setActiveSection(section);
     const el = document.getElementById(section);
     if (el) {
-      el.scrollIntoView({ behavior: "smooth" });
+      const nav = document.querySelector("nav");
+      const navHeight = nav ? nav.getBoundingClientRect().height : 0;
+      const top =
+        el.getBoundingClientRect().top + window.pageYOffset - navHeight;
+      window.scrollTo({ top, behavior: "smooth" });
     }
   };
 
