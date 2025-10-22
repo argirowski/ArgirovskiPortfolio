@@ -43,19 +43,29 @@ const ResumePage: React.FC = () => {
                     key={`${job.company}-${job.period}`}
                     className={index < workExperience.length - 1 ? "mb-4" : ""}
                   >
-                    <div className="flex justify-between items-start mb-2">
-                      <div>
+                    <div className="grid grid-cols-1 md:grid-cols-12 gap-2 mb-2 items-start">
+                      {/* DOM order: period then position so on small screens period appears first */}
+                      <div className="md:col-span-3 md:col-start-10 md:row-start-1 md:text-right">
+                        <span className="inline-block px-3 py-2 bg-badge-bg text-badge-text text-sm max-sm:text-xs font-medium border-0 rounded-lg">
+                          {job.period}
+                        </span>
+                      </div>
+
+                      <div className="md:col-span-9 md:row-start-1">
                         <h4 className="text-xl font-semibold text-contact-heading mb-1 max-sm:text-lg">
                           {job.position}
                         </h4>
+                      </div>
+
+                      {/* Row 2: company */}
+                      <div className="md:col-span-12">
                         <p className="mb-0 text-contact-card-text">
                           {job.company}
                         </p>
                       </div>
-                      <span className="px-3 py-2 bg-badge-bg text-badge-text text-sm max-sm:text-xs font-medium border-0 rounded-lg">
-                        {job.period}
-                      </span>
                     </div>
+
+                    {/* Row 3: responsibilities */}
                     <ul className="list-disc list-inside ml-4">
                       {job.responsibilities.map((responsibility, respIndex) => (
                         <li
@@ -81,22 +91,34 @@ const ResumePage: React.FC = () => {
                     key={`${edu.institution}-${edu.period}`}
                     className={index < education.length - 1 ? "mb-4" : ""}
                   >
-                    <div className="flex justify-between items-start mb-2">
-                      <div>
+                    <div className="grid grid-cols-1 md:grid-cols-12 gap-2 mb-2 items-start">
+                      {/* DOM order: period then title so on small screens period appears first */}
+                      <div className="md:col-span-3 md:col-start-10 md:row-start-1 md:text-right">
+                        <span className="inline-block px-3 py-2 bg-badge-bg text-badge-text text-sm max-sm:text-xs font-medium border-0 rounded-lg">
+                          {edu.period}
+                        </span>
+                      </div>
+
+                      <div className="md:col-span-9 md:row-start-1">
                         <h4 className="text-xl font-semibold text-contact-heading mb-1 max-sm:text-lg">
                           {edu.title}
                         </h4>
+                      </div>
+
+                      {/* Row 2: institution */}
+                      <div className="md:col-span-12 md:row-start-2">
                         <p className="mb-0 text-contact-card-text">
                           {edu.institution}
                         </p>
                       </div>
-                      <span className="px-3 py-2 bg-badge-bg text-badge-text text-sm max-sm:text-xs font-medium border-0 rounded-lg">
-                        {edu.period}
-                      </span>
+
+                      {/* Row 3: description */}
+                      <div className="md:col-span-12 md:row-start-3">
+                        <p className="max-sm:text-sm text-contact-card-text mt-2">
+                          {edu.description}
+                        </p>
+                      </div>
                     </div>
-                    <p className="max-sm:text-sm text-contact-card-text">
-                      {edu.description}
-                    </p>
                   </div>
                 ))}
               </div>
