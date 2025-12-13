@@ -18,7 +18,7 @@ import {
 const ResumePage: React.FC = () => {
   return (
     <>
-      <section className="min-h-screen flex items-center justify-center bg-contact-bg px-4">
+  <section className="md:min-h-screen flex items-center justify-center bg-contact-bg px-4">
         <div className="text-left w-full max-w-6xl">
           <h1 className="text-7xl font-bold leading-tight text-contact-heading text-center max-[900px]:text-5xl">
             Professional Profile

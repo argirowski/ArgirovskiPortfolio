@@ -29,7 +29,7 @@ export const projects = [
     id: 2,
     title: "Reactivities Social App",
     description:
-      "A full-stack web app built with .NET 9.0 and React (TypeScript), featuring Clean Architecture with CQRS + Mediator, Entity Framework Core, and ASP.NET Core Identity. Includes real-time updates via SignalR and a custom photo upload widget with Dropzone and Cropper. The frontend uses MobX for state management. Designed as a multi-project solution with scalable, production-ready architecture.",
+      "A full-stack web app built with .NET 9.0 and React (TypeScript), featuring Clean Architecture with CQRS + Mediator, Entity Framework Core, and ASP.NET Core Identity. Includes real-time updates via SignalR and a custom photo upload widget with Dropzone and Cropper. The frontend uses MobX for state management.",
     technologies: [
       "React Typescript",
       "ASP.NET Core Web API",
@@ -42,6 +42,23 @@ export const projects = [
   },
   {
     id: 3,
+    title: "Task Management App",
+    description:
+      "A full-stack web app built with .NET 9.0 and React, using C# for backend logic and TypeScript for the frontend. The backend follows Clean Architecture principles with CQRS using MediatR, Entity Framework Core for data access, and custom JWT token-based authentication. The frontend features React Bootstrap for UI components and Formik with Yup for form validation.",
+    technologies: [
+      "MediatR (CQRS)",
+      "JWT authentication",
+      "Entity Framework Core",
+      "React TypeScript",
+      "Clean Architecture",
+      "Repository Pattern",
+    ],
+    category: "Full Stack",
+    githubUrl: "https://github.com/argirowski/TaskManagementApp",
+    featured: true,
+  },
+  {
+    id: 4,
     title: "Restaurant App",
     description:
       "A backend web application built with ASP.NET Core and C#, following Clean Architecture with CQRS. Features MS SQL with Entity Framework Core, secure API access via authentication and authorization, custom middleware, file handling, and Serilog logging. Includes automated tests and CI/CD pipelines for deployment to Azure.",
@@ -58,10 +75,10 @@ export const projects = [
     featured: true,
   },
   {
-    id: 4,
+    id: 5,
     title: "Dating App",
     description:
-      "A full-stack web app built with .NET 8 and Angular 18, featuring JWT-based authentication, Entity Framework Core for data persistence, and real-time communication via SignalR. Includes drag-and-drop photo uploads to the cloud, private messaging, dynamic filtering/sorting/paging, and Angular notifications. Designed with best practices for scalable architecture and clean error handling.",
+      "A full-stack web app built with .NET 8 and Angular 18, featuring JWT-based authentication, Entity Framework Core for data persistence, and real-time communication via SignalR. Includes drag-and-drop photo uploads to the cloud, private messaging, dynamic filtering/sorting/paging, and Angular notifications.",
     technologies: [
       ".NET 8",
       "Angular 18",

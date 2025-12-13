@@ -9,7 +9,7 @@ import { handleDownloadCV } from "../../common/utils";
 const HomePage: React.FC<HomePageProps> = ({ onNavClick }) => {
   return (
     <>
-      <section className="min-h-screen flex items-center justify-center bg-contact-bg px-4 max-md:pb-12">
+  <section className="md:min-h-screen flex items-center justify-center bg-contact-bg px-4 max-md:pb-12">
         <div className="text-left w-full max-w-6xl">
           {/* Home Content */}
           <div className="grid grid-cols-12 gap-6 mx-auto">
