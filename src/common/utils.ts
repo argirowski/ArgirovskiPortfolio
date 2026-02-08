@@ -98,6 +98,7 @@ export const technicalSkills = {
     "TypeScript",
     "React",
     "Redux",
+    "Next.js",
     "Tailwind CSS",
     "Responsive Design",
   ],
@@ -143,6 +144,17 @@ export const certifications = [
 ];
 
 export const workExperience = [
+  {
+    position: "Software Developer",
+    company: "EmuWorks",
+    period: "Oct 2025 - Present",
+    responsibilities: [
+      "Developed and maintained a web application using Next.js, focusing on performance, scalability, and server-side rendering.",
+      "Built and integrated a custom application within Microsoft Teams, enabling users to access core features directly inside the Teams environment.",
+      "Collaborated closely with backend and product teams to translate business requirements into technical solutions within the Teams ecosystem.",
+      "Participated in code reviews, architectural discussions, and continuous improvement of development practices.",
+    ],
+  },
   {
     position: "Software Developer",
     company: "Damilah",
