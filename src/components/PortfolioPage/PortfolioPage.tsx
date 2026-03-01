@@ -7,21 +7,21 @@ import { faGithub } from "@fortawesome/free-brands-svg-icons";
 const PortfolioPage: React.FC = () => {
   return (
     <>
-  <section className="md:min-h-screen flex items-center justify-center bg-contact-bg px-4 pb-24 max-md:pb-12">
+      <section className="md:min-h-screen flex items-center justify-center bg-contact-bg px-4 pb-24 max-md:pb-12">
         <div className="text-left w-full max-w-7xl">
           <h1 className="text-7xl font-bold leading-tight text-contact-heading text-center max-[900px]:text-5xl">
             Selected Projects
           </h1>
           <h2 className="text-2xl font-light mt-6 text-contact-heading text-center max-[900px]:text-xl">
-            Take a look at some of my favorite projects that showcase my web
-            development skills and style.
+            Work that reflects an approach to building scalable, maintainable
+            web applications.
           </h2>
 
           {/* Portfolio content will go here */}
           <div className="mt-12">
             <h3 className="text-2xl font-semibold text-contact-heading text-left mb-4 max-sm:text-xl">
               <FontAwesomeIcon icon={faShield} className="mr-3" />
-              Top Picks
+              Project Highlights
             </h3>
 
             {/* Project Cards Grid */}

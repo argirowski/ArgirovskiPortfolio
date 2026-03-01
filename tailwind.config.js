@@ -26,26 +26,26 @@ module.exports = {
       },
       colors: {
         // Footer colors extracted from existing design
-        "footer-bg": "#1a1a1a",
-        "footer-text": "#e5e5e5",
+        "footer-bg": "#16213e",
+        "footer-text": "#E2E8F0",
         // Navbar accent colors
-        "nav-hover": "#06B6D4",
-        "nav-active": "#0891B2",
-        // Contact page background
-        "contact-bg": "#f8f8f8",
+        "nav-hover": "#7DD3FC",
+        "nav-active": "#38BDF8",
+        // Main section background
+        "contact-bg": "#F1F5F9",
         // Contact page heading color
-        "contact-heading": "#1a1a1a",
+        "contact-heading": "#333333",
         // Contact card colors
         "contact-card-bg": "#ffffff",
-        "contact-card-text": "#1a1a1a",
-        "contact-card-border": "#a8adb1",
-        // Contact link color
-        "contact-link": "#0f2742",
-        // Contact link hover color
-        "contact-link-hover": "#1d4b7a",
-        // Badge colors
-        "badge-bg": "#2d2d2d",
-        "badge-text": "#f5f5f5",
+        "contact-card-text": "#333333",
+        "contact-card-border": "#DADADA",
+        // Contact link color / button color
+        "contact-link": "#1f2937",
+        // Contact link hover color / button hover
+        "contact-link-hover": "#374151",
+        // Badge colors (labels: dates, language badges)
+        "badge-bg": "#CBD5E1",
+        "badge-text": "#333333",
       },
     },
   },

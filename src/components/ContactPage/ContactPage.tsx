@@ -12,14 +12,14 @@ const ContactPage: React.FC = () => {
             Let's get in touch
           </h1>
           <h2 className="text-2xl font-light mt-6 text-contact-heading text-center max-[900px]:text-xl">
-            I'm always open to new opportunities and collaborations. Reach out
-            anytime!
+            I’m open to new opportunities and collaborations. Feel free to reach
+            out.
           </h2>
 
           {/* Contact Card */}
           <div className="mt-12 mx-auto bg-contact-card-bg text-contact-card-text border border-contact-card-border rounded-lg shadow-md p-8">
             <h3 className="text-2xl font-semibold text-contact-heading text-left mb-4 max-sm:text-xl">
-              How to Connect
+              Let’s Connect
             </h3>
             <div className="flex items-center gap-3">
               <FontAwesomeIcon icon={faLinkedin} size="lg" />
@@ -29,7 +29,7 @@ const ContactPage: React.FC = () => {
                 rel="noopener noreferrer"
                 className="text-contact-link hover:text-contact-link-hover"
               >
-                Follow me on LinkedIn
+                LinkedIn
               </a>
             </div>
             <div className="flex items-center gap-3 mt-3">
@@ -40,7 +40,7 @@ const ContactPage: React.FC = () => {
                 rel="noopener noreferrer"
                 className="text-contact-link hover:text-contact-link-hover"
               >
-                Follow me on GitHub
+                GitHub
               </a>
             </div>
             <div className="flex items-center gap-3 mt-3">

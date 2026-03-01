@@ -10,31 +10,32 @@ export function handleDownloadCV(RESUME_PDF_URL: string) {
 export const projects = [
   {
     id: 1,
-    title: "E-Commerce Store",
+    title: "Task Management App",
     description:
-      "A full-stack web application built with .NET and React, using C# for backend logic and TypeScript for the frontend. Features Redux for state management, Material UI for styling, Entity Framework for data access, and ASP.NET Core Identity for secure authentication.",
+      "A full-stack application built with .NET 9 and React (TypeScript) using Clean Architecture and CQRS (MediatR). Implements JWT authentication with refresh tokens, repository pattern, Entity Framework Core, and FluentValidation pipeline behaviors. The frontend uses React Bootstrap and Formik with Yup for structured form handling.",
     technologies: [
-      "React TypeScript",
+      "Clean Architecture",
+      "CQRS + MediatR",
+      "JWT + Refresh Tokens",
       "Entity Framework Core",
-      ".NET",
-      "Material UI",
-      "ASP.NET Core Identity",
-      "Redux",
+      "FluentValidation",
+      "React + TypeScript",
     ],
     category: "Full Stack",
-    githubUrl: "https://github.com/argirowski/ECommerceStore",
+    githubUrl: "https://github.com/argirowski/TaskManagementApp",
     featured: true,
   },
   {
     id: 2,
     title: "Reactivities Social App",
     description:
-      "A full-stack web app built with .NET 9.0 and React (TypeScript), featuring Clean Architecture with CQRS + Mediator, Entity Framework Core, and ASP.NET Core Identity. Includes real-time updates via SignalR and a custom photo upload widget with Dropzone and Cropper. The frontend uses MobX for state management.",
+      "A full-stack social event platform built with .NET 9 and React (TypeScript) using Clean Architecture and CQRS (MediatR). Users can create and join activities, follow other users, upload profile photos, and receive real-time updates via SignalR. The backend includes JWT authentication, pagination, filtering, and centralized error handling, while the frontend uses React Query and MobX for scalable state management.",
     technologies: [
       "React Typescript",
       "ASP.NET Core Web API",
       "Entity Framework Core",
       "CQRS + MediatR",
+      "JWT Authentication",
     ],
     category: "Full Stack",
     githubUrl: "https://github.com/argirowski/Reactivities",
@@ -42,49 +43,49 @@ export const projects = [
   },
   {
     id: 3,
-    title: "Task Management App",
-    description:
-      "A full-stack web app built with .NET 9.0 and React, using C# for backend logic and TypeScript for the frontend. The backend follows Clean Architecture principles with CQRS using MediatR, Entity Framework Core for data access, and custom JWT token-based authentication. The frontend features React Bootstrap for UI components and Formik with Yup for form validation.",
-    technologies: [
-      "MediatR (CQRS)",
-      "JWT authentication",
-      "Entity Framework Core",
-      "React TypeScript",
-      "Clean Architecture",
-      "Repository Pattern",
-    ],
-    category: "Full Stack",
-    githubUrl: "https://github.com/argirowski/TaskManagementApp",
-    featured: true,
-  },
-  {
-    id: 4,
     title: "Restaurant App",
     description:
-      "A backend web application built with ASP.NET Core and C#, following Clean Architecture with CQRS. Features MS SQL with Entity Framework Core, secure API access via authentication and authorization, custom middleware, file handling, and Serilog logging. Includes automated tests and CI/CD pipelines for deployment to Azure.",
+      "A backend REST API built with ASP.NET Core, structured using Clean Architecture and CQRS (MediatR). Features include JWT authentication, role-based authorization, Entity Framework Core with SQL Server, server-side pagination, custom exception middleware, structured logging with Serilog, automated testing, and CI/CD deployment to Azure.",
     technologies: [
-      "CQRS + Clean Architecture",
-      ".ASP.NET Core",
-      "Authentication & Authorization",
-      "Serilog",
-      "Azure + CI/CD Pipelines",
+      "ASP.NET Core Web API",
+      "Clean Architecture + CQRS",
       "Entity Framework Core",
+      "JWT Authentication",
+      "Azure CI/CD",
     ],
     category: "Backend",
     githubUrl: "https://github.com/argirowski/RestaurantApp",
     featured: true,
   },
   {
+    id: 4,
+    title: "E-Commerce Store",
+    description:
+      "A full-stack e-commerce application implementing product management, authentication, role-based authorization, shopping cart functionality, order processing, and payment integration. Built with ASP.NET Core and React (TypeScript), featuring Redux for state management, server-side pagination and filtering, and secure identity handling with ASP.NET Core Identity.",
+    technologies: [
+      "ASP.NET Core",
+      "React (TypeScript)",
+      "Entity Framework Core",
+      "Redux",
+      "ASP.NET Core Identity",
+      "Material UI",
+    ],
+    category: "Full Stack",
+    githubUrl: "https://github.com/argirowski/ECommerceStore",
+    featured: true,
+  },
+  {
     id: 5,
     title: "Dating App",
     description:
-      "A full-stack web app built with .NET 8 and Angular 18, featuring JWT-based authentication, Entity Framework Core for data persistence, and real-time communication via SignalR. Includes drag-and-drop photo uploads to the cloud, private messaging, dynamic filtering/sorting/paging, and Angular notifications.",
+      "A full-stack application built with .NET 8 and Angular 18, implementing JWT authentication, ASP.NET Identity, and real-time messaging with SignalR. Features include cloud photo uploads, private messaging, dynamic filtering/sorting/pagination, and secure role-based access. Built with Entity Framework Core and Angular reactive forms.",
     technologies: [
-      ".NET 8",
+      ".NET 8 Web API",
       "Angular 18",
       "Entity Framework Core",
-      "JWT Authentication",
-      "Filtering, sorting, and paging",
+      "JWT + ASP.NET Identity",
+      "SignalR",
+      "Pagination and Filtering",
     ],
     category: "Full Stack",
     githubUrl: "https://github.com/argirowski/DatingApp",
@@ -94,23 +95,29 @@ export const projects = [
 
 export const technicalSkills = {
   frontend: [
-    "JavaScript",
-    "TypeScript",
+    "Typescript",
     "React",
-    "Redux",
     "Next.js",
+    "Javascript",
     "Tailwind CSS",
     "Responsive Design",
   ],
   backend: [
     "C#",
-    ".NET Core",
-    "REST APIs",
-    "Unit Testing",
+    "ASP.NET Core",
     "Entity Framework Core",
+    "RESTful API Development",
+    "Authentication & Authorization",
+    "Clean Architecture",
   ],
   database: ["SQL", "Microsoft SQL Server"],
-  tools: ["Git / GitHub", "Docker", "Microsoft Azure", "Agile Methodology"],
+  tools: [
+    "Microsoft Azure",
+    "Docker",
+    "Git / GitHub",
+    "Unit Testing",
+    "Agile Methodology",
+  ],
 };
 
 export const languages = [
@@ -130,13 +137,14 @@ export const languages = [
 
 export const certifications = [
   {
-    title: "Querying Data with Transact-SQL - Exam 761",
-    url: "https://www.credly.com/badges/ab2660b7-4db1-4515-9e0d-56238e6c1e45",
-  },
-  {
     title: "Programming in Microsoft C# - Exam 70-483",
     url: "https://www.credly.com/badges/49fceafe-9455-40c1-988c-dd6500def154",
   },
+  {
+    title: "Querying Data with Transact-SQL - Exam 761",
+    url: "https://www.credly.com/badges/ab2660b7-4db1-4515-9e0d-56238e6c1e45",
+  },
+
   {
     title: "Oracle Certified Associate, Java SE 7 Programmer",
     url: "https://www.credly.com/badges/b9f7aeda-e73b-483c-820e-90fccfa1278f",
@@ -146,13 +154,13 @@ export const certifications = [
 export const workExperience = [
   {
     position: "Software Developer",
-    company: "EmuWorks",
+    company: "EmuWorks (KB-Synotec)",
     period: "Oct 2025 - Present",
     responsibilities: [
-      "Developed and maintained a web application using Next.js, focusing on performance, scalability, and server-side rendering.",
-      "Built and integrated a custom application within Microsoft Teams, enabling users to access core features directly inside the Teams environment.",
-      "Collaborated closely with backend and product teams to translate business requirements into technical solutions within the Teams ecosystem.",
-      "Participated in code reviews, architectural discussions, and continuous improvement of development practices.",
+      "Built a full-stack task planning application with Next.js and React (TypeScript), leveraging Server Components and Server Actions to deliver a scalable and maintainable architecture.",
+      "Integrated Microsoft Graph API to manage and synchronize Microsoft Planner tasks within the Microsoft 365 ecosystem, implementing secure Entra ID authentication and Microsoft Teams tab embedding.",
+      "Designed accessible, responsive user interfaces with Tailwind CSS and implemented efficient client-state management using Zustand and SWR (caching and optimistic updates), with schema-based validation via React Hook Form and Zod.",
+      "Collaborated with backend engineers and product managers to translate business requirements into scalable solutions, contributing to architectural discussions and code reviews.",
     ],
   },
   {
@@ -160,11 +168,11 @@ export const workExperience = [
     company: "Damilah",
     period: "Jul 2022 - Feb 2025",
     responsibilities: [
-      "Built modern, responsive user interfaces using React with TypeScript, ensuring type safety and maintainable code structure.",
-      "Developed scalable backend APIs and business logic using .NET Core, enabling seamless data flow across the stack.",
-      "Employed Entity Framework Core for efficient data access and object-relational mapping, following best practices for database interaction.",
-      "Designed and implemented sleek, utility-first UI components with Tailwind CSS, focusing on clean, accessible, mobile-first design.",
-      "Collaborated in a full-stack environment, contributing to both frontend features and backend architecture, delivering cohesive end-to-end solutions.",
+      "Developed modern, responsive user interfaces with React and TypeScript, ensuring type safety and maintainable component architecture.",
+      "Designed and implemented scalable REST APIs and business logic using ASP.NET Core, enabling seamless data flow between frontend and backend services.",
+      "Utilized Entity Framework Core for efficient data access and object-relational mapping, applying best practices in query optimization and database interaction.",
+      "Built clean, accessible, mobile-first UI components with Tailwind CSS to deliver consistent user experiences across devices.",
+      "Contributed across the full stack, collaborating on frontend features and backend architecture to deliver cohesive end-to-end solutions.",
     ],
   },
   {
@@ -172,21 +180,21 @@ export const workExperience = [
     company: "CodeIT Solution",
     period: "Jan 2021 - Jun 2022",
     responsibilities: [
-      "Developed and maintained full-stack applications using .NET Core and C#, ensuring scalable and efficient backend architecture.",
-      "Built responsive, user-centric front-end interfaces with React and styled components using Bootstrap for modern, accessible UI design.",
-      "Designed and queried SQL-based relational databases, optimizing performance for key operations.",
-      "Utilized Entity Framework Core for object-relational mapping, enhancing productivity and consistency in data management.",
-      "Collaborated on both frontend and backend solutions, contributing to end-to-end application features and delivery.",
+      "Developed and maintained full-stack applications using ASP.NET Core and C#, building scalable and maintainable backend services.",
+      "Designed and implemented responsive, user-centric interfaces with React and Bootstrap, delivering accessible and consistent UI experiences.",
+      "Designed and optimized SQL Server databases, improving performance of critical queries and core business operations.",
+      "Leveraged Entity Framework Core for object-relational mapping, ensuring clean data access patterns and maintainable persistence logic.",
+      "Collaborated across frontend and backend teams to deliver end-to-end features within iterative development cycles.",
     ],
   },
 ];
 
 export const education = [
   {
-    title: "Web Developer, Semos Javascript Academy",
+    title: "Web Developer Bootcamp - Semos Javascript Academy",
     institution: "Semos Computer Education Center",
     period: "May 2018 - Jan 2019",
     description:
-      "Completed a Web Development program covering modern technologies and tools including HTML5, CSS3, JavaScript, Node.js, MongoDB, React, Redux, TypeScript, Git, HTTP, and REST. Gained hands-on experience building full-stack applications and mastering both frontend and backend development workflows.",
+      "Completed an intensive full-stack web development program focused on the MERN stack (MongoDB, Express, React, Node.js). Gained hands-on experience building dynamic web applications, with emphasis on RESTful APIs, state management, and modern JavaScript (ES6+), alongside strong foundations in HTML5 and CSS3.",
   },
 ];

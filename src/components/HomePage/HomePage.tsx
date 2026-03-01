@@ -9,7 +9,7 @@ import { handleDownloadCV } from "../../common/utils";
 const HomePage: React.FC<HomePageProps> = ({ onNavClick }) => {
   return (
     <>
-  <section className="md:min-h-screen flex items-center justify-center bg-contact-bg px-4 max-md:pb-12">
+      <section className="md:min-h-screen flex items-center justify-center bg-contact-bg px-4 max-md:pb-12">
         <div className="text-left w-full max-w-6xl">
           {/* Home Content */}
           <div className="grid grid-cols-12 gap-6 mx-auto">
@@ -25,14 +25,13 @@ const HomePage: React.FC<HomePageProps> = ({ onNavClick }) => {
             {/* Right Half - 6 columns */}
             <div className="col-span-6 max-md:col-span-12 max-md:flex max-md:flex-col max-md:items-center max-md:text-center">
               <h1 className="text-7xl font-bold leading-tight text-contact-heading text-left max-[900px]:text-5xl">
-                Welcome !
+                Hi, I’m Gjorgji.
               </h1>
               <h2 className="text-2xl font-light mt-6 text-contact-heading text-left max-[900px]:text-xl">
-                I am a Full Stack Developer who loves building web experiences
-                that look great and work even better. Whether it is a slick UI
-                or smooth backend logic, I am all about making the web feel
-                effortless. Feel free to reach out or explore my work, just
-                click a button below!
+                Full-stack developer focused on building scalable, maintainable
+                applications that solve real-world challenges. Enjoy combining
+                structured backend logic with clean, intuitive user experiences
+                to create systems that feel reliable and effortless.
               </h2>
 
               {/* Buttons Section - Split into two halves */}

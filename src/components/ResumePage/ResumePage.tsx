@@ -18,14 +18,13 @@ import {
 const ResumePage: React.FC = () => {
   return (
     <>
-  <section className="md:min-h-screen flex items-center justify-center bg-contact-bg px-4">
+      <section className="md:min-h-screen flex items-center justify-center bg-contact-bg px-4">
         <div className="text-left w-full max-w-6xl">
           <h1 className="text-7xl font-bold leading-tight text-contact-heading text-center max-[900px]:text-5xl">
-            Professional Profile
+            Experience and Background
           </h1>
           <h2 className="text-2xl font-light mt-6 text-contact-heading text-center max-[900px]:text-xl">
-            Overview of my professional journey, education, skills, and
-            credentials.
+            A closer look at my experience, skills, and career path.
           </h2>
 
           {/* Resume Cards */}
@@ -36,7 +35,7 @@ const ResumePage: React.FC = () => {
               <div className="bg-contact-card-bg text-contact-card-text border border-contact-card-border rounded-lg shadow-md p-8">
                 <h3 className="text-2xl font-semibold text-contact-heading text-left mb-4 max-sm:text-xl">
                   <FontAwesomeIcon icon={faLaptopCode} className="mr-3" />
-                  Work Experience
+                  Professional Experience
                 </h3>
                 {workExperience.map((job, index) => (
                   <div
@@ -197,29 +196,6 @@ const ResumePage: React.FC = () => {
               {/* Second card in right column */}
               <div className="bg-contact-card-bg text-contact-card-text border border-contact-card-border rounded-lg shadow-md p-8">
                 <h3 className="text-2xl font-semibold text-contact-heading text-left mb-4 max-sm:text-xl">
-                  <FontAwesomeIcon icon={faEarthEurope} className="mr-3" />
-                  Languages
-                </h3>
-                {languages.map((language, index) => (
-                  <div
-                    key={language.name}
-                    className={index < languages.length - 1 ? "mb-3" : ""}
-                  >
-                    <div className="flex justify-between items-center mb-1">
-                      <span className="max-sm:text-sm text-contact-card-text">
-                        {language.name}
-                      </span>
-                      <span className="px-3 py-2 bg-badge-bg text-badge-text text-sm max-sm:text-xs font-medium border-0 rounded-lg ml-2">
-                        {language.level}
-                      </span>
-                    </div>
-                  </div>
-                ))}
-              </div>
-
-              {/* Third card in right column */}
-              <div className="bg-contact-card-bg text-contact-card-text border border-contact-card-border rounded-lg shadow-md p-8">
-                <h3 className="text-2xl font-semibold text-contact-heading text-left mb-4 max-sm:text-xl">
                   <FontAwesomeIcon icon={faAward} className="mr-3" />
                   Certifications
                 </h3>
@@ -238,6 +214,29 @@ const ResumePage: React.FC = () => {
                         {cert.title}
                       </a>
                     </h6>
+                  </div>
+                ))}
+              </div>
+
+              {/* Third card in right column */}
+              <div className="bg-contact-card-bg text-contact-card-text border border-contact-card-border rounded-lg shadow-md p-8">
+                <h3 className="text-2xl font-semibold text-contact-heading text-left mb-4 max-sm:text-xl">
+                  <FontAwesomeIcon icon={faEarthEurope} className="mr-3" />
+                  Languages
+                </h3>
+                {languages.map((language, index) => (
+                  <div
+                    key={language.name}
+                    className={index < languages.length - 1 ? "mb-3" : ""}
+                  >
+                    <div className="flex justify-between items-center mb-1">
+                      <span className="max-sm:text-sm text-contact-card-text">
+                        {language.name}
+                      </span>
+                      <span className="px-3 py-2 bg-badge-bg text-badge-text text-sm max-sm:text-xs font-medium border-0 rounded-lg ml-2">
+                        {language.level}
+                      </span>
+                    </div>
                   </div>
                 ))}
               </div>
