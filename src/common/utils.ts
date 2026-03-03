@@ -159,7 +159,7 @@ export const workExperience = [
     responsibilities: [
       "Built a full-stack task planning application with Next.js and React (TypeScript), leveraging Server Components and Server Actions to deliver a scalable and maintainable architecture.",
       "Integrated Microsoft Graph API to manage and synchronize Microsoft Planner tasks within the Microsoft 365 ecosystem, implementing secure Entra ID authentication and Microsoft Teams tab embedding.",
-      "Designed accessible, responsive user interfaces with Tailwind CSS and implemented efficient client-state management using Zustand and SWR (caching and optimistic updates), with schema-based validation via React Hook Form and Zod.",
+      "Designed accessible, responsive user interfaces with Tailwind CSS, implemented client-side state management in React, and applied schema-based form validation using React Hook Form and Zod.",
       "Collaborated with backend engineers and product managers to translate business requirements into scalable solutions, contributing to architectural discussions and code reviews.",
     ],
   },
