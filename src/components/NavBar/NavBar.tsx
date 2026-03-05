@@ -13,7 +13,7 @@ const NavBar: React.FC<NavBarProps> = ({ activeSection, onNavClick }) => {
           <div className="flex items-center h-full">
             <button
               type="button"
-              className="font-bold text-2xl md:text-3xl flex items-center h-full bg-transparent border-0 cursor-pointer text-footer-text hover:text-nav-hover hover:opacity-80 transition-colors duration-150"
+              className="font-bold text-2xl md:text-3xl flex items-center h-full bg-transparent border-0 cursor-pointer text-footer-text hover:text-nav-hover hover:opacity-80 transition-colors duration-150 focus:outline-none focus-visible:ring-2 focus-visible:ring-nav-active/35 focus-visible:ring-offset-2 focus-visible:ring-offset-footer-bg rounded"
               onClick={() => onNavClick("home")}
             >
               <FontAwesomeIcon icon={faUser} className="mr-2" />
@@ -27,10 +27,10 @@ const NavBar: React.FC<NavBarProps> = ({ activeSection, onNavClick }) => {
               id="nav-home"
               type="button"
               onClick={() => onNavClick("home")}
-              className={`text-base md:text-lg font-semibold px-3 md:px-4 py-1 md:py-2 h-full transition-colors duration-150 focus:outline-none focus-visible:ring-2 focus-visible:ring-nav-active/50 hover:text-nav-hover ${
+              className={`text-base md:text-lg font-semibold px-3 md:px-4 py-1 md:py-2 h-full transition-colors duration-150 focus:outline-none focus-visible:ring-2 focus-visible:ring-nav-active/35 focus-visible:ring-offset-2 focus-visible:ring-offset-footer-bg hover:text-nav-hover ${
                 activeSection === "home"
                   ? "text-nav-active"
-                  : "text-footer-text"
+                  : "text-nav-default"
               }`}
             >
               Home
@@ -39,10 +39,10 @@ const NavBar: React.FC<NavBarProps> = ({ activeSection, onNavClick }) => {
               id="nav-portfolio"
               type="button"
               onClick={() => onNavClick("portfolio")}
-              className={`text-base md:text-lg font-semibold px-3 md:px-4 py-1 md:py-2 h-full transition-colors duration-150 focus:outline-none focus-visible:ring-2 focus-visible:ring-nav-active/50 hover:text-nav-hover ${
+              className={`text-base md:text-lg font-semibold px-3 md:px-4 py-1 md:py-2 h-full transition-colors duration-150 focus:outline-none focus-visible:ring-2 focus-visible:ring-nav-active/35 focus-visible:ring-offset-2 focus-visible:ring-offset-footer-bg hover:text-nav-hover ${
                 activeSection === "portfolio"
                   ? "text-nav-active"
-                  : "text-footer-text"
+                  : "text-nav-default"
               }`}
             >
               Portfolio
@@ -51,10 +51,10 @@ const NavBar: React.FC<NavBarProps> = ({ activeSection, onNavClick }) => {
               id="nav-resume"
               type="button"
               onClick={() => onNavClick("resume")}
-              className={`text-base md:text-lg font-semibold px-3 md:px-4 py-1 md:py-2 h-full transition-colors duration-150 focus:outline-none focus-visible:ring-2 focus-visible:ring-nav-active/50 hover:text-nav-hover ${
+              className={`text-base md:text-lg font-semibold px-3 md:px-4 py-1 md:py-2 h-full transition-colors duration-150 focus:outline-none focus-visible:ring-2 focus-visible:ring-nav-active/35 focus-visible:ring-offset-2 focus-visible:ring-offset-footer-bg hover:text-nav-hover ${
                 activeSection === "resume"
                   ? "text-nav-active"
-                  : "text-footer-text"
+                  : "text-nav-default"
               }`}
             >
               Resume
@@ -63,10 +63,10 @@ const NavBar: React.FC<NavBarProps> = ({ activeSection, onNavClick }) => {
               id="nav-contact"
               type="button"
               onClick={() => onNavClick("contact")}
-              className={`text-base md:text-lg font-semibold px-3 md:px-4 py-1 md:py-2 h-full transition-colors duration-150 focus:outline-none focus-visible:ring-2 focus-visible:ring-nav-active/50 hover:text-nav-hover ${
+              className={`text-base md:text-lg font-semibold px-3 md:px-4 py-1 md:py-2 h-full transition-colors duration-150 focus:outline-none focus-visible:ring-2 focus-visible:ring-nav-active/35 focus-visible:ring-offset-2 focus-visible:ring-offset-footer-bg hover:text-nav-hover ${
                 activeSection === "contact"
                   ? "text-nav-active"
-                  : "text-footer-text"
+                  : "text-nav-default"
               }`}
             >
               Contact

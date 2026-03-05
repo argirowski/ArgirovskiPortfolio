@@ -9,7 +9,7 @@ import { handleDownloadCV } from "../../common/utils";
 const HomePage: React.FC<HomePageProps> = ({ onNavClick }) => {
   return (
     <>
-      <section className="md:min-h-screen flex items-center justify-center bg-contact-bg px-4 max-md:pb-12">
+      <section className="md:min-h-screen flex items-center justify-center bg-section-bg-a px-4 max-md:pb-12">
         <div className="text-left w-full max-w-6xl">
           {/* Home Content */}
           <div className="grid grid-cols-12 gap-6 mx-auto">
@@ -39,41 +39,41 @@ const HomePage: React.FC<HomePageProps> = ({ onNavClick }) => {
                 <div className="grid grid-cols-2 gap-4 max-[400px]:grid-cols-1 max-md:gap-4 col-span-12 max-md:col-span-12">
                   {/* Left buttons half */}
                   <div className="space-y-4">
-                    <button
-                      onClick={() => handleDownloadCV(RESUME_PDF_URL)}
-                      className="w-[13rem] max-[900px]:w-[12rem] max-[830px]:w-[11rem] h-12 bg-contact-link hover:bg-contact-link-hover text-white rounded-lg text-lg font-medium transition-colors duration-200 flex items-center justify-center gap-2"
-                    >
-                      <FontAwesomeIcon icon={faFileArrowDown} />
-                      Download CV
-                    </button>
                     <a
                       href="mailto:gjorgji.argirovski@gmail.com"
-                      className="w-[13rem] max-[900px]:w-[12rem] max-[830px]:w-[11rem] h-12 bg-contact-link hover:bg-contact-link-hover text-white rounded-lg text-lg font-medium transition-colors duration-200 flex items-center justify-center gap-2"
+                      className="w-[13rem] max-[900px]:w-[12rem] max-[830px]:w-[11rem] h-12 bg-btn-contact-bg hover:bg-btn-contact-hover text-white rounded-lg text-lg font-medium transition-all duration-150 flex items-center justify-center gap-2 hover:shadow-btn-contact focus:outline-none focus-visible:ring-2 focus-visible:ring-nav-active/35 focus-visible:ring-offset-2"
                     >
                       <FontAwesomeIcon icon={faEnvelope} />
                       Contact
                     </a>
+                    <button
+                      onClick={() => handleDownloadCV(RESUME_PDF_URL)}
+                      className="w-[13rem] max-[900px]:w-[12rem] max-[830px]:w-[11rem] h-12 bg-btn-secondary-bg text-btn-secondary-text hover:bg-btn-secondary-hover rounded-lg text-lg font-medium transition-all duration-150 flex items-center justify-center gap-2 hover:-translate-y-px focus:outline-none focus-visible:ring-2 focus-visible:ring-nav-active/35 focus-visible:ring-offset-2"
+                    >
+                      <FontAwesomeIcon icon={faFileArrowDown} />
+                      Download CV
+                    </button>
                   </div>
 
                   {/* Right buttons half */}
                   <div className="space-y-4">
                     <a
-                      href="https://www.linkedin.com/in/gjorgji-argirovski/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="w-[13rem] max-[900px]:w-[12rem] max-[830px]:w-[11rem] h-12 bg-contact-link hover:bg-contact-link-hover text-white rounded-lg text-lg font-medium transition-colors duration-200 flex items-center justify-center gap-2"
-                    >
-                      <FontAwesomeIcon icon={faLinkedin} />
-                      LinkedIn
-                    </a>
-                    <a
                       href="https://github.com/argirowski"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="w-[13rem] max-[900px]:w-[12rem] max-[830px]:w-[11rem] h-12 bg-contact-link hover:bg-contact-link-hover text-white rounded-lg text-lg font-medium transition-colors duration-200 flex items-center justify-center gap-2"
+                      className="w-[13rem] max-[900px]:w-[12rem] max-[830px]:w-[11rem] h-12 bg-btn-secondary-bg text-btn-secondary-text hover:bg-btn-secondary-hover rounded-lg text-lg font-medium transition-all duration-150 flex items-center justify-center gap-2 hover:-translate-y-px focus:outline-none focus-visible:ring-2 focus-visible:ring-nav-active/35 focus-visible:ring-offset-2"
                     >
                       <FontAwesomeIcon icon={faGithub} />
                       GitHub
+                    </a>
+                    <a
+                      href="https://www.linkedin.com/in/gjorgji-argirovski/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="w-[13rem] max-[900px]:w-[12rem] max-[830px]:w-[11rem] h-12 bg-btn-secondary-bg text-btn-secondary-text hover:bg-btn-secondary-hover rounded-lg text-lg font-medium transition-all duration-150 flex items-center justify-center gap-2 hover:-translate-y-px focus:outline-none focus-visible:ring-2 focus-visible:ring-nav-active/35 focus-visible:ring-offset-2"
+                    >
+                      <FontAwesomeIcon icon={faLinkedin} />
+                      LinkedIn
                     </a>
                   </div>
                 </div>

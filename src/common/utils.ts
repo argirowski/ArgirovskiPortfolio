@@ -23,7 +23,6 @@ export const projects = [
     ],
     category: "Full Stack",
     githubUrl: "https://github.com/argirowski/TaskManagementApp",
-    featured: true,
   },
   {
     id: 2,
@@ -39,7 +38,6 @@ export const projects = [
     ],
     category: "Full Stack",
     githubUrl: "https://github.com/argirowski/Reactivities",
-    featured: true,
   },
   {
     id: 3,
@@ -55,7 +53,6 @@ export const projects = [
     ],
     category: "Backend",
     githubUrl: "https://github.com/argirowski/RestaurantApp",
-    featured: true,
   },
   {
     id: 4,
@@ -72,7 +69,6 @@ export const projects = [
     ],
     category: "Full Stack",
     githubUrl: "https://github.com/argirowski/ECommerceStore",
-    featured: true,
   },
   {
     id: 5,
@@ -89,7 +85,6 @@ export const projects = [
     ],
     category: "Full Stack",
     githubUrl: "https://github.com/argirowski/DatingApp",
-    featured: true,
   },
 ];
 

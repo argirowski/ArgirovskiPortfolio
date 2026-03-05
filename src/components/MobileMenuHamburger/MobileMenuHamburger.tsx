@@ -31,7 +31,7 @@ const MobileMenuHamburger: React.FC<MobileMenuHamburgerProps> = ({
         aria-label="Open menu"
         aria-expanded={open}
         onClick={() => setOpen((v) => !v)}
-        className="p-2 rounded-md text-footer-text hover:text-nav-hover focus:outline-none focus-visible:ring-2 focus-visible:ring-nav-active/50"
+        className="p-2 rounded-md text-nav-default hover:text-nav-hover focus:outline-none focus-visible:ring-2 focus-visible:ring-nav-active/35 focus-visible:ring-offset-2 focus-visible:ring-offset-footer-bg transition-colors duration-150"
       >
         {/* simple hamburger icon */}
         <svg
@@ -51,10 +51,10 @@ const MobileMenuHamburger: React.FC<MobileMenuHamburgerProps> = ({
       </button>
 
       {open && (
-        <div className="absolute right-0 mt-3 w-48 bg-footer-bg border border-gray-800 rounded-md shadow-lg py-2 z-50">
+        <div className="absolute right-0 mt-3 w-48 bg-footer-bg border border-nav-dropdown-border rounded-md shadow-lg py-2 z-50">
           <button
-            className={`w-full text-left px-4 py-2 text-base md:text-lg ${
-              activeSection === "home" ? "text-nav-active" : "text-footer-text"
+            className={`w-full text-left px-4 py-2 text-base md:text-lg focus:outline-none focus-visible:ring-2 focus-visible:ring-nav-active/35 focus-visible:ring-inset transition-colors duration-150 ${
+              activeSection === "home" ? "text-nav-active" : "text-nav-default"
             } hover:text-nav-hover`}
             onClick={() => {
               onNavClick("home");
@@ -64,10 +64,10 @@ const MobileMenuHamburger: React.FC<MobileMenuHamburgerProps> = ({
             Home
           </button>
           <button
-            className={`w-full text-left px-4 py-2 text-base md:text-lg ${
+            className={`w-full text-left px-4 py-2 text-base md:text-lg focus:outline-none focus-visible:ring-2 focus-visible:ring-nav-active/35 focus-visible:ring-inset transition-colors duration-150 ${
               activeSection === "portfolio"
                 ? "text-nav-active"
-                : "text-footer-text"
+                : "text-nav-default"
             } hover:text-nav-hover`}
             onClick={() => {
               onNavClick("portfolio");
@@ -77,10 +77,10 @@ const MobileMenuHamburger: React.FC<MobileMenuHamburgerProps> = ({
             Portfolio
           </button>
           <button
-            className={`w-full text-left px-4 py-2 text-base md:text-lg ${
+            className={`w-full text-left px-4 py-2 text-base md:text-lg focus:outline-none focus-visible:ring-2 focus-visible:ring-nav-active/35 focus-visible:ring-inset transition-colors duration-150 ${
               activeSection === "resume"
                 ? "text-nav-active"
-                : "text-footer-text"
+                : "text-nav-default"
             } hover:text-nav-hover`}
             onClick={() => {
               onNavClick("resume");
@@ -90,10 +90,10 @@ const MobileMenuHamburger: React.FC<MobileMenuHamburgerProps> = ({
             Resume
           </button>
           <button
-            className={`w-full text-left px-4 py-2 text-base md:text-lg ${
+            className={`w-full text-left px-4 py-2 text-base md:text-lg focus:outline-none focus-visible:ring-2 focus-visible:ring-nav-active/35 focus-visible:ring-inset transition-colors duration-150 ${
               activeSection === "contact"
                 ? "text-nav-active"
-                : "text-footer-text"
+                : "text-nav-default"
             } hover:text-nav-hover`}
             onClick={() => {
               onNavClick("contact");

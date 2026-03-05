@@ -66,20 +66,22 @@ function App() {
   };
 
   return (
-    <div className="App">
+    <div className="min-h-screen flex flex-col">
       <NavBar activeSection={activeSection} onNavClick={handleNavClick} />
-      <section id="home">
-        <HomePage onNavClick={handleNavClick} />
-      </section>
-      <section id="portfolio">
-        <PortfolioPage />
-      </section>
-      <section id="resume">
-        <ResumePage />
-      </section>
-      <section id="contact">
-        <ContactPage />
-      </section>
+      <main>
+        <section id="home">
+          <HomePage onNavClick={handleNavClick} />
+        </section>
+        <section id="portfolio">
+          <PortfolioPage />
+        </section>
+        <section id="resume">
+          <ResumePage />
+        </section>
+        <section id="contact">
+          <ContactPage />
+        </section>
+      </main>
       <Footer />
     </div>
   );
