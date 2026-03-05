@@ -32,7 +32,7 @@ const ResumePage: React.FC = () => {
             {/* Main Resume Card - 8 columns */}
             <div className="col-span-8 max-lg:col-span-12 space-y-6">
               {/* First card in left column */}
-              <div className="bg-contact-card-bg text-contact-card-text border border-contact-card-border rounded-lg shadow-card-subtle p-8">
+              <div className="bg-contact-card-bg text-contact-card-text border border-contact-card-border rounded-lg shadow-card-subtle p-8 transition-all duration-150 hover:border-card-hover-border hover:shadow-card-hover">
                 <h3 className="text-2xl font-semibold text-contact-heading text-left mb-4 max-sm:text-xl">
                   <FontAwesomeIcon icon={faLaptopCode} className="mr-3 text-pill-text" />
                   Professional Experience
@@ -80,7 +80,7 @@ const ResumePage: React.FC = () => {
               </div>
 
               {/* Second card in left column */}
-              <div className="bg-contact-card-bg text-contact-card-text border border-contact-card-border rounded-lg shadow-card-subtle p-8">
+              <div className="bg-contact-card-bg text-contact-card-text border border-contact-card-border rounded-lg shadow-card-subtle p-8 transition-all duration-150 hover:border-card-hover-border hover:shadow-card-hover">
                 <h3 className="text-2xl font-semibold text-contact-heading text-left mb-4 max-sm:text-xl">
                   <FontAwesomeIcon icon={faBuildingColumns} className="mr-3 text-pill-text" />
                   Education
@@ -126,7 +126,7 @@ const ResumePage: React.FC = () => {
             {/* Side Card - 4 columns */}
             <div className="col-span-4 max-lg:col-span-12 space-y-6">
               {/* First card in right column */}
-              <div className="bg-contact-card-bg text-contact-card-text border border-contact-card-border rounded-lg shadow-card-subtle p-8">
+              <div className="bg-contact-card-bg text-contact-card-text border border-contact-card-border rounded-lg shadow-card-subtle p-8 transition-all duration-150 hover:border-card-hover-border hover:shadow-card-hover">
                 <h3 className="text-2xl font-semibold text-contact-heading text-left mb-4 max-sm:text-xl">
                   <FontAwesomeIcon icon={faGear} className="mr-3 text-pill-text" />
                   Technical Skills
@@ -194,7 +194,7 @@ const ResumePage: React.FC = () => {
               </div>
 
               {/* Second card in right column */}
-              <div className="bg-contact-card-bg text-contact-card-text border border-contact-card-border rounded-lg shadow-card-subtle p-8">
+              <div className="bg-contact-card-bg text-contact-card-text border border-contact-card-border rounded-lg shadow-card-subtle p-8 transition-all duration-150 hover:border-card-hover-border hover:shadow-card-hover">
                 <h3 className="text-2xl font-semibold text-contact-heading text-left mb-4 max-sm:text-xl">
                   <FontAwesomeIcon icon={faAward} className="mr-3 text-pill-text" />
                   Certifications
@@ -219,7 +219,7 @@ const ResumePage: React.FC = () => {
               </div>
 
               {/* Third card in right column */}
-              <div className="bg-contact-card-bg text-contact-card-text border border-contact-card-border rounded-lg shadow-card-subtle p-8">
+              <div className="bg-contact-card-bg text-contact-card-text border border-contact-card-border rounded-lg shadow-card-subtle p-8 transition-all duration-150 hover:border-card-hover-border hover:shadow-card-hover">
                 <h3 className="text-2xl font-semibold text-contact-heading text-left mb-4 max-sm:text-xl">
                   <FontAwesomeIcon icon={faEarthEurope} className="mr-3 text-pill-text" />
                   Languages
