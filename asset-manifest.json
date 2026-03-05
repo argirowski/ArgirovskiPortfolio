@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/ArgirovskiPortfolio/static/css/main.d1c93099.css",
-    "main.js": "/ArgirovskiPortfolio/static/js/main.02e495c9.js",
+    "main.css": "/ArgirovskiPortfolio/static/css/main.322874d4.css",
+    "main.js": "/ArgirovskiPortfolio/static/js/main.9c41b202.js",
     "static/media/gjorgji-argirovski-cv-image.jpg": "/ArgirovskiPortfolio/static/media/gjorgji-argirovski-cv-image.88a4fb2f4dc30c694474.jpg",
     "index.html": "/ArgirovskiPortfolio/index.html",
-    "main.d1c93099.css.map": "/ArgirovskiPortfolio/static/css/main.d1c93099.css.map",
-    "main.02e495c9.js.map": "/ArgirovskiPortfolio/static/js/main.02e495c9.js.map"
+    "main.322874d4.css.map": "/ArgirovskiPortfolio/static/css/main.322874d4.css.map",
+    "main.9c41b202.js.map": "/ArgirovskiPortfolio/static/js/main.9c41b202.js.map"
   },
   "entrypoints": [
-    "static/css/main.d1c93099.css",
-    "static/js/main.02e495c9.js"
+    "static/css/main.322874d4.css",
+    "static/js/main.9c41b202.js"
   ]
 }
