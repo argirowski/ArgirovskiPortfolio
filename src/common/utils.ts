@@ -72,6 +72,22 @@ export const projects = [
   },
   {
     id: 5,
+    title: "Next Blog",
+    description:
+      "NextBlog is a modern fullstack blogging platform built with Next.js and SQLite. It features a responsive interface for browsing, reading, and managing blog posts. The project demonstrates the integration of a database with a React-based framework to create a functional web application.",
+    technologies: [
+      "Next.js",
+      "React",
+      "SQLite",
+      "Tailwind CSS",
+      "Server Components",
+      "Server Actions",
+    ],
+    category: "Full Stack",
+    githubUrl: "https://github.com/argirowski/NextBlog",
+  },
+  {
+    id: 6,
     title: "Dating App",
     description:
       "A full-stack application built with .NET 8 and Angular 18, implementing JWT authentication, ASP.NET Identity, and real-time messaging with SignalR. Features include cloud photo uploads, private messaging, dynamic filtering/sorting/pagination, and secure role-based access. Built with Entity Framework Core and Angular reactive forms.",
