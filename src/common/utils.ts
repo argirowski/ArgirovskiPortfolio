@@ -84,7 +84,7 @@ export const projects = [
       "Server Actions",
     ],
     category: "Full Stack",
-    githubUrl: "https://github.com/argirowski/NextBlog",
+    githubUrl: "https://github.com/argirowski/my-blog",
   },
   {
     id: 6,
